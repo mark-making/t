@@ -16,7 +16,7 @@ muted: false
 # // Where things are
 # //
 # url: 'http://79.170.44.132/talesmith.io'
-url: 'http://talesmith.tv'
+url: 'http://talesmith-test.mm-web-hosting.co.uk/'
 source: ./jekyll
 destination: ./_site
 layouts_dir: /_layouts
