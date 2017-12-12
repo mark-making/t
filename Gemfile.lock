@@ -49,9 +49,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.5, >= 3.5.2)
-  jekyll-contentblocks (~> 1.2)
-  sass (~> 3.5, >= 3.5.1)
+  jekyll
+  jekyll-contentblocks
+  sass
+
+RUBY VERSION
+   ruby 2.4.1p111
 
 BUNDLED WITH
    1.16.0
