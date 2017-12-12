@@ -1,8 +1,7 @@
-- title: 'About'
-  href: 'about'
-
-- title: 'Work'
-  href: 'work'
-
-- title: 'Awards'
-  href: 'awards'
+---
+- title: About
+  href: about
+- title: Work
+  href: work
+- title: Awards
+  href: awards
