@@ -1,0 +1,78 @@
+// Arrow starts transparent, gets bigger and rotates on the X axis out.
+@keyframes arrow-down {
+	0% {
+		opacity: 0;
+		transform:
+			translateY(0)
+	}
+	33% {
+		opacity: 1;
+		transform:
+			translateY(10px);
+	}
+	66% {
+		transform:
+			translateY(30px)
+			rotateX(100deg)
+			scale(1.5);
+	}
+	99% {
+		transform:
+			translateY(50px)
+	}
+	100% {
+		opacity: 0;
+		transform:
+			translateY(0);
+	}
+}
+
+.explore {
+	text: {
+		align: center;
+		transform: uppercase;
+		decoration: none;
+	}
+	font: {
+		size: 1.125em;
+		weight: 900;
+	}
+	color: $talesmith-grey;
+	color: rgba($talesmith-grey, 0.5);
+	letter-spacing: 0.1em;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 10em;
+	padding: 1em 1em 3em 1em;
+	&__arrow {
+		&:before, &:after {
+			content: "\2335";
+			font: {
+				family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			}
+			text-align: center;
+			color: $talesmith-grey;
+			color: rgba($talesmith-grey, 0.3);
+			position: absolute;
+			left: 0; top: 1.5em; right: 0; bottom: 0;
+		}
+		&:before {
+			opacity: 0;
+			animation: arrow-down infinite 3s 2s;
+		}
+		&:after {
+			opacity: 0;
+			animation: arrow-down infinite 3s 0s;
+		}
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}

@@ -1,0 +1,42 @@
+<aside class="information-bar">
+
+	<section class="information-bar__content">
+
+		<div class="information-bar__content--default-left">
+      <h1 class="information-bar__content__heading">
+        Let’s tell your story
+      </h1>
+      <div class="site-footer__contact">
+  			<p class="information-bar__content__sub-heading">
+  				<b>Phone:</b>
+  				<span>{{ site.telephone }}</span>
+  			</p>
+  			<p class="information-bar__content__sub-heading">
+  				<b>Email:</b>
+  				<a href="mailto:{{ site.email }}" rel="email">{{ site.email }}</a>
+  			</p>
+      </div>
+      <div class="site-footer__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">Lymehouse studios<br>30/31 Lyme Street<span><br>
+        <span itemprop="addressLocality">Camden</span><br>
+        <span itemprop="addressRegion" class="site-footer__address--town">London</span><br>
+        <a href="https://goo.gl/maps/2DFSBSWGQ8P2" target="_blank" rel="noreferrer noopener" class="site-footer__address--postcode">
+          <span itemprop="postalCode">NW1 0EE</span><br>
+        </a>
+        <span itemprop="addressCountry">United Kingdom</span>
+      </div>
+      <div class="discover">
+        <ul class="discover-links">
+  				<li class="discover-links__list-item">
+  					<a href="{{ site.url }}/work/" class="button discover-links__list-item--button" itemprop="significantLink">Work</a>
+  				</li>
+  				<li class="discover-links__list-item">
+  					<a href="{{ site.url }}/awards/" class="button discover-links__list-item--button" itemprop="significantLink">Awards</a>
+  				</li>
+  			</ul>
+      </div>
+		</div>
+
+	</section>
+
+</aside>

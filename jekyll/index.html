@@ -1,0 +1,43 @@
+---
+#-#-#-#-#
+# META  #
+#-#-#-#-#
+
+layout: default
+title: Talesmith
+class: homepage
+
+#-#-#-#-#
+# VIDE  #
+#-#-#-#-#
+
+hero:     false
+muted:    false
+img:      false
+loop:     true
+carousel: true
+
+#-#-#-#-#-#-#-#-#-#
+# VIDEO DEFAULTS  #
+#-#-#-#-#-#-#-#-#-#
+
+default-start: playing
+default-audio: audible
+video-title: Showreel of Martin Williams
+video-description: Martin Williams
+---
+
+{% include /front-page/intro.html %}
+
+{%
+  include /front-page/teaser.html
+  teaserURL="the-life-of-earth"
+  teaserIMG="teaser-earth.png"
+  teaserTitle="New release"
+  teaserIntro="The life of earth<br>from space<small>Delve into the planet’s extraordinary<br>4.5 billion year old history as never seen before.</small>"
+  teaserBGC="background-color: transparent;"
+%}
+
+{% include /front-page/feature-modules.html %}
+
+{% include /front-page/outro.html %}

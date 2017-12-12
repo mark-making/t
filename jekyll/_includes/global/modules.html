@@ -1,0 +1,57 @@
+<a class="module__half__link-wrap" href="{{ site.url }}{{ work.url }}">
+    <picture class="module__image">
+        <!--[if IE 9]>
+            <video style="display: none;">
+        <![endif]-->
+                <source srcset="{{ site.url }}{{ site.images }}{{ work.title | downcase | slugify }}-l.jpg" media="(min-width: 925px)">
+                <source srcset="{{ site.url }}{{ site.images }}{{ work.title | downcase | slugify }}-m.jpg" media="(min-width: 920px)">
+                <source srcset="{{ site.url }}{{ site.images }}{{ work.title | downcase | slugify }}-s.jpg" media="(min-width: 650px)">
+        <!--[if IE 9]>
+            </video>
+        <![endif]-->
+        <img srcset="{{ site.url }}{{ site.images }}{{ work.title | downcase | slugify }}.jpg" alt="{{ work.title }}" class="module__image--img">
+    </picture>
+    {% if page.class == 'work-overview' %}
+            <div class="module__content--meta-reveal {{ work.title | downcase | slugify}}">
+                {% if work.role %}
+                    <h3 class="module__content--title">{{ work.role }}</h3>
+                {% endif %}
+                <ul class="module__content--tv">
+                    <li class="module__content--tv--producer">
+                        <span>Producer:&nbsp;</span>
+                        <b class="{{ work.producer | downcase | slugify}}">{{ work.producer }}</b>
+                    </li>
+                        <li class="module__content--tv--channel">
+                                <span>Shown on:&nbsp;</span>
+                                {% for channel in work.channel %}
+                                    <b class="{{ channel.name | downcase | slugify }}">
+                                        {{ channel.name}}{% unless forloop.last %} &#8729; {% endunless %}
+                                    </b>
+                                {% endfor %}
+                        </li>
+                </ul>
+            </div>
+    {% endif %}
+    <section class="module__content {{ work.title | downcase | slugify}}">
+        <div class="dt">
+            <div class="dt-c">
+                <div class="module__content--meta-default">
+                    <h3 class="module__content--title">
+                        {{ work.title | truncatewords: 7 }}
+                    </h3>
+                    {% if page.class == 'homepage' %}
+                        <ul class="module__content--tv">
+                            <li class="module__content--tv--producer">
+                                <span>Producer:&nbsp;</span>
+                                <b class="{{ work.producer | downcase | slugify}}">{{ work.producer }}</b>
+                            </li>
+                        </ul>
+                    {% endif %}
+                </div>
+                <span class="module__content--button {{ work.title | downcase | slugify}}--button">
+                    <span>View project</span>
+                </span>
+            </div>
+        </div>
+    </section>
+</a>

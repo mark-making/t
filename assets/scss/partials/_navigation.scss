@@ -1,0 +1,126 @@
+// Navigation
+//
+// A majority of buttons in the site are built from the same base class.
+//
+// Markup: _navigation.hbs
+//
+// :hover       - Highlight the button when hovered.
+// :focus       - Highlight the button when focussed.
+//
+// Styleguide Components - Navigation
+
+.site-navigation {
+    background: {
+        color: $talesmith-black;
+        color: rgba($talesmith-black, 0.3);
+    }    
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    line-height: 1;
+    min-height: $nav-height;
+    .inline-list {
+        list-style: none;
+        display: block;
+        overflow: auto;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        li {
+            position: relative;
+            display:inline-block;
+            line-height: $nav-height;
+            &:first-child,
+            &:last-child {
+                // width: 50%;
+            }
+            &:first-child {
+                float: left;
+                text-align: left;
+            }
+            &:last-child {
+                float: right;
+                text-align: right;
+            }
+            a {
+                &.page-link {
+                    transition: all .2s ease .2s;
+                    letter-spacing: 0.05em;
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 .5em;
+                    color: $white;
+                    text: {
+                        align: center;
+                        decoration: none;
+                        transform: uppercase;
+                    }
+                    font: {
+                        family: 'Lato', sans-serif;
+                        weight: 300;
+                    }
+                    @include media(s) {
+                        padding: 0 1em;
+                    }
+                }
+                &:hover, &:focus  {
+                    background: {
+                        color: $talesmith-orange;
+                        color: rgba($talesmith-orange, 0.9);
+                    }
+                    color: $white;
+                    outline: 0;
+                }
+                &:visited {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// Current nav highlight
+$nav: work, about;
+@each $item in $nav {
+    .#{$item} {
+        .page-link {
+            &.#{$item} {
+                &.active {
+                    font-weight: 600!important;
+                    box-shadow: inset darken($talesmith-orange, 20) 0 -0.2em 0 0;
+                    background: {
+                        color: $talesmith-orange;
+                        color: rgba($talesmith-orange, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}
+.team-member {
+  .about {
+    &.active {
+        font-weight: 600!important;
+        box-shadow: inset darken($talesmith-orange, 20) 0 -0.2em 0 0;
+        background: {
+            color: $talesmith-orange;
+            color: rgba($talesmith-orange, 0.7);
+        }
+    }
+  }
+}
+.work-single {
+  .work {
+    &.active {
+        font-weight: 600!important;
+        box-shadow: inset darken($talesmith-orange, 20) 0 -0.2em 0 0;
+        background: {
+            color: $talesmith-orange;
+            color: rgba($talesmith-orange, 0.7);
+        }
+    }
+  }
+}

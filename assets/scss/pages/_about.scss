@@ -1,0 +1,72 @@
+// About Page
+//
+// A majority of buttons in the site are built from the same base class.
+//
+// Styleguide Pages - About
+
+.about-bio {
+
+	@include max-width();
+
+	// Grid
+	@include media(s) {
+		@include column(10);
+		@include push(1);
+		@include pull(1);
+	}
+	@include media(m) {
+		@include column(8);
+		@include push(2);
+		@include pull(2);
+	}
+	text-align: center;
+
+}
+
+.about-bio {
+	margin-bottom: 2em;
+}
+
+.article {
+	@include column(12);
+	&__heading {
+		margin-top: 0;
+		font: {
+			family: inherit;
+			weight: 300;
+			size: 1.5em;
+		}
+	}
+	.read-biography	{
+		letter-spacing: 0.1em;
+		text: {
+			transform: uppercase;
+			decoration: inherit;
+		}
+		font: {
+			size: .875em;
+			weight: 900;
+		}
+		margin: 0;
+		display: inline-block;
+		padding: 1em;
+		color: $talesmith-grey;
+		span {
+			vertical-align: middle;
+			i {
+				font-style: normal;
+			}
+			b {
+				font: {
+					family: 'Lato', sans-serif;
+					weight: 900;
+				}
+			}
+		}
+		&.expanded {
+			i {
+				color: $talesmith-orange;
+			}
+		}
+	}
+}

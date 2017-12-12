@@ -1,0 +1,48 @@
+---
+#-#-#-#-#-#
+# JEKYLL  #
+#-#-#-#-#-#
+
+layout: page
+menu: main
+
+#-#-#-#-#
+# META  #
+#-#-#-#-#
+
+title: Work
+class: work-overview
+
+#-#-#-#
+# URI #
+#-#-#-#
+
+permalink: /work/
+
+#-#-#-#-#
+# VIDE  #
+#-#-#-#-#
+
+hero: false
+---
+
+<section class="about-bio">
+
+    <header class="heading-group">
+        <h1 class="heading-group__heading">{{page.title}}</h1>
+        <h2 class="heading-group__sub-heading">Here are some examples of our work</h2>
+        <hr class="heading-group__break">
+    </header>
+
+</section>
+
+<section class="module">
+    {% assign work = site.work | sort: 'order_page' %}
+    {% for work in work %}
+      {% unless work.cat == 'freelance' %}
+        <section class="module__half module__half--overview">
+            {% include /global/modules.html %}
+        </section>
+      {% endunless %}
+    {% endfor %}
+</section>

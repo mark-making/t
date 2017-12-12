@@ -1,0 +1,33 @@
+@mixin media($point) {
+  @if $point == l {
+    @media (min-width: 1366px) { @content; }
+  }
+  @else if $point == m {
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $point == s {
+    @media (min-width: 650px)  { @content; }
+  }
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+@mixin visuallyhidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@mixin max-width() {
+    max-width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+}

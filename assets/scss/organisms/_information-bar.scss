@@ -1,0 +1,463 @@
+// Information Bar
+//
+// Styleguide Components - Information Bar
+
+.information-bar {
+    //
+    // Bar appearance
+    //
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    overflow: auto;
+    margin: 2em 0;
+    padding: 0 1em;
+    background: {
+        color: $white;
+    }
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+    border: {
+        top:        1px solid   lighten($talesmith-grey, 50);
+        top:        1px solid   rgba($talesmith-grey, 0.3);
+        bottom:     1px solid   lighten($talesmith-grey, 50);
+        bottom:     1px solid   rgba($talesmith-grey, 0.3);
+    }
+    //
+    // Small screen media query
+    //
+    @include media(s) {
+        padding: 0 .5em;
+    }
+    //
+    // Basically a wrapper for the content
+    //
+    &__content{
+        //
+        // Include maximum width
+        //
+        @include max-width();
+        //
+        // About page heading
+        //
+        &__heading {
+            margin: 0 0 1em 0;
+            font: {
+                size: 1.375em;
+            }
+            text: {
+                transform: none;
+            }
+        }
+        //
+        // Global sub-heading
+        //
+        &__sub-heading {
+            text: {
+                transform: uppercase;
+            }
+            font: {
+                weight: 900;
+            }
+            b {
+              letter-spacing: 0.1em;
+              font: {
+                  size: .875em;
+                  weight: 900;
+              }
+            }
+            span {
+                font: {
+                    weight: 400;
+                }
+            }
+            //
+            // Single work
+            //
+            &--producer {
+                font: {
+                    size: .75em;
+                }
+            }
+            //
+            // About page
+            //
+            [rel="email"] {
+                text-decoration: none;
+                text-transform: lowercase;
+                font-size: 1em;
+                font-weight: 400;
+                color: $talesmith-grey;
+            }
+        }
+        //
+        // List style reset for channels and awards - should be a global global thing
+        //
+        &__channels,
+        &__awards {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        &__channels,
+        &__awards {
+            &__list {
+                margin: 0;
+                padding: 0;
+                width: auto;
+                min-height: inherit;
+                float: left;
+                margin-left: -.5em;
+                margin-top: -.5em;
+                &--logo {
+                    padding: 0;
+                    min-height: initial;
+                    display: block;
+                    float: left;
+                    margin: .5em;
+                    //
+                    // Small screen media query
+                    //
+                    @include media(s) {
+
+                    }
+                    span, a {
+                        $icon-height:32px;
+                        background:{
+                            image: url('#{$base-dir}/img/optimised/infobar.svg');
+                            repeat: no-repeat;
+                            size: cover;
+                            position-x: 0;
+                        }
+                        width: 100px;
+                        height: $icon-height;
+                        margin: 0;
+                        display: block;
+                        opacity: 0.6;
+                        transition: opacity .2s ease;
+                        &.bbc {
+                            background-position-y:0;
+                        }
+                        &.sky {
+                            background-position-y:-$icon-height;
+                        }
+                        &.channel-4 {
+                            background-position-y:-$icon-height*2;
+                        }
+                        &.itv {
+                            background-position-y:-$icon-height*3;
+                        }
+                        &.discovery-channel {
+                            background-position-y:-$icon-height*4;
+                        }
+                        &.national-geographic {
+                            background-position-y:-$icon-height*5;
+                        }
+                        &.abc {
+                            background-position-y:-$icon-height*6;
+                        }
+                        &.pbs {
+                            background-position-y:-$icon-height*7;
+                        }
+                        &.emmy-award {
+                            background-position-y:-$icon-height*8;
+                        }
+                        &.cine-golden-eagles {
+                            background-position-y:-$icon-height*9;
+                        }
+                        &.remi-awards {
+                            background-position-y:-$icon-height*10;
+                        }
+                        &.aaas-awards {
+                            background-position-y:-$icon-height*11;
+                        }
+                        &.grierson-awards, &.grierson-trust {
+                            background-position-y:-$icon-height*12;
+                        }
+                        &.bafta-crafts {
+                            background-position-y:-$icon-height*13;
+                        }
+                        &.m6 {
+                            background-position-y:-$icon-height*14;
+                        }
+                        &.rtl {
+                            background-position-y:-$icon-height*15;
+                        }
+                        &.rts-craft-awards {
+                            background-position-y:-$icon-height*16;
+                        }
+                        &.wildscreen-pandas {
+                            background-position-y:-$icon-height*17;
+                        }
+                        &.guild-of-tv-cameramen {
+                            background-position-y:-$icon-height*18;
+                        }
+                        &.goldspirit-award {
+                            background-position-y:-$icon-height*19;
+                        }
+                        &.jackson-hole {
+                            background-position-y:-$icon-height*20;
+                        }
+                        &.televisual-bulldog-awards {
+                            background-position-y:-$icon-height*21;
+                        }
+                        &.international-3d-society-awards {
+                            background-position-y:-$icon-height*22;
+                        }
+                        &.houston-worldfest {
+                            background-position-y:-$icon-height*23;
+                        }
+                        &.silver-scream-fest {
+                            background-position-y:-$icon-height*24;
+                        }
+                        &.accolade-global-film-competition {
+                            background-position-y:-$icon-height*25;
+                        }
+                        &.rincon-international-film-festival {
+                            background-position-y:-$icon-height*26;
+                        }
+                        &.london-international-film-festival {
+                            background-position-y:-$icon-height*27;
+                        }
+                        &.sene-film-music-arts-festival {
+                            background-position-y:-$icon-height*28;
+                        }
+                        &.arizona-international-film-festival {
+                            background-position-y:-$icon-height*29;
+                        }
+                        &.los-angeles-reel-film-festival {
+                            background-position-y:-$icon-height*30;
+                        }
+                        &.lighthouse-international-film-festival {
+                            background-position-y:-$icon-height*31;
+                        }
+                        &.smithsonian-networks {
+                            background-position-y:-$icon-height*32;
+                        }
+                        &.zee-entertainment {
+                            background-position-y:-$icon-height*33;
+                        }
+                        &.cbc {
+                            background-position-y:-$icon-height*34;
+                        }
+                        &.france-tv {
+                            background-position-y:-$icon-height*35;
+                        }
+                        &.vr-experience {
+                            background-position-y:-$icon-height*36;
+                        }
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    b {
+                        @include visuallyhidden();
+                    }
+                }
+                .text-only {
+                    span {
+                        width: auto;
+                        background: none;
+                        opacity: 1;
+                        b {
+                            border: initial;
+                            clip: initial;
+                            height: auto;
+                            margin: initial;
+                            overflow: initial;
+                            padding: initial;
+                            position: relative;
+                            width: auto;
+                            color: #3b3b3b;
+                            font-size: 80%;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+        &__awards  {
+            &__list {
+                float: left;
+                margin-left: -.5em;
+                margin-top: -.5em;
+                &--logo {
+                    float: left;
+                    margin: .5em;
+                    @include media(s) {
+                        a[data-tooltip] {
+                          position: relative;
+                          &:hover {
+                            z-index: 20;
+                              &:after {
+                                content: attr(data-tooltip);
+                                position: absolute;
+                                left: 0;
+                                top: -110%;
+                                white-space: inherit;
+                                background-color: $talesmith-orange;
+                                color: $white;
+                                padding: .5em;
+                                width: 250%;
+                                text-align: center;
+                                border-radius: 4px;
+                                font: {
+                                    size: 0.725em;
+                                    weight: 900;
+                                }
+                                line-height: 1.5em;
+                              }
+                          }
+                        }
+                    }
+                }
+            }
+        }
+        //
+        // List styles for awards
+        //
+
+        //
+        // Map locations
+        //
+        &__locations {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 100%;
+            @include media(s) {
+                max-height: 7em;
+                overflow-y: scroll;
+                padding-bottom: 1em;
+            }
+            &--location {
+                float: left;
+                width: 100%;
+                list-style-position: inside;
+            }
+        }
+        //
+        // The --default flag is for pages that are not single work (about)
+        //
+        &--default-left,
+        &--default-right {
+            //
+            // Grid
+            //
+            @include column(10);
+            @include push(1);
+            @include pull(1);
+            //
+            // Appearance
+            //
+            padding: 2em 0;
+            //
+            // This is for the map sub-heading
+            //
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &--default-left {
+          @include media(s) {
+            @include column(10);
+            @include push(1);
+            @include pull(1);
+            div {
+              @include column(4,12);
+            }
+          }
+          .discover-links {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              float: none;
+              overflow: auto;
+              &__list-item {
+                  float: left;
+                  &--button {
+                      padding: 1.3em;
+
+                      &:hover {
+                        transform: translate(2px,-2px);
+                      }
+                  }
+              }
+          }
+        }
+        //
+        // The --work flag is for pages that are single work
+        //
+        &--work-left,
+        &--work-mid,
+        &--work-right {
+            //
+            // Grid
+            //
+            @include column(12);
+        }
+        &--work-left {
+            @include media(s) {
+                @include column(2);
+            }
+        }
+        &--work-mid {
+            position: relative;
+            @include media(s) {
+                @include column(5);
+                padding: 0 1em;
+            }
+        }
+        &--work-right {
+            // Grid
+            @include media(s) {
+                @include column(5);
+            }
+            //
+            // Really need to sort this
+            //
+            .location-wrap{
+                line-height: 1;
+                color: $talesmith-orange;
+                // Grid
+                @include media(s) {
+                    @include column(2,5);
+                }
+                a {
+                    text-decoration: none;
+                    color: $talesmith-grey;
+                    .name {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .name {
+                    color: $talesmith-grey;
+                    font: {
+                        size: .75em;
+                    }
+                }
+                .information-bar__content__sub-heading {
+                    color: $talesmith-grey;
+                    margin-bottom: .5em;
+                    .places-digit {
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .map {
+                // Grid
+                @include column(12);
+                @include media(s) {
+                    @include column(3,5);
+                    float: right;
+                }
+            }
+        }
+    }
+}

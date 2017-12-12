@@ -1,0 +1,15 @@
+{
+  "name": "jekyll-base",
+  "dependencies": {
+    "jquery": "latest",
+    "modernizr": "latest",
+    "normalize-scss": "latest",
+    "semantic.gs": "latest",
+    "vide": "latest",
+    "picturefill": "latest",
+    "smallworld.js": "latest",
+    "magnific-popup": "latest",
+    "owl.carousel": "latest"
+  },
+  "private": true
+}

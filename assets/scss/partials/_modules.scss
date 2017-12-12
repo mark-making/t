@@ -1,0 +1,247 @@
+// Modules
+//
+// A majority of buttons in the site are built from the same base class.
+//
+// Styleguide Organisms - Home Module
+
+.module {
+    overflow: auto;
+    height: auto;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: .5em;
+    // Small screen
+    @include media(s) {
+        padding: .25em;
+    }
+    // Medium screen
+    @include media(m) {
+        padding: .5em;
+    }
+    &__half {
+        @include column(12);
+        position: relative;
+        overflow: hidden;
+        float: left;
+        margin-bottom: .5em;
+        // Small screen
+        @include media(s) {
+            margin: .5%;
+            width: 49%;
+            &:hover {
+                .module__image--img {
+                    filter: grayscale(0);
+                }
+                .module__half__meta {
+                    transform: translateX(0);
+                }
+                .module__content--meta-reveal {
+                    transform: translateY(0);
+                }
+                .module__content--meta-default {
+                }
+            }
+        }
+        &__link-wrap {
+            text-decoration: none;
+            display: block;
+        }
+        &--overview {
+            min-height: inherit;
+            height: inherit;
+        }
+    }
+    &__content {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        min-height: 10em;
+        z-index: 4;
+        // Medium screen
+        @include media(m) {
+            min-height: 5em;
+            height: 5em;
+            &--meta-default,
+            &--meta-reveal {
+            }
+            &--meta-default {
+                width: 70%;
+                float: left;
+            }
+            &--meta-reveal {
+             transform: translateY(-8em);
+            }
+        }
+        &--meta-reveal {
+            padding: 1em 0;
+            left: 0;
+            top: 0;
+            position: absolute;
+            width: 100%;
+            transition: transform .5s ease 5ms;
+            .module__content--title {
+                margin: 0;
+                margin-bottom: .5em;
+            }
+        }
+        &--tv {
+            margin: 0;
+            padding: 0 .5em;
+            display: block;
+            overflow: auto;
+            &--producer,
+            &--channel {
+                text-align: left;
+                display: block;
+                float: left;
+                font-size: .75em;
+                text-transform: uppercase;
+                margin-right: 1em;
+                color: $talesmith-grey;
+                span {
+                    font-weight: 400;
+                }
+            }
+            &--producer {}
+            &--channel {}
+        }
+        &--title {
+            color: $talesmith-grey;
+            text: {
+                transform: uppercase;
+                align: center;
+            }
+            margin: 0;
+            padding: 1em;
+            letter-spacing: 0.1em;
+            display: block;
+            // Medium screen
+            @include media(m) {
+                padding: 0 .5em;
+                text-align: left;
+            }
+        }
+        &--button {
+            letter-spacing: 0.13em;
+            padding: 1em 2.5em;
+            width: 100%;
+            display: inline-block;
+            transition: background .5s ease 5ms;
+            font: {
+                family: 'Lato', sans-serif;
+                weight: 900;
+                size: .75em;
+            }
+            text: {
+                transform: uppercase;
+                decoration: none;
+                align: center;
+            }
+            color: $talesmith-grey;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            line-height: 3em;
+            // Small screen
+            @include media(m) {
+                width: 30%;
+                padding: 2.5em 0;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: inherit;
+                line-height: 2em;
+            }
+        }
+    }
+    &__image {
+        display: block;
+        overflow: hidden;
+        &--img {
+            display: block;
+            vertical-align: middle;
+            min-width: 100%;
+            color: #3b3b3b;
+            font-size: 1.5em;
+            min-height: 10em;
+            background-color: darkgrey;
+            // This is horrible, only way to animate filters without using all is vendor prefixes
+                $timing: .5s ease .2s;
+                transition: -webkit-filter $timing;
+                transition: -moz-filter $timing;
+                transition: -ms-filter $timing;
+                transition: -o-filter $timing;
+            // End horrible
+
+            // Small screen
+            @include media(s) {
+                // filter: grayscale(1);
+            }
+        }
+    }
+}
+
+.module__half--front {
+    .module__content--meta-default {
+        position: relative;
+    }
+    &:first-child {
+        float: left;
+        margin-left: 0;
+    }
+    &:last-child {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.module__half--overview,
+.module__half--front {
+
+    // Body dependent color looping
+    @each $show, $color in $shows {
+        .#{$show} {
+            background-color: $color;
+            &--button {
+                background: {
+                    color: lighten($color, 5);
+                }
+                &:hover {
+                    background: {
+                        color: darken($color, 5);
+                    }
+                }
+            }
+        }
+    }
+
+    // Some shows need white text
+
+    .first-life-with-david-attenborough,
+    .stephen-hawking-s-universe,
+    .the-burrowers-animals-underground,
+    .inside-the-living-body,
+    .red-arrows,
+    .equinox-wave-that-shook-the-world,
+    .great-american-motorcycle,
+    .monkeys-an-amazing-animal-family,
+    .flyspy,
+    .flyride-4d,
+    .hold-the-world,
+    .the-life-of-earth-from-space {
+        color: $white;
+        .module__content--title,
+        .module__content--tv--producer,
+        .module__content--tv--channel {
+          color: $white;
+        }
+        &--button {
+          color: $white;
+        }
+    }
+
+}

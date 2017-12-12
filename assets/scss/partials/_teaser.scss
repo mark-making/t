@@ -1,0 +1,157 @@
+// Teaser
+//
+// A majority of buttons in the site are built from the same base class.
+//
+@keyframes moveteaser {
+  0% {
+    transform: scale(1) translate(0, 0) rotate(0);
+  }
+  100% {
+    transform: scale(.6) translate(-25%, -60%) rotate(-0.10turn);
+  }
+}
+.teaser {
+    // Default/Mobile
+    clear: both;
+    overflow: hidden;
+    $teaser-height: 15em;
+    height: $teaser-height;
+    min-height: $teaser-height;
+    transition: all .2s ease;
+    // Small screen
+    @include media(s) {
+        &:hover {
+            .teaser__content__text--title {
+                &:after {
+                    width: 8.5em;
+                }
+            }
+        }
+    }
+    // Medium screen
+    @include media(m) {
+        background: {
+            position: 40% 0;
+        }
+    }
+    // Large screen
+    @include media(l) {
+        background: {
+            position: 0 0;
+        }
+    }
+    &__content {
+        // Small screen
+        position: relative;
+        height: 100%;
+        background: {
+          color: rgb(70, 70, 70);
+          color: rgba(70, 70, 70, 0.8);
+        }
+        .moving {
+          width: auto;
+          position: absolute;
+          left: -10em;
+          top: -10em;
+          mix-blend-mode: overlay;
+          opacity: 0.3;          
+          transition: left 5s ease;
+          will-change: transform;
+        }
+        // Small screen
+        @include media(s) {             
+            background:{
+                image: url('#{$base-dir}/img/optimised/teaser-bg.png');
+                color: rgb(70, 70, 70);
+                repeat: repeat-x;
+                size: cover;
+                position-x: 0;
+            }
+            .moving {
+              mix-blend-mode: unset;
+              opacity: 1;
+              left: -20em;
+              animation: {
+                name: moveteaser;
+                duration: 75s;
+                iteration-count: 1;
+                direction: forwards;
+                fill-mode: forwards;
+                timing-function: ease-out;
+              }               
+            }           
+        }
+        @include media(m) {
+            .moving {
+              left: -5em;
+              top: -4.5em;               
+            } 
+        }
+        @media screen and (prefers-reduced-motion: reduce) {
+            .moving {
+                animation: none;
+            }
+        }
+        &__text {
+            height: 100%;
+            color: $white;
+            padding: 0 10px;
+            z-index: 99;
+            position: relative;
+            @include column(10);
+            @include push(1);
+            // Small screen
+            @include media(s) {
+                @include column(6);
+                @include push(6);
+            }
+            @include media(m) {
+                @include column(5);
+                @include push(7);
+            }
+            &--title {
+                display: block;
+                font: {
+                    family: inherit;
+                    weight: 300;
+                    size: 1.3em;
+                }
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin: 0 0 5px 0;
+                &:after {
+                    transition: all .2s ease;
+                    content: '';
+                    display: block;
+                    margin: 0.2em auto;
+                    text-align: center;
+                    width: 8.5em;
+                    height: 2px;
+                    background-color: $talesmith-orange;
+                    @include media(s) {
+                        width: 4.5em;
+                    }
+                }
+            }
+            &--show {
+                display: block;
+                font: {
+                    family: 'Libre Baskerville', serif;
+                    weight: 300;
+                    size: 1.5em;
+                }
+                text-transform: uppercase;
+                letter-spacing: .05em;
+                margin: 0;
+                small {
+                    font-family: 'Lato', sans-serif;
+                    margin: .5em 0 0 0;
+                    display: block;
+                    font-size: 50%;
+                    line-height: 1.5;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

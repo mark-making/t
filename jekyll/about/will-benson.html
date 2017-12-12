@@ -1,0 +1,34 @@
+---
+#-#-#-#-#
+# META  #
+#-#-#-#-#
+
+layout: team-member
+team-member: Will Benson
+team-description: "Will is a highly versatile specialist factual Producer with extensive experience making science and wildlife documentaries for major UK and US broadcasters."
+---
+
+
+<section class="about-bio">
+
+{% for person in site.data.team %}
+  {% if person.firstname == 'Will' %}
+
+    {% include /team/bio.html %}
+
+    <article class="article">
+        <h1 class="article__heading">
+          {{ person.description }}
+        </h1>
+        <p>
+          He has filmed stories across the globe, from remote camps in the Kalahari to behind the scenes at Buckingham Palace.
+        </p>
+        <p>
+          When he’s not making TV you’ll most probably find him out running.
+        </p>
+    </article>
+
+  {% endif %}
+{% endfor %}
+
+</section>

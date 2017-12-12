@@ -1,0 +1,8 @@
+<section class="module" id="explore">
+  {% assign work = site.work | sort: 'order_page' %}
+  {% for work in work limit:2 offset:1 %}
+      <section class="module__half module__half--front">
+          {% include /global/modules.html %}
+      </section>
+  {% endfor %}
+</section>

@@ -1,0 +1,143 @@
+.hero-video, .hero-img, .image-row {
+    -webkit-transform-style:preserve-3d;
+    background-size: cover;
+    margin-top: -6em;
+    position: relative;
+    height: 30em;
+    overflow: hidden;
+    @include media(s) {
+        height: 50em;
+    }
+}
+.hero-img {
+    height: inherit;
+    margin-top: 0;
+    @include media(s) {
+        margin-top: -8em;
+    }
+}
+.awards {
+   .hero-img {
+     margin-top: 0;
+     background-color: rgb(220, 226, 238);
+     .module__image--img {
+       min-width: initial;
+       margin: 0 auto;
+     }
+   }
+}
+.image-row {
+    height: auto;
+}
+
+// Global button styles
+
+.touch,
+.no-touch {
+    .control {
+        color: $white;
+        transition: all .2s ease .2s;
+        transform-origin: center center;
+        display: block;
+        position: absolute;
+        border: none;
+        background: {
+            color: $talesmith-grey;
+            color: rgba($talesmith-grey, 0.5)
+        }
+        outline: none;
+        bottom: 0;
+        padding: 0;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+    }
+}
+
+// Touch devices
+
+.touch {
+    .control {
+        &__play {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            font-size: 5em;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+        }
+        &__mute {
+            display: none;
+        }
+    }
+}
+
+// Non touch
+
+.no-touch {
+
+    .control {
+        &__play {
+            left: 1em;
+            bottom: 1em;
+            // background-color: red;
+        }
+        &__mute {
+            // background-color: blue;
+            right: 1em;
+            bottom: 1em;
+        }
+        &:hover {
+            color: $talesmith-orange;
+        }
+    }
+
+    [data-state='playing'], [data-state='muted'] {
+        width: 3em;
+        height: 3em;
+    }
+
+    [data-state='muted'] {
+        color: $talesmith-orange;
+    }
+
+    [data-state='playing'] {
+        $tracking: 4px;
+        color: $talesmith-orange;
+        &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+
+            display: block;
+            border-radius: 50%;
+            background-color: transparent;
+            z-index: 0;
+            position: absolute;
+            left: -$tracking;
+            bottom: -$tracking;
+            border: solid $tracking;
+            border: {
+                top-color: $talesmith-orange;
+                right-color: transparent;
+                bottom-color: transparent;
+                left-color: transparent;
+            }
+            animation: {
+                name: spin;
+                duration: 4000ms;
+                iteration-count: infinite;
+                timing-function: linear;
+                origin: center center;
+            }
+        }
+        &:hover {
+            &:after {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,49 @@
+# //
+# // Meta
+# //
+title: "Talesmith"
+description: "Founded by Emmy winning film-maker Martin Williams, our team has a long and glittering track record in producing award-winning content fronted by some of the biggest names in television. Our aim is to deliver the highest quality films and series for UK, US and international broadcasters."
+email: "&#105;&#110;&#102;&#111;&#64;&#116;&#97;&#108;&#101;&#115;&#109;&#105;&#116;&#104;&#46;&#116;&#118;" # info@talesmith.tv
+email-obfuscated: "&#64;&#116;&#97;&#108;&#101;&#115;&#109;&#105;&#116;&#104;&#46;&#116;&#118;" # @talesmith.tv
+telephone: "+44 020 7284 6896"
+# //
+# // Outputting
+# //
+timezone: Europe/London
+permalink: pretty
+muted: true
+# //
+# // Where things are
+# //
+url: 'http://localhost:4000'
+source: ./jekyll
+destination: ./_serve
+layouts_dir: /_layouts
+data_dir: /_data
+# //
+# // Assets
+# //
+images: /img/optimised/
+video: /video/
+# //
+# // Collections
+# //
+collections:
+ work:
+  output: true
+  permalink: /work/:path/
+# //
+# // Serving cmd: jekyll serve --config _config_dev.yml --verbose
+# //
+# host: 127.0.0.1
+# port: 4000
+# //
+# // Handling Reading
+# //
+include: [ '.htaccess', 'humans.txt', 'robots.txt', '.htpasswd' ]
+keep_files: [ 'css', 'js', 'img', 'video', 'fonts' ]
+# //
+# // Markdown Processors
+# //
+kramdown:
+ auto_ids: false

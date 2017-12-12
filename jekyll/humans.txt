@@ -1,0 +1,18 @@
+# humanstxt.org
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Full name
+    @twitter
+    Job role
+
+# THANKS
+
+    Full name
+    @twitter
+    Job role | Company
+
+# TECHNOLOGY COLOPHON
+
+    GRUNT.js, Jekyll, SASS, CSS3, HTML5, jQuery, Modernizr, Apache Server Configs

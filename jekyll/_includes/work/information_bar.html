@@ -1,0 +1,76 @@
+<aside class="information-bar {{ page.layout | downcase | slugify }}">
+
+    <section class="information-bar__content">
+
+        <div class="information-bar__content--work-left">
+            <p class="information-bar__content__sub-heading">
+                <b>Shown on:</b>
+            </p>
+            <section class="information-bar__content__channels">
+                {% if page.channel %}
+                    <ul class="information-bar__content__channels__list">
+                        {% for channel in page.channel %}
+                            <li class="information-bar__content__channels__list--logo {% if channel.text-only %}text-only{% endif %}">
+                                <span class="{{ channel.name | downcase | slugify }}" title="{{ channel.name }}">
+                                    <b>{{ channel.name }}</b>
+                                </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p><small>TBA</small></p>
+                {% endif %}
+            </section>
+        </div>
+
+        <div class="information-bar__content--work-mid">
+            <p class="information-bar__content__sub-heading">
+                <b>Awards/Nominations:</b>
+            </p>
+            <section class="information-bar__content__awards">
+                {% if page.award %}
+                    <ul class="information-bar__content__awards__list">
+                        {% for award in page.award %}
+                            <li class="information-bar__content__awards__list--logo">
+                                <a href="{{ site.url }}/awards/" class="{{ award.name | downcase | slugify }}" data-tooltip="{{ award.name }} ({{ award.year }}) - {% if award.outcome %}{{ award.outcome }} for {% endif %}{{ award.category }}">
+                                    <b title="{{ award.name }}">{{ award.name }}</b>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                   <p><small>No awards&#8230;<i>yet</i></small></p>
+                {% endif %}
+            </section>
+        </div>
+
+        <div class="information-bar__content--work-right" >
+            <div class="location-wrap">
+                <p class="information-bar__content__sub-heading">
+                    {% capture places %}
+                        {{ page.map | size }}
+                    {% endcapture %}
+                    <b class="places-digit">{{places}}</b>
+                    {% assign places = places | plus:0 %}
+                    {% if places > 1 %}
+                        <b>Locations:</b>
+                    {% else %}
+                        <b>Location:</b>
+                    {% endif %}
+                </p>
+                <ul class="information-bar__content__locations" itemscope itemtype="http://schema.org/ItemList">
+                <meta itemprop="name" content="Filming Locations">
+                <meta itemprop="itemListOrder" content="http://schema.org/ItemListOrderDescending" />
+                    {% for location in page.map %}
+                        <li class="information-bar__content__locations--location">
+                            <span class="name" itemprop="itemListElement">{{ location.name }}{% if location.where %},<br>{{ location.where }}{% endif %}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="map"></div>
+        </div>
+
+    </section>
+
+</aside>

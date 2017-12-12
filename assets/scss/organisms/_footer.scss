@@ -1,0 +1,330 @@
+// Footer
+//
+// Styleguide Components - Footer
+
+.site-footer {
+	//
+	// Site footer base styles
+	//
+	background: linear-gradient(0deg, transparent, rgba(240, 240, 240 ,0.3));
+	max-width: 100%;
+	width: 100%;
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	padding: {
+		bottom: 2em;
+	}
+	z-index: 2;
+	overflow: auto;
+	clear: both;
+	.logo {
+		color: $black;
+		font-size: 1.2em;
+	}
+	.upper-footer,
+	.lower-footer {
+		overflow: auto;
+	}
+	.upper-footer {
+		padding: 3em 0;
+	}
+	.lower-footer {
+		padding: 0 1em;
+	}
+	//
+	// Set up the grid for the 3 columns
+	//
+	&__secondary-nav,
+	&__contact-details,
+	&__legal {
+		color: $talesmith-grey;
+		@include column(12);
+		@include media(s) {
+			@include column(4);
+		}
+	}
+  &__address {
+  	color: $talesmith-grey;
+    display: inline-block;
+    text-transform: capitalize;
+    margin: 1em 0;
+    line-height: 1.4;
+		font: {
+			weight: 300;
+		}
+    &--postcode {
+      color: $talesmith-orange;
+      text-decoration: underline;
+    }
+  }
+	//
+	// Secondary navigation
+	//
+	&__secondary-nav {
+		&__footer-nav {
+			margin-top: .5em;
+			padding-left: 0.2em;
+			&--link {
+				display: block;
+				font: {
+					family: inherit;
+					size: .875em;
+				}
+				text: {
+					transform: uppercase;
+					decoration: none;
+				}
+				letter-spacing: 0.05em;
+				padding: .5em 0;
+				color: $talesmith-grey;
+				&:before {
+					content: '\3009';
+					width: 0.5em;
+					display: inline-block;
+					transition: transform .2s ease;
+					transform: translateX(0);
+				}
+				&:hover, &:focus {
+					&:before {
+						transform: translateX(0.125em);
+					}
+				}
+			}
+		}
+	}
+	//
+	// Contact details
+	//
+	&__contact-details {
+		&--heading {
+			@extend .alt-font, .uppercase;
+			margin: 0;
+			font: {
+				size: 1.125em;
+				weight: 900;
+			}
+		}
+		&__list {
+			padding: 0;
+			list-style-type: none;
+			&--item {
+				font: {
+					size: 1.125em;
+					weight: 300;
+				}
+				margin: .5em 0;
+			}
+		}
+		a[href*="mailto"] {
+			color: $talesmith-grey;
+			text-decoration: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		.social {
+			font-size: 1.5em;
+			&.twitter {
+				@extend .icon;
+				@extend .icon-twitter-with-circle;
+				color: $twitter;
+				span {
+					 @include visuallyhidden();
+				}
+			}
+			&.facebook {
+				@extend .icon, .icon-facebook-with-circle;
+				color: $facebook;
+				span {
+					 @include visuallyhidden();
+				}
+			}
+			&.linkedin {
+				@extend .icon, .icon-linkedin-with-circle;
+				color: $linkedin;
+				span {
+					 @include visuallyhidden();
+				}
+			}
+		}
+	}
+	//
+	// Legal section
+	//
+	&__legal {
+		&--copyright {
+			color: lighten($talesmith-grey, 40);
+			margin: 0;
+		}
+		&--disclaimer {
+			color: lighten($talesmith-grey, 40);
+			margin: 1em 0;
+			display: block;
+		}
+		&--heading {
+			@extend .alt-font, .uppercase;
+			margin: 0;
+			font: {
+				size: 1.125em;
+				weight: 900;
+			}
+		}		
+	}
+}
+
+// Logos shared styles
+.logos-minor,
+.logos-major {
+	&__list {
+		margin: 0;
+		padding: 0;
+		overflow: auto;
+		white-space: nowrap;
+		@include media(s) {
+			margin-bottom: 0.5em;
+		}
+		&--logo {
+			min: {
+				height: 6.75em;
+			}
+			text: {
+				align: center;
+			}
+			background: {
+				color: transparent;
+			}
+			margin: {
+				bottom: 0.5em;
+			}
+			padding: 3em 0;
+			position: relative;
+		}
+	}
+}
+// Logos individual styles
+.logos-minor {
+	&__list {
+		&--logo {
+			@include column(6);
+			padding: 1em 0;
+			overflow: auto;
+	    min-height: initial;
+			// Small screen
+			@include media(s) {
+				@include column(4);
+				padding: 3em 0;
+			}
+			// Medium screen
+			@include media(m) {
+				@include column(2);
+			}
+			a {
+				background:{
+					repeat: no-repeat;
+					size: cover;
+				}
+				// No svg fallback
+				background: url('#{$base-dir}/img/optimised/channels.png');
+				// Browser supports svg
+				background: url('#{$base-dir}/img/optimised/channels.svg'),linear-gradient(transparent, transparent);
+				display: block;
+				margin: 0 auto;
+				width: 128px;
+				height: 64px;
+				opacity: 0.5;
+				transition: opacity .2s ease .2s;
+				&:hover {
+					opacity: 0.7;
+				}
+				&.bbc {
+					background-position: 0 0;
+				}
+				&.sky {
+					background-position: 0 -64px;
+				}
+				&.channel-4 {
+					background-position: 0 -64*2+px;
+				}
+				&.itv {
+					background-position: 0 -64*3+px;
+				}
+				&.discovery-channel {
+					background-position: 0 -64*4+px;
+				}
+				&.national-geographic {
+					background-position: 0 -64*5+px;
+				}
+				&.smithsonian-channel {
+					background-position: 0 -64*6+px;
+				}
+				&.zee-entertainment {
+					background-position: 0 -64*7+px;
+				}
+				&.cbc-canada {
+					background-position: 0 -64*8+px;
+				}
+				&.france-tv {
+					background-position: 0 -64*9+px;
+				}
+				&.p-e-l-creative {
+					background-position: 0 -64*10+px;
+				}
+				&.legend-cultural-development {
+					background-position: 0 -64*11+px;
+				}
+				span {
+					 @include visuallyhidden();
+				}
+			}
+		}
+	}
+}
+.logos-major {
+	&__list {
+		&--logo {
+			@include column(12);
+			&:first-child {
+				@include media(s) {
+					@include column(5);
+					@include push(1);
+				}
+				@include media(m) {
+					@include column(4);
+					@include push(2);
+				}
+			}
+			&:last-child {
+				@include media(s) {
+					@include column(5);
+					@include pull(1);
+				}
+				@include media(m) {
+					@include column(4);
+					@include pull(2);
+				}
+			}
+			a {
+				background:{
+					image: url('#{$base-dir}/img/optimised/awards.png');
+					repeat: no-repeat;
+				}
+				display: block;
+				margin: 0 auto;
+				width: 100%;
+				height: 220px;
+				transition: opacity .2s ease .2s;
+				&.academy-award {
+					background-position: 50% 0;
+				}
+				&.bafta {
+					background-position: 50% -220px;
+				}
+				span {
+					 @include visuallyhidden();
+				}
+			}
+		}
+	}
+}

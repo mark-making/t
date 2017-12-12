@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+  {% include /global/head.html %}
+
+  <body class="{{ page.layout }} {% if page.class %}{{ page.class | downcase | slugify }} {% endif %} {{ page.title | downcase | slugify }}" {% if page.title == 'About' %}itemscope itemtype="https://schema.org/AboutPage"{% else %}itemscope itemtype="http://schema.org/WebPage"{% endif %}>
+  <meta itemprop="specialty" content="Filmmaking">
+
+  <div class="site-wrap">
+
+    {% include /global/header.html %}
+
+    <section class="site-content">
+      <main class="main" role="main">
+        {{ content }}
+      </main>
+    </section>
+
+    {% include /global/footer.html %}
+
+    </div>
+
+  </body>
+
+</html>

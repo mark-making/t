@@ -1,0 +1,43 @@
+// Header
+//
+// A majority of buttons in the site are built from the same base class.
+//
+// Styleguide Components - Header
+
+.logo {
+	@extend .icon;
+	@extend .icon-logo;
+	text-decoration: none;
+	h1 {
+		@include visuallyhidden();
+	}
+}
+
+.site-header {
+	max-width: 100%;
+	min-height: 3.4375em;
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	width: 100%;
+	.site-title {
+		position: relative;
+		display: inline-block;
+		color: $white;
+		z-index: 4;
+		font-size: $logo-size;
+		&:before {
+			transition: all .5s ease .2s;
+			transform: scale(.6);
+			@include media(s) {
+				transform: scale(1);
+			}
+			display: block;
+			line-height: $nav-height / $logo-size;
+		}
+	}
+}

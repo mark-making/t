@@ -1,0 +1,170 @@
+// Set browsers to render the text as nice as possible.
+// For mobile we optimise for speed (no ligatures).
+// For desktop we optimise for legibility.
+.font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+    @include media(s) {
+        text-rendering: optimizeLegibility;
+    }
+}
+
+html {
+    @extend .font-smoothing;
+    font: {
+        size: 100%;
+        family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    }
+}
+
+// When the web-font becomes active, it sets a body class.
+// We use this to combat FOUT.
+.wf-active {
+    font: {
+        family: 'Lato', sans-serif;
+    }
+}
+
+// Headings
+h1, h2, h3, h4, h5 {
+    font: {
+        family: 'Libre Baskerville', serif;
+    }
+    &.uppercase {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    &.alt-font {
+        font: {
+            family: inherit;
+        }
+    }
+    &.intro {
+        text-align: center;
+        font: {
+            size: 1.3em;
+            weight: 400;
+        }
+        @include media(s) {
+            font: {
+                size: 1.8em;
+            }
+        }
+        @include media(m) {
+            font: {
+                size: 2em;
+            }
+        }
+    }
+    &.central-header {
+        text-align: center;
+        font-weight: 300;
+        font: {
+            size: 1.3em;
+            weight: 400;
+        }
+        @include media(s) {
+            font: {
+                size: 1.5em;
+            }
+        }       
+    }
+    &.intro, &.central-header {
+        line-height: 1.5;
+    }
+}
+
+.heading-group {
+
+    // Grid
+    @include media(m) {
+        @include column(8);
+        @include push(2);
+        @include pull(2);
+    }
+
+    // Position
+    padding: {
+        top: 3em;
+        bottom: 3em;
+    }
+
+    // Global
+    text-align: center;
+
+    &__heading {
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 0;
+        font-size: 1.8em;
+        @include media(s) {
+            letter-spacing: 0.1em;
+            font-size: 2em;
+        }
+    }
+
+    &__sub-heading {
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin: .875em 0;
+        font: {
+            family: inherit;
+            weight: 300;
+            size: 1.125em;
+        }
+    }
+
+    &__producer {
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin: .875em 0;
+        font: {
+            family: inherit;
+            weight: 300;
+            size: 1.125em;
+        }
+    }
+
+    &__break {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-bottom: .125em solid $talesmith-orange;
+        margin: {
+            top: 0;
+            bottom: 0;
+            left: auto;
+            right: auto;
+        }
+        padding: 0;
+        @include media(s) {
+            width: 80%;
+        }
+    }
+
+    &__image {
+        max-width: 50%;
+        height: auto;
+        margin: 0 auto 1.5rem;
+        padding: 1rem;
+        transition: all .5s ease;
+        border: solid $talesmith-grey 1px;
+        &:hover {
+            border: solid $talesmith-orange 1px;
+            filter: brightness(1.2);
+        }
+        border-radius: 50%;
+        line-height: 1;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+        }
+    }    
+
+}

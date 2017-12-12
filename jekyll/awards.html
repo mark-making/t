@@ -1,0 +1,80 @@
+---
+#-#-#-#-#-#
+# JEKYLL  #
+#-#-#-#-#-#
+
+layout:     page
+
+#-#-#-#-#
+# META  #
+#-#-#-#-#
+
+title:      Awards
+
+#-#-#-#
+# URI #
+#-#-#-#
+
+permalink: /awards/
+
+#-#-#-#-#
+# VIDE  #
+#-#-#-#-#
+
+hero:    false
+img:     true
+loop:    true
+---
+
+<header class="heading-group">
+    <h1 class="heading-group__heading">Talesmith</h1>
+    <h2 class="heading-group__sub-heading">{{ page.title }}</h2>
+    <hr class="heading-group__break">
+</header>
+
+<div class="table-container" itemscope itemtype="http://schema.org/Table">
+    <table class="full_table">
+        <meta itemprop="name" content="{{page.title}}">
+        <meta itemprop="about" content="A list of acheivements from Martin Williams">
+        <meta itemprop="description" content="A list of acheivements from Martin Williams">
+        <tr class="full_table__row">
+            <th class="full_table__heading">Show</th>
+            <th class="full_table__heading">Award name</th>
+            <th class="full_table__heading">Year</th>
+            <th class="full_table__heading">Outcome</th>
+            <th class="full_table__heading">Award category</th>
+        </tr>
+        {% assign work = site.work | sort: 'order_page', 'last' %}
+        {% for work in work %}
+            {% for award in work.award %}
+                <tr class="full_table__row" itemscope itemtype="http://schema.org/TVEpisode">
+                    <td class="full_table__row--data" >
+                        <a class="full_table__row--link" href="{{ site.url }}{{ work.url }}" itemprop="url">
+                            <span itemprop="name">{{ work.title }}</span>
+                        </a>
+                    </td>
+                    {% for x in award.name %}
+                        <td class="full_table__row--data" itemprop="award">
+                            {% if award.url %}
+                                <a class="full_table__row--link external" target="_blank" rel="noopener noreferrer" title="External link" href="{{ award.url }}">
+                                    <span>{{ award.name }}</span>
+                                </a>
+                            {% else %}
+                                {{ award.name }}
+                            {% endif %}
+                        </td>
+                        <td class="full_table__row--data" itemprop="datePublished">
+                            {{ award.year }}
+                        </td>
+                        <td class="full_table__row--data {{ award.outcome | downcase | slugify }}">
+                            {{ award.outcome }}
+                        </td>
+                        <td class="full_table__row--data">
+                            {{ award.category }}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        {% endfor %}
+    </table>
+</div>

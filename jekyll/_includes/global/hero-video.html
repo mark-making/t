@@ -1,0 +1,56 @@
+{% if page.hero == true and page.img == false %}
+	<section class="hero-video" itemprop="video" itemscope itemtype="http://schema.org/VideoObject" data-vide-bg="{{ site.url }}{{ site.video }}{{ page.title | downcase | slugify }}" data-vide-options="posterType: jpg, autoplay: {{ page.autoplay }}, loop: {{ page.loop }}, muted: {{ site.muted }}, position: 50% 50%">
+		<meta itemprop="name" content="{% if page.video-title %}{{ page.video-title }}{% else %}{{ page.title }}{% endif %}" />
+        <meta itemprop="caption" content="{% if page.video-description %}{{ page.video-description }}{% else %}{{ page.title }}{% endif %}" />
+        <meta itemprop="description" content="{% if page.video-description %}{{ page.video-description }}{% else %}{{ page.title }}{% endif %}" />
+        <meta itemprop="thumbnail" content="{{ site.url }}{{ site.video }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg" />
+        {% if page.title contains 'Attenborough' %}
+            <meta itemprop="actor" content="David Attenborough">
+        {% elsif page.title contains 'Hawking' %}
+            <meta itemprop="actor" content="Stephen Hawking">
+        {% endif %}
+        {% for item in page.schema %}
+            <meta itemprop="{{ item.name }}" content="Martin Williams">
+        {% endfor %}
+		<button id="play-pause" type="button" class="icon control control__play" data-state="{{ page.default-start }}" aria-label="Play/Pause">&#xe601;</button>
+		<button id="mute" type="button" class="icon control control__mute" data-state="{{ page.default-audio }}" aria-label="Mute/Unmute">&#xe603;</button>
+	</section>
+{% elsif page.img == true %}
+    <section class="hero-img">
+        <picture>
+            <!--[if IE 9]>
+                <video style="display: none;">
+            <![endif]-->
+                    <source srcset="{{ site.url }}{{ site.images }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}-l.jpg" media="(min-width: 925px)">
+                    <source srcset="{{ site.url }}{{ site.images }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}-m.jpg" media="(min-width: 920px)">
+                    <source srcset="{{ site.url }}{{ site.images }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}-s.jpg" media="(min-width: 650px)">
+            <!--[if IE 9]>
+                </video>
+            <![endif]-->
+            <img srcset="{{ site.url }}{{ site.images }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg" alt="{{ page.title | downcase | slugify }}" class="module__image--img">
+        </picture>
+    </section>
+{% elsif page.carousel == true and page.loop == true %}
+    <section class="image-row">
+        <section class="owl-carousel">
+            {% for img in site.data.carousel %}
+                <div class="item">
+                    <picture>
+                        <!--[if IE 9]>
+                            <video style="display: none;">
+                        <![endif]-->
+                                <source srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}-l.jpg" media="(min-width: 925px)">
+                                <source srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}-m.jpg" media="(min-width: 920px)">
+                                <source srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}-s.jpg" media="(min-width: 650px)">
+                        <!--[if IE 9]>
+                            </video>
+                        <![endif]-->
+                        <img srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}.jpg" alt="{{ work.title }}" class="module__image--img">
+                    </picture>            
+                </div>
+            {% endfor %}
+        </section>
+    </section>
+{% else %}
+
+{% endif %}

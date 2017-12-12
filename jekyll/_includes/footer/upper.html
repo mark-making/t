@@ -1,0 +1,22 @@
+<section class="upper-footer">
+	<section class="logos-minor">
+		<ul class="logos-minor__list">
+			{% for award in site.data.footer-logos-minor %}
+				<li class="logos-minor__list--logo">
+					<a href="{{ site.url }}/work/" class="{{ award.title | downcase | slugify }}" title="{{ award.title }}">
+						<span>{{ award.title }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+		<ul class="logos-major__list">
+			{% for award in site.data.footer-logos-major %}
+				<li class="logos-major__list--logo">
+					<a href="{{ site.url }}/work/" class="{{ award.title | downcase | slugify }}" title="{{ award.title }}">
+						<span>{{ award.title }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
+</section>

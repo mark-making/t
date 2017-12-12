@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow: {
+		y: scroll;
+		x: auto;
+	}
+	color: $talesmith-grey;
+}
+
+::selection {
+    background: $talesmith-orange;
+    color: $white;
+    text-shadow: none;
+}
+
+.site-content {
+	overflow: auto;
+}
+
+.dt {
+	display: table;
+	height: 100%;
+	width: 100%;
+	.dt-c {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+}
+
+.half {
+	@include column(12);
+	@include media(s) {
+		@include column(4);
+	}
+}
+
+.strapline {
+	@include column(10);
+	@include push(1);
+	@include media(s) {
+		@include column(8);
+		@include push(2);
+	}
+}
+
+.outro {
+	@include column(8);
+	@include push(2);
+	@include pull(2);
+	padding: 2em 0;
+	@include media(s) {
+		@include column(4);
+		@include push(4);
+		@include pull(4);
+	}
+	.button {
+		max-width: 15em;
+		text-align: center;
+		display: block;
+		margin: 0.6em auto;
+	}
+}
+
+.map {
+	height: 10em;
+	width: 100%;
+	position: relative;
+}

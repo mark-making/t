@@ -1,0 +1,223 @@
+// Team Page
+//
+// A majority of buttons in the site are built from the same base class.
+//
+// Styleguide Pages - Team
+
+.talesmith-team {
+    @include max-width();
+    // Grid
+    @include media(s) {
+        @include column(10);
+        @include push(1);
+        @include pull(1);
+    }
+    @include media(m) {
+        @include column(8);
+        @include push(2);
+        @include pull(2);
+    }
+    text-align: center;
+}
+
+// Unordered list of members - Overview
+.members {
+    height: auto;
+    width: 100%;
+    overflow: visible;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+    // The team member
+    &__member {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        margin-bottom: 3em;
+        padding: 2%;
+        opacity: 1;
+        @include media(s) {
+            float: left;
+            pointer-events: auto;
+            width: calc(100% / 2);
+            margin: 0;
+            padding: 2% 5%;
+            &:nth-child(odd) {
+                padding-left: 0;
+            }
+            &:nth-child(even) {
+                padding-right: 0;
+            }
+        }
+        figure {
+            position: relative;
+            background-color: $talesmith-orange;
+            border-radius: 50%;
+        }
+        p {
+            font: {
+                family: 'Open Sans', sans-serif;
+            }
+        }
+        hr {
+            margin: 1em 0 0 0;
+            height: 1px;
+            background-color: lighten($talesmith-grey, 50);
+            border: none;
+        }
+        // Picture of the person
+        &--picture {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+            margin: 0 auto;
+            transform: scale(1) translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: all .5s ease;
+            will-change: transform;
+            @include media(s) {
+                &:hover {
+                    transform: scale(0.95);
+                    filter: contrast(1.10);
+                }
+            }
+        }
+        // Name of the person
+        &--name {
+            font: {
+                weight: 600;
+            }
+            margin: 0.5em 0 0.2em 0;
+            max-width: 100%;
+            span {
+                word-wrap: break-word;
+            }
+        }
+        &--link {
+          text-decoration: none;
+          color: $talesmith-black;
+          transition: color .2s ease-in-out;
+          &:hover {
+            color: $talesmith-orange;
+          }
+        }
+        // Job title
+        &--job-title {
+            margin: 0;
+        }
+        // Description of the person
+        &--description {
+            border-radius: 1em;
+			      z-index: 1;
+            font-size: 0.9em;
+            line-height: 1.6em;
+        }
+        // Email link
+        &--button-link {
+          display: inline-block;
+          width: auto;
+          padding: .8em 1em;
+          font-size: 12px;
+          transition: all .2s ease;
+          background-color: transparent;
+          text-decoration: none;
+          color: $talesmith-black;
+          box-shadow: lighten($talesmith-grey, 50) 0px 4px 10px -5px;
+          border: {
+            style: double;
+            width: 0 1px 1px 1px;
+            color: lighten($talesmith-grey, 50);
+          }
+          &:hover {
+            background-color: $talesmith-orange;
+            color: $white;
+            border: {
+              color: transparent;
+            }
+          }
+        }
+        &--email {
+          margin: 1em 0 0 0;
+            &--link {
+                text: {
+                    decoration: none;
+                }
+                font-style: normal;
+                .extension {
+                    // 645px and up
+                    @include media(40.3125em) {
+                        display: none;
+                    }
+                    // 768px and up
+                    @include media(48em) {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team-member {
+    .about-bio {
+        .profiles {
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+            justify-content: center;
+            font-size: 80%;
+            li {
+                line-height: 1;
+                padding: 0 1em;
+                a {
+                    text-decoration: none;
+                    padding: 0.2em 0.5em;
+                    border-radius: 3px;  
+                    font-weight: bold;                  
+                }
+                &.email-address {
+
+                }
+                &.imdb-profile {
+                    a {
+                        color: rgb(0,0,0);
+                    }
+                }
+                &.linkedin-profile {
+                    a {
+                        color: $linkedin;
+                    }
+                }                                
+            }
+        }
+    }
+    .full-biography {
+        text-align: left;
+        @include media(s) {
+            @include column(12);
+        }    
+        @include media(m) {
+            @include column(10);
+            @include pull(1);
+            @include push(1);
+        }
+        ul {
+            margin: 0;
+            padding: 0 1.4em;
+            list-style-position: outside;
+            li {
+                color: $talesmith-orange;
+                span {
+                    color: $talesmith-black; 
+                }
+                &:not(:last-of-type) {
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+}

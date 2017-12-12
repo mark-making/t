@@ -1,0 +1,77 @@
+.full_table {
+    // @include max-width();
+    // width: 1366px;
+    width: 100%;
+    min-width: 100%;
+    overflow: {
+        x: scroll;
+        y: visible;
+    }
+    border-collapse: separate;
+    clear: both;
+    &__heading {
+        padding: 1em;
+        background-color: $talesmith-orange;
+        text: {
+            align: left;
+            transform: uppercase;
+        }
+        color: $white;
+        &--title {
+            background-color: $talesmith-grey;
+            color: $white;
+        }
+    }
+    &__row {
+        &:nth-child(odd) {
+            background-color: darken($white, 15);
+        }
+        &:nth-child(even) {
+            background-color: darken($white, 20);
+        }
+        &:hover {
+            background-color: darken($white, 30);
+        }
+        &--data {
+            padding: 1em;
+            &.winner {
+                background-color: gold;
+                border: 1px solid darken(gold, 10);
+                color: darken(gold, 30);
+                &:after {
+                    content: '\2605';
+                    display: block;
+                    float: right;
+                }
+            }
+        }
+        &--link {
+            position: relative;
+            color: $talesmith-grey;
+            font-weight: 700;
+            text-decoration: none;
+            transition: color .2s ease;
+            &:hover {
+                text-decoration: none;
+                color: darken($talesmith-grey, 30%);
+            }
+            &::after {
+                position: relative;
+                color: $white;
+                font-size: .8rem;
+                vertical-align: middle;
+                width: 1rem;
+                height: 1rem;
+                margin-left: .5rem;
+                background-color: $talesmith-orange;
+                display: inline-block;
+                border-radius: 50%;                
+            }            
+            &.external {
+                &::after {
+                    content: "\2197";
+                }
+            }
+        }
+    }
+}

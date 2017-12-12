@@ -1,0 +1,11 @@
+<nav class="site-footer__secondary-nav__footer-nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+	<meta itemprop="about" content="Footer navigation">
+	{% for link in site.data.footer-navigation %}
+		{% if link.title %}
+			<a class="site-footer__secondary-nav__footer-nav--link" href="{{ site.url }}/{{ link.href }}/" itemprop="url">
+				<meta itemprop="name" content="{{ link.title }}">
+				{{ link.title }}
+			</a>
+		{% endif %}
+	{% endfor %}
+</nav>

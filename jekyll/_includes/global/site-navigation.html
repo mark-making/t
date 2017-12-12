@@ -1,0 +1,15 @@
+<nav class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<meta itemprop="about" content="Site navigation">
+	<ul class="inline-list">
+		{% for page in site.pages %}
+      {% unless page.menu != 'main' %}
+				<li>
+					<a class="page-link {{ page.title | downcase | slugify | append: ' active' }}" href="{{ site.url }}{{ page.url }}" itemprop="url">
+						<meta itemprop="name" content="{{ page.title }}">
+						<span>{{ page.title }}</span>
+					</a>
+				</li>
+			{% endunless %}
+		{% endfor %}
+	</ul>
+</nav>

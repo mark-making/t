@@ -1,0 +1,18 @@
+.brand {
+	.colour-block {
+		padding: 1em;
+		display: block;
+		&--talesmith-black {
+			color: $white;
+			background: {
+				color: $talesmith-black;
+			}
+		}
+		&--talesmith-orange {
+			color: $white;
+			background: {
+				color: $talesmith-orange;
+			}
+		}
+	}
+}

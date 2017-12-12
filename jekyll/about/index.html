@@ -1,0 +1,72 @@
+---
+#-#-#-#-#
+# META  #
+#-#-#-#-#
+
+layout: page
+title: About
+menu: main
+
+#-#-#-#
+# URI #
+#-#-#-#
+
+permalink: /about/
+
+#-#-#-#-#
+# VIDE  #
+#-#-#-#-#
+
+hero:     false
+muted:    false
+img:      false
+loop:     true
+carousel: true
+
+#-#-#-#-#-#-#-#-#-#
+# VIDEO DEFAULTS  #
+#-#-#-#-#-#-#-#-#-#
+
+default-start: playing
+default-audio: audible
+video-title: Behind the scenes with Martin Williams and Talesmith
+video-description: Get a look of what happens behinds the scenes with Martin Williams
+---
+
+<section class="about-bio">
+
+    <header class="heading-group">
+        <h1 class="heading-group__heading">Talesmith</h1>
+        <h2 class="heading-group__sub-heading">About us</h2>
+        <hr class="heading-group__break">
+    </header>
+
+    <article class="article">
+        <h1 class="article__heading">
+          We are EMMY and BAFTA winning producers of ambitious multi-platform content for broadcast, museums, cinema, VR and digital.
+        </h1>
+        <p>
+          With glossy natural history, science and adventure documentary close to our heart, Talesmith was founded by four-time Emmy-winning filmmaker Martin Williams with the aim to deliver a new kind of specialist factual content, specifically designed to appeal to the modern generation.
+        </p>
+        <p>
+          Our team has a long and glittering track record in producing award-winning content fronted by some of the biggest names in television. With a focus on new technologies, very high production value, and a multi-platform output we are firmly focused on the international market and are always looking for ways to innovate and modernise.
+        </p>
+    </article>
+
+</section>
+
+{% include /global/information_bar.html %}
+
+<section class="talesmith-team" id="team">
+
+    <header class="heading-group">
+      <h1 class="heading-group__heading">Our team</h1>
+      <h2 class="heading-group__sub-heading">A look behind the scenes</h2>
+      <hr class="heading-group__break">
+    </header>
+
+  	<ul class="members" aria-label="{{ site.title }} team members">
+  		{% include /global/team-listing.html %}
+  	</ul>
+
+</section>

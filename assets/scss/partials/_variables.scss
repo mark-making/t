@@ -1,0 +1,107 @@
+// Brand
+$primary:           rgb(28,89,68);          // 'Dark Blue'              HEX: #1B2644
+$secondary:         rgb(63,148,211);        // 'Light Blue'             HEX: #3E94D3
+$tertiary:          rgb(0,0,0);             // ''
+// Named
+$talesmith-black:   rgb(32,32,32);          // 'Talesmith Black'        HEX: #202020
+$talesmith-orange:  rgb(235,84,64);         // 'Talesmith Orange'       HEX: #eb5443
+$talesmith-grey:    rgb(59,59,59);          // 'Talesmith Grey'         HEX: #3b3b3b
+// UI Colours
+$success:           rgb(0,0,0);             // ''                       HEX: #6aa842
+$failure:           rgb(0,0,0);             // ''                       HEX: #c80000
+$white:             rgb(255,255,255);       // ''                       HEX: #FFFFFF
+$black:             rgb(0,0,0);             // ''                       HEX: #000000
+$disabled:          rgb(184,184,184);       // ''                       HEX: #B8B8B8
+// Other
+$markmaking:    #df0028;
+// Social
+// Twitter - https://about.twitter.com/press/brand-assets
+$twitter:       rgb(85, 172, 238);      // 'Twitter Blue'       PANTONE: 298U       CMYK: 70,10,0,0     RGB: 85,172,238     HEX: #55acee
+// Facebook - https://www.facebookbrand.com/
+$facebook:      rgb(62, 82, 148);       // 'Facebook Blue'      PANTONE: X          CMYK: 91,65,8,1     RGB: 59,89,153      HEX: #3e5294
+// LinkedIn - https://brand.linkedin.com/
+$linkedin:      rgb(72, 117, 180);      // 'Linkedin Blue'      PANTONE: X          CMYK: X             RGB: 72,117,18      HEX: #4875B4
+// Google + - https://developers.google.com/+/branding-guidelines
+$googleplus:    rgb(221, 75, 57);       // 'Google+ Red'        PANTONE: X          CMYK: X             RGB: 221,75,57      HEX: #dd4b39
+
+$total-width: 100%;
+$column-width: 60;
+$gutter-width: 0;
+$columns: 12;
+
+$nav-height:    3.4375em;
+$logo-size:     1.6em;
+
+// Show colours
+$big-cats-an-amazing-animal-family:            rgb(227,227,227);
+$david-attenborough-s-galapagos-3d:            rgb(195,210,230);
+$first-life-with-david-attenborough:           rgb(159,150,132);
+$kingdom-of-plants-3d-with-david-attenborough: rgb(191,204,72);
+$stephen-hawking-s-universe:                   rgb(87,89,14);
+$the-burrowers-animals-underground:            rgb(149,67,9);
+$the-queens-garden:                            rgb(205,221,185);
+$inside-the-living-body:                       rgb(205,98,64);
+$red-arrows:                                   rgb(179,32,60);
+$equinox-wave-that-shook-the-world:            rgb(55,55,60);
+$great-american-motorcycle:                    rgb(249,99,2);
+$monkeys-an-amazing-animal-family:             rgb(155,155,155);
+$flyspy:                                       rgb(89,125,87);
+$flyride-4d:                                   rgb(16,127,201);
+$hold-the-world:                               rgb(70,70,70);
+$the-real-t-rex-with-chris-packham:                          rgb(235,202,145);
+$the-life-of-earth-from-space:                 rgb(14, 34, 58);
+// Array map
+$shows: (
+
+  "big-cats-an-amazing-animal-family":
+  $big-cats-an-amazing-animal-family,
+
+  "david-attenborough-s-galapagos-3d":
+  $david-attenborough-s-galapagos-3d,
+
+  "first-life-with-david-attenborough":
+  $first-life-with-david-attenborough,
+
+  "kingdom-of-plants-3d-with-david-attenborough":
+  $kingdom-of-plants-3d-with-david-attenborough,
+
+  "stephen-hawking-s-universe":
+  $stephen-hawking-s-universe,
+
+  "the-burrowers-animals-underground":
+  $the-burrowers-animals-underground,
+
+  "the-queens-garden":
+  $the-queens-garden,
+
+  "inside-the-living-body":
+  $inside-the-living-body,
+
+  "red-arrows":
+  $red-arrows,
+
+  "equinox-wave-that-shook-the-world":
+  $equinox-wave-that-shook-the-world,
+
+  "great-american-motorcycle":
+  $great-american-motorcycle,
+
+  "monkeys-an-amazing-animal-family":
+  $monkeys-an-amazing-animal-family,
+
+  "flyspy":
+  lighten($flyspy,10%),
+
+  "flyride-4d":
+  $flyride-4d,
+
+  "hold-the-world":
+  $hold-the-world,
+
+  "the-real-t-rex-with-chris-packham":
+  $the-real-t-rex-with-chris-packham,
+
+  "the-life-of-earth-from-space":
+  $the-life-of-earth-from-space,
+
+);

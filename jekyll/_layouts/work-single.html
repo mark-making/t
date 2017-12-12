@@ -1,0 +1,111 @@
+---
+layout: default
+---
+<script>
+    var co_ordsArr = [];
+    {% for location in page.map %}
+        var country = ['{{ location.lat }}', '{{ location.long }}'];
+        co_ordsArr.push(country);
+    {% endfor %}
+</script>
+{% contentblock comment %}
+<section class="page">
+    <div class="page-content">
+        <section class="work-item" itemscope itemtype="http://schema.org/TVSeries">
+        <meta itemprop="thumbnailUrl" content="{{ site.url }}{{ site.video }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg">
+            <!--
+                Article header
+            -->
+            <header class="heading-group">
+                <!--
+                    Article name
+                -->
+                <h1 class="heading-group__heading">
+                    <span itemprop="name">{{page.title}}</span>
+                </h1>
+                <!--
+                    Generate a small description
+                -->
+                {% capture short_desc %}{% contentblock article %}{% endcapture %}
+                <meta itemprop="description" content="{{ short_desc | truncatewords: 18 | strip_html }}">
+                <!--
+                    Role
+                -->
+                <h2 class="heading-group__sub-heading">
+                    <span>{{ page.role }}</span>
+                </h2>
+                <h2 class="heading-group__producer">
+                    <span><small>Producer:&nbsp;{{ page.producer }}</small></span>
+                </h2>
+                <hr class="heading-group__break">
+            </header>
+            <!--
+                FOR LOOP through author,producer,director
+            -->
+            {% for item in page.schema %}
+                <div itemprop="{{ item.name }}" itemscope itemtype="http://schema.org/Person">
+                    <meta itemprop="name" content="Martin Williams">
+                </div>
+            {% endfor %}
+            <!--
+                END FOR
+            -->
+            <!--
+                Production company
+            -->
+            <meta itemprop="productionCompany" content="{{ page.producer }}">
+            <!--
+                Series information
+            -->
+            <div itemprop="season" itemscope itemtype="http://schema.org/TVSeason">
+                <meta itemprop="name" content="Season {{ page.season }}">
+                <meta itemprop="numberofEpisodes" content="{{ page.episodes }}"/>
+                <meta itemprop="datePublished" content="{{ page.publised }}">
+            </div>
+            <!--
+                IF any notable Characters are mentioned.
+            -->
+            <div itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                {% if short_desc contains 'Attenborough' %}
+                        <meta itemprop="name" content="David Attenborough">
+                    {% elsif short_desc contains 'Hawking' %}
+                        <meta itemprop="name" content="Stephen Hawking">
+                    {% elsif short_desc contains 'Packham' %}
+                        <meta itemprop="name" content="Chris Packham">
+                    {% elsif short_desc contains 'Bradbury' %}
+                        <meta itemprop="name" content="Julia Bradbury">
+                    {% elsif short_desc contains 'Titchmarsh' %}
+                        <meta itemprop="name" content="Alan Titchmarsh">
+                {% endif %}
+                {% for person in page.cast %}
+                    <meta itemprop="name" content="{{ person.name }}">
+                {% endfor %}
+            </div>
+            <!--
+                END IF
+            -->
+            <!--
+                Article content
+            -->
+            <article class="article">
+                <section itemprop="text">
+                    {% contentblock article %}
+                </section>
+            </article>
+        </section>
+        <!--
+            Article meta
+        -->
+        {% include /work/information_bar.html %}
+        <!--
+        Article images
+        {% include /work/information_bar.html %}
+        -->
+        <!--
+            Outward path to all work
+        -->
+        <section class="outro">
+            <a href="{{ site.url }}/work/" class="button" itemprop="significantLink">see all work</a>
+        </section>
+    </div>
+</section>

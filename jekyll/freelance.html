@@ -1,0 +1,59 @@
+---
+#-#-#-#-#-#
+# JEKYLL  #
+#-#-#-#-#-#
+
+layout: page
+
+#-#-#-#-#
+# META  #
+#-#-#-#-#
+
+title: Martin Williams Back Catalogue
+class: work-overview
+
+#-#-#-#
+# URI #
+#-#-#-#
+
+permalink: /work/martin-williams/
+
+#-#-#-#-#
+# VIDE  #
+#-#-#-#-#
+
+hero: false
+---
+
+<section class="about-bio">
+
+    <header class="heading-group">
+        <h1 class="heading-group__heading">{{page.title}}</h1>
+        <h2 class="heading-group__sub-heading">{{page.role}}</h2>
+        <hr class="heading-group__break">
+    </header>
+
+    <article class="article">
+        <h1 class="article__heading">
+            Talesmith is masterminded by <a href="/about/martin-williams/">Martin Williams</a>.
+        </h1>
+        <p>
+          Here are some examples of his previous projects.
+        </p>
+    </article>
+
+</section>
+
+<section class="module">
+    {% assign work = site.work | sort: 'order_page' %}
+    {% for work in work %}
+      {% unless work.cat != 'freelance' %}
+        <section class="module__half module__half--overview">
+            {% include /global/modules.html %}
+        </section>
+      {% endunless %}
+    {% endfor %}
+</section>
+<section class="outro">
+    <a href="{{ site.url }}/work/" class="button" itemprop="significantLink">Work</a>
+</section>
