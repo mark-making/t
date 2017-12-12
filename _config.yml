@@ -15,8 +15,7 @@ muted: false
 # //
 # // Where things are
 # //
-# url: 'http://79.170.44.132/talesmith.io'
-url: 'http://talesmith-test.mm-web-hosting.co.uk'
+url: ""
 source: ./jekyll
 destination: ./_site
 layouts_dir: /_layouts
@@ -41,6 +40,21 @@ collections:
 # //
 include: [ .htaccess, humans.txt, robots.txt ]
 keep_files: [ css, js, img, video, fonts ]
+exclude:
+  - Gulpfile.js
+  - admin
+  - readme.md
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+  - yarn.lock
+  - yarn-error.log
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - run_control
 # //
 # // Markdown Processors
 # //
