@@ -22,6 +22,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Hero image?", name: "hero", widget: "boolean", default: true}
-      - {label: "Producer", name: "producer", widget: "text"}      
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - {label: "Producer", name: "producer", widget: "text"} 
