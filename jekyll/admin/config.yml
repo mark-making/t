@@ -8,9 +8,11 @@ media_folder: "/assets/img/"
 public_folder: "/img/optimised/"
 
 collections: # A list of collections the CMS should be able to edit
-  - label: "Work" # Used in the UI, ie.: "New Post"
-    name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
-    folder: "_work/talesmith" # The path to the folder where the documents are stored
+  - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Work" # Used in the UI, ie.: "New Post"
+    description: >
+      This is where the work posts live.
+    folder: "_work" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
