@@ -33,15 +33,24 @@ collections:
   output: true
   permalink: /work/:path/
 # //
-# // Serving cmd: jekyll serve --config _config_dev.yml --verbose
-# //
-# host: 127.0.0.1
-# port: 4000
-# //
 # // Handling Reading
 # //
 include: [ '.htaccess', 'humans.txt', 'robots.txt', '.htpasswd' ]
 keep_files: [ 'css', 'js', 'img', 'video', 'fonts' ]
+exclude:
+  - Gulpfile.js
+  - readme.md
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+  - yarn.lock
+  - yarn-error.log
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - run_control
 # //
 # // Markdown Processors
 # //
