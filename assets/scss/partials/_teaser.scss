@@ -61,7 +61,7 @@
         // Small screen
         @include media(s) {
             background:{
-                image: url('./img/optimised/teaser-bg.png');
+                image: url('../img/optimised/teaser-bg.png');
                 color: rgb(70, 70, 70);
                 repeat: repeat-x;
                 size: cover;

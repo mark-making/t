@@ -226,9 +226,9 @@
 					size: cover;
 				}
 				// No svg fallback
-				background: url('./img/optimised/channels.png');
+				background: url('../img/optimised/channels.png');
 				// Browser supports svg
-				background: url('./img/optimised/channels.svg'),linear-gradient(transparent, transparent);
+				background: url('../img/optimised/channels.svg'),linear-gradient(transparent, transparent);
 				display: block;
 				margin: 0 auto;
 				width: 128px;
@@ -307,7 +307,7 @@
 			}
 			a {
 				background:{
-					image: url('./img/optimised/awards.png');
+					image: url('../img/optimised/awards.png');
 					repeat: no-repeat;
 				}
 				display: block;
