@@ -25,6 +25,9 @@
 	<link rel="alternate" href="{{ site.url }}" hreflang="en-gb" />
 	<script src="{{ "/js/vendor.js" | prepend: site.baseurl | prepend: site.url }}"></script>
 	<script src="{{ "/js/scripts.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+	{% if page.class == 'homepage' %}
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	{% endif %}
 	<script>
 		////////////////
 		// Analytics //
