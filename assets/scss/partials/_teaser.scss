@@ -54,14 +54,14 @@
           left: -10em;
           top: -10em;
           mix-blend-mode: overlay;
-          opacity: 0.3;          
+          opacity: 0.3;
           transition: left 5s ease;
           will-change: transform;
         }
         // Small screen
-        @include media(s) {             
+        @include media(s) {
             background:{
-                image: url('#{$base-dir}/img/optimised/teaser-bg.png');
+                image: url('./img/optimised/teaser-bg.png');
                 color: rgb(70, 70, 70);
                 repeat: repeat-x;
                 size: cover;
@@ -78,14 +78,14 @@
                 direction: forwards;
                 fill-mode: forwards;
                 timing-function: ease-out;
-              }               
-            }           
+              }
+            }
         }
         @include media(m) {
             .moving {
               left: -5em;
-              top: -4.5em;               
-            } 
+              top: -4.5em;
+            }
         }
         @media screen and (prefers-reduced-motion: reduce) {
             .moving {

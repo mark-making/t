@@ -126,7 +126,7 @@
                     span, a {
                         $icon-height:32px;
                         background:{
-                            image: url('#{$base-dir}/img/optimised/infobar.svg');
+                            image: url('./img/optimised/infobar.svg');
                             repeat: no-repeat;
                             size: cover;
                             position-x: 0;
