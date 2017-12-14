@@ -19,14 +19,41 @@ collections: # A list of collections the CMS should be able to edit
     delete: true
     slug: "{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Hero image?", name: "hero", widget: "boolean", default: true}
+      - {label: "Hero video?", name: hero, widget: boolean, default: false}
+      - {label: "Loop video?", name: loop, widget: boolean, default: false}
+      - {label: "Static image?", name: img, widget: boolean, default: true}
       - {label: "Order", name: "order_page", widget: "number", valueType: "int", min: 1}
       - {label: "Producer", name: "producer", widget: "text"}
       - label: Schema
         name: schema
         widget: list
         fields:
-          - {label: Type, name: type, widget: string, default: "Everything is awesome!"}
+          - {label: Type, name: name, widget: string, default: "Director"}
+      - label: Cast
+        name: cast
+        widget: list
+        fields:
+          - {label: Full name, name: name, widget: string}
+      - label: Awards
+        name: award
+        widget: list
+        fields:
+          - {label: Award name, name: name, widget: text}
+          - {label: Year, name: year, widget: text}
+          - {label: Category, name: category, widget: text}
+      - label: Channels
+        name: channel
+        widget: list
+        fields:
+          - {label: Channel name, name: name, widget: text}
+          - {label: "Text only?", name: text-only, widget: text}
+      - label: Map
+        name: map
+        widget: list
+        fields:
+          - {label: Channel name, name: name, widget: text}
+          - {label: Latitude, name: lat, widget: text}
+          - {label: Longitude, name: long, widget: text}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
