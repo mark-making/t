@@ -44,6 +44,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Award name, name: name, widget: text}
           - {label: Year, name: year, widget: text}
           - {label: Category, name: category, widget: text}
+          - {label: Outcome, name: outcome, widget: select, options: ["Nomination", "Winner"]}
+          - {label: Web address, name: url, widget: text}
       - label: Channels
         name: channel
         widget: list
