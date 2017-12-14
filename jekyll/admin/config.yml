@@ -26,7 +26,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "schema"
         widget: "list"
         field:
-          - {label: Name, name: name, widget: string}
+          - {label: Name, name: name, widget: text}      
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
