@@ -21,8 +21,13 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Hero image?", name: "hero", widget: "boolean", default: true}
       - {label: "Order", name: "order_page", widget: "number", valueType: "int", min: 1}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Producer", name: "producer", widget: "text"}
+      - label: "Role"
+        name: "schema"
+        widget: "list"
+        field:
+          - {label: Name, name: name, widget: string}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
