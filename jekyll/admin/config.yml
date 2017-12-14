@@ -25,12 +25,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Schema"
         name: "schema"
         widget: "list"
-        fields:
-          - label: "Roles"
-            name: "role"
-            widget: "object"
-            field:
-              - {label: "Role", name: "name", widget: "select", options: ["", "Director", "Producer", "Writer"]}
+        field:
+          - {label: "Roles", name: "name", widget: "string"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
