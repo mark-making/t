@@ -26,16 +26,19 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Producer", name: "producer", widget: "text"}
       - label: Schema
         name: schema
+        required: false
         widget: list
         fields:
           - {label: Type, name: name, widget: string, default: "Director"}
       - label: Cast
         name: cast
+        required: false
         widget: list
         fields:
           - {label: Full name, name: name, widget: string}
       - label: Awards
         name: award
+        required: false
         widget: list
         fields:
           - {label: Award name, name: name, widget: text}
