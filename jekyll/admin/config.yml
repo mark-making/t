@@ -22,11 +22,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Hero image?", name: "hero", widget: "boolean", default: true}
       - {label: "Order", name: "order_page", widget: "number", valueType: "int", min: 1}
       - {label: "Producer", name: "producer", widget: "text"}
-      - label: "Schema"
-        name: "schema"
-        widget: "list"
-        field:
-          - {label: "Roles", name: "type", widget: "text"}
+      - {label: "Schema", name: "schema", widget: "list", default: ["news"]
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
