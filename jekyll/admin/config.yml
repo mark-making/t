@@ -7,8 +7,12 @@ publish_mode: editorial_workflow
 media_folder: "assets/img/"
 public_folder: "/img/optimised/"
 
+#
+# Collections
+#
+
 collections: # A list of collections the CMS should be able to edit
-  - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "work"
     label: "View work" # Used in the UI, ie.: "New Post"
     description: >
       This is where the work posts live.
@@ -64,3 +68,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "carousel"
+    label: "Carousel"
+    file: "jekyll/_data/carousel.yml"
+    description: "Image carousel"
+    fields:
+      - name: image
+        label: Image
+        widget: list
+        fields:
+          - {label: "Title", name: "worktitle", widget: "string"}
