@@ -68,13 +68,17 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "carousel"
-    label: "Carousel"
-    file: "jekyll/_data/carousel.yml"
-    description: "Image carousel"
-    fields:
-      - name: image
-        label: Image
-        widget: list
-        fields:
-          - {label: "Title", name: "worktitle", widget: "string"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+    - name: "carousel"
+      label: "Carousel"
+      file: "jekyll/_data/carousel.yml"
+      description: "Image carousel"
+      fields:
+        - name: image
+          label: Image
+          widget: list
+          fields:
+            - {label: "Title", name: "worktitle", widget: "string"}
