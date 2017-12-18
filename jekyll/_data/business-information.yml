@@ -3,11 +3,11 @@ address:
   addressLocality: Camden - Test
   addressRegion: London
   postalCode: NW1 0EE
-  streetAddress: >
+  streetAddress: |-
     Lymehouse studios
     30/31 Lyme Street
 contact:
   email: >-
     &#105;&#110;&#102;&#111;&#64;&#116;&#97;&#108;&#101;&#115;&#109;&#105;&#116;&#104;&#46;&#116;&#118;
+  open: '(10:00 - 18:00 GMT)'
   telephone: +44 020 7284 6896
-  open: "(10:00 - 18:00 GMT)"
