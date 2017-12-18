@@ -33,7 +33,7 @@
 {% elsif page.carousel == true and page.loop == true %}
     <section class="image-row">
         <section class="owl-carousel">
-            {% for img in site.data.carousel %}
+            {% for img in site.data.carousel.image %}
                 <div class="item">
                     <picture>
                         <!--[if IE 9]>
@@ -46,7 +46,7 @@
                             </video>
                         <![endif]-->
                         <img srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}.jpg" alt="{{ work.title }}" class="module__image--img">
-                    </picture>            
+                    </picture>
                 </div>
             {% endfor %}
         </section>

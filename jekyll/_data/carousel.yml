@@ -1,6 +1,7 @@
 ---
-- worktitle: 'The Real T. rex with Chris Packham'
-- worktitle: 'Hold the World'
-- worktitle: 'Flyride 4D'
-- worktitle: 'Monkeys: An Amazing Animal Family'
-- worktitle: 'FLYSPY'
+image:
+  - worktitle: 'The Real T. rex with Chris Packham'
+  - worktitle: 'Hold the World'
+  - worktitle: 'Flyride 4D'
+  - worktitle: 'Monkeys: An Amazing Animal Family'
+  - worktitle: 'FLYSPY'
