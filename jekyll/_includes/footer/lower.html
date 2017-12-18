@@ -34,7 +34,7 @@
   <div class="site-footer__legal">
     <h2 class="site-footer__legal--heading">Address</h2>
     <div class="site-footer__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-      <span itemprop="streetAddress">{{ site.data.business-information.address.streetAddress }}<span><br>
+      <span itemprop="streetAddress">{{ site.data.business-information.address.streetAddress | newline_to_br }}<span><br>
       <span itemprop="addressLocality">{{ site.data.business-information.address.addressLocality }}</span><br>
       <span itemprop="addressRegion" class="site-footer__address--town">{{ site.data.business-information.address.addressRegion }}</span><br>
       <a href="https://goo.gl/maps/2DFSBSWGQ8P2" target="_blank" rel="noreferrer noopener" class="site-footer__address--postcode">
