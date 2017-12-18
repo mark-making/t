@@ -94,7 +94,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Telephone", name: "telephone", widget: "string"}
               - {label: "Email", name: "email", widget: "string"}
               - {label: "Opening times", name: "open", widget: "string"}
-      - name: "team"
+      - name: "people"
         label: "Team"
         file: "jekyll/_data/team.yml"
         description: "Team members"
