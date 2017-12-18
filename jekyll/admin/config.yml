@@ -12,6 +12,7 @@ public_folder: "/img/optimised/"
 #
 
 collections: # A list of collections the CMS should be able to edit
+
   - name: "work"
     label: "View work" # Used in the UI, ie.: "New Post"
     description: >
@@ -68,6 +69,27 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "contact"
+    label: "Contact"
+    files:
+    - name: "address"
+      label: "Address"
+      file: "jekyll/_data/business-information.yml"
+      description: "Address information"
+      fields:
+        - {label: "Street Address", name: "streetAddress", widget: "markdown"}
+        - {label: "Locality", name: "addressLocality", widget: "string"}
+        - {label: "Region", name: "addressRegion", widget: "string"}
+        - {label: "Postcode", name: "postalCode", widget: "string"}
+        - {label: "Country", name: "addressCountry", widget: "string"}
+    - name: "Contact"
+      label: "contact"
+      file: "jekyll/_data/business-information.yml"
+      description: "Contact information"
+      fields:
+        - {label: "Telephone", name: "telephone", widget: "string"}
+        - {label: "Email", name: "email", widget: "string"}      
 
   - name: "pages"
     label: "Pages"

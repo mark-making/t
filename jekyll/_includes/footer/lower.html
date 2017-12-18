@@ -1,57 +1,53 @@
 <section class="lower-footer" itemscope itemtype="http://schema.org/Organization">
-
-	<div class="site-footer__secondary-nav">
-		<a href="{{ site.url }}" class="logo" itemprop="url">
-			<h1 itemprop="name">{{ site.title }}</h1>
-		</a>
-		{% include /footer/navigation.html %}
-	</div>
-
-	<div class="site-footer__contact-details">
-		<h2 class="site-footer__contact-details--heading">Work with us</h2>
-		<meta itemprop="founder" content="Martin Williams">
-		<ul class="site-footer__contact-details__list">
-			<li class="site-footer__contact-details__list--item" itemprop="telephone">
-				{{ site.telephone }}
-			</li>
-			<li class="site-footer__contact-details__list--item">
-				<small>(10:00 - 18:00 GMT)</small>
-			</li>
-			<li class="site-footer__contact-details__list--item">
-				<a href="mailto:{{ site.email }}">
-					<span itemprop="email">{{ site.email }}</span>
-				</a>
-			</li>
-		</ul>
-		<a class="social linkedin" href="https://www.linkedin.com/company/9419948" itemprop="sameAs">
-			<span>LinkedIn</span>
-		</a>
-		<a class="social twitter" href="https://www.twitter.com/talesmithtv" itemprop="sameAs">
-			<span>Twitter</span>
-		</a>
-		<a class="social facebook" href="https://www.facebook.com/talesmithmedia" itemprop="sameAs">
-			<span>Facebook</span>
-		</a>
-	</div>
-
-	<div class="site-footer__legal">
+  <div class="site-footer__secondary-nav">
+  <a href="{{ site.url }}" class="logo" itemprop="url">
+  <h1 itemprop="name">{{ site.title }}</h1>
+  </a>
+  {% include /footer/navigation.html %}
+  </div>
+  <div class="site-footer__contact-details">
+  <h2 class="site-footer__contact-details--heading">Work with us</h2>
+  <meta itemprop="founder" content="Martin Williams">
+  <ul class="site-footer__contact-details__list">
+  <li class="site-footer__contact-details__list--item" itemprop="telephone">
+  {{ site.data.business-information.contact.telephone }}
+  </li>
+  <li class="site-footer__contact-details__list--item">
+  <small>(10:00 - 18:00 GMT)</small>
+  </li>
+  <li class="site-footer__contact-details__list--item">
+  <a href="mailto:{{ site.email }}">
+  <span itemprop="email">{{ site.data.business-information.contact.email }}</span>
+  </a>
+  </li>
+  </ul>
+  <a class="social linkedin" href="https://www.linkedin.com/company/9419948" itemprop="sameAs">
+  <span>LinkedIn</span>
+  </a>
+  <a class="social twitter" href="https://www.twitter.com/talesmithtv" itemprop="sameAs">
+  <span>Twitter</span>
+  </a>
+  <a class="social facebook" href="https://www.facebook.com/talesmithmedia" itemprop="sameAs">
+  <span>Facebook</span>
+  </a>
+  </div>
+  <div class="site-footer__legal">
     <h2 class="site-footer__legal--heading">Address</h2>
     <div class="site-footer__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-      <span itemprop="streetAddress">Lymehouse studios<br>30/31 Lyme Street<span><br>
-      <span itemprop="addressLocality">Camden</span><br>
-      <span itemprop="addressRegion" class="site-footer__address--town">London</span><br>
+      <span itemprop="streetAddress">{{ site.data.business-information.address.streetAddress }}<span><br>
+      <span itemprop="addressLocality">{{ site.data.business-information.address.addressLocality }}</span><br>
+      <span itemprop="addressRegion" class="site-footer__address--town">{{ site.data.business-information.address.addressRegion }}</span><br>
       <a href="https://goo.gl/maps/2DFSBSWGQ8P2" target="_blank" rel="noreferrer noopener" class="site-footer__address--postcode">
-        <span itemprop="postalCode">NW1 0EE</span><br>
+        <span itemprop="postalCode">{{ site.data.business-information.address.postalCode }}</span><br>
       </a>
-      <span itemprop="addressCountry">United Kingdom</span>
+      <span itemprop="addressCountry">{{ site.data.business-information.address.addressCountry }}</span>
     </div>
     <p class="site-footer__legal--copyright">
       &#169; Talesmith 2005 - {{ site.time | date: '%Y' }}
     </p>
-		<small class="site-footer__legal--disclaimer">
-			All titles, content, publisher names, trademarks, artwork, and associated imagery are trademarks and/or copyright material of their respective owners.
-			All rights reserved.
-		</small>
-	</div>
-
+  <small class="site-footer__legal--disclaimer">
+  All titles, content, publisher names, trademarks, artwork, and associated imagery are trademarks and/or copyright material of their respective owners.
+  All rights reserved.
+  </small>
+  </div>
 </section>
