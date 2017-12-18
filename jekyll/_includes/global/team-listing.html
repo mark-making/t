@@ -1,4 +1,4 @@
-{% for team in site.data.team %}
+{% for team in site.data.team.people %}
 	<li class="members__member" itemscope itemtype="http://schema.org/Person">
 		<figure>
       <a href="{{ team.firstname | downcase }}-{{ team.lastname | downcase }}/">
