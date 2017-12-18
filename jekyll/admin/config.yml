@@ -70,13 +70,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "contact"
-    label: "Contact"
+  - name: "details"
+    label: "Details"
     files:
     - name: "address"
       label: "Address"
       file: "jekyll/_data/business-information.yml"
       description: "Address information"
+      widget: "object"
       fields:
         - {label: "Street Address", name: "streetAddress", widget: "markdown"}
         - {label: "Locality", name: "addressLocality", widget: "string"}
@@ -87,9 +88,10 @@ collections: # A list of collections the CMS should be able to edit
       label: "contact"
       file: "jekyll/_data/business-information.yml"
       description: "Contact information"
+      widget: "object"
       fields:
         - {label: "Telephone", name: "telephone", widget: "string"}
-        - {label: "Email", name: "email", widget: "string"}      
+        - {label: "Email", name: "email", widget: "string"}
 
   - name: "pages"
     label: "Pages"
