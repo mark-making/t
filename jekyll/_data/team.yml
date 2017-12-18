@@ -1,57 +1,28 @@
 people:
   - person:
-    firstname: Martin
-    lastname: Williams
-    jobtitle: CEO & Creative Director
-    description: Martin is a director at heart and he’d like to direct everything Talesmith produces.
-    gender: Male
-    imdb-profile: http://www.imdb.com/name/nm1546548/
-    linkedin-profile: https://www.linkedin.com/in/martin-williams-3230b07/
+      description: D
+      firstname: S
+      gender: Female
+      imdb-profile: I
+      jobtitle: E
+      lastname: 'Y'
+      linkedin-profile: L
   - person:
-    firstname: Ulla
-    lastname: Streib
-    jobtitle: COO
-    description: There aren’t many Directors of Production and Operations more experienced than Ulla.
-    gender: Female
-    imdb-profile: http://www.imdb.com/name/nm1455957/
-    linkedin-profile: https://www.linkedin.com/in/ulla-streib-038039a/
+      description: D
+      firstname: S
+      gender: Female
+      imdb-profile: d
+      jobtitle: E
+      lastname: 'Y'
+  - {}
+  - {}
+  - {}
+  - {}
   - person:
-    firstname: Ruth
-    lastname: Roberts
-    jobtitle: Development EP
-    description: Ruth’s credits include David Attenborough Meets President Obama (BBC – EMMY nominee / Director) and Into the Universe with Stephen Hawking (Discovery / Ch4 Producer).
-    gender: Female
-    imdb-profile: http://www.imdb.com/name/nm1772070/
-    linkedin-profile: https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/
-  - person:
-    firstname: Gaby
-    lastname: Bastyra
-    jobtitle: Head of Development
-    description: Gaby joined Talesmith in June 2017 as Head of Development after 7 years at Passion Planet producing and running development.
-    gender: Female
-    imdb-profile: http://www.imdb.com/name/nm3282891/
-    linkedin-profile: https://uk.linkedin.com/in/gabybastyra
-  - person:
-    firstname: Fiona
-    lastname: McDonald
-    jobtitle: Line Producer
-    description: Fearless Fiona has more broadcast credits that you can shake a spreadsheet at.
-    gender: Female
-    imdb-profile: http://www.imdb.com/name/nm1707253/
-    linkedin-profile: https://www.linkedin.com/in/fiona-mcdonald-8b319828/
-  - person:
-    firstname: Dom
-    lastname: Walter
-    jobtitle: Assistant Producer
-    description: From InDesign artwork and shooting taster tapes to wrangling Manchu falconers and running slack lining courses, there is no end to Dom’s considerable talent.
-    gender: Male
-    imdb-profile: http://www.imdb.com/name/nm1707253/
-    linkedin-profile: https://www.linkedin.com/in/dom-walter-a323718b/
-  - person:
-    firstname: Will
-    lastname: Benson
-    jobtitle: Producer
-    description: Will is a highly versatile specialist factual Producer with extensive experience making science and wildlife documentaries for major UK and US broadcasters.
-    gender: Male
-    imdb-profile: http://www.imdb.com/name/nm6491341/""
-    linkedin-profile: https://www.linkedin.com/in/will-benson-37012b11/
+      description: J
+      firstname: J
+      gender: Other
+      imdb-profile: JJ
+      jobtitle: J
+      lastname: j
+      linkedin-profile: J
