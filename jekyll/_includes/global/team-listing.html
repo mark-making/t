@@ -1,29 +1,29 @@
 {% for item in site.data.team.people %}
-			<li class="members__member" itemscope itemtype="http://schema.org/Person">
-				<figure>
-		      <a href="{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}/">
-					 <img class="members__member--picture" src="{{ site.url }}{{ site.images }}{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}.jpg" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
-		      </a>
-				</figure>
-				<h2 class="members__member--name" itemprop="name">
-		      <a class="members__member--link" href="{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}/">
-					  <span class="firstname">{{ item.person.firstname }}</span>&nbsp;<span class="lastname">{{ item.person.lastname }}</span>
-		      </a>
-				</h2>
-				<p class="members__member--job-title" itemprop="jobTitle">
-					{{ item.person.jobtitle }}
-				</p>
-				<hr>
-		    <a class="members__member--button-link" href="{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}/">
-		      View {{ item.person.firstname }}'s profile
-		    </a>
-		    <a class="members__member--button-link" href="mailto:{{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}?subject=Website%20query" title="{{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}">
-		      <span itemprop="email">{{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}</span>
-		    </a>
-				<p class="members__member--description" itemprop="description">
-					{{ item.person.description  | truncate: 100 }}
-				</p>
-		    <meta itemprop="worksFor" content="{{ site.title }}">
-		    <meta itemprop="gender" content="{{ item.person.gender }}">
-			</li>
+  <li class="members__member" itemscope itemtype="http://schema.org/Person">
+    <figure>
+      <a href="{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}/">
+        <img class="members__member--picture" src="{{ site.url }}{{ site.images }}{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}.jpg" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
+      </a>
+    </figure>
+    <h2 class="members__member--name" itemprop="name">
+      <a class="members__member--link" href="{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}/">
+        <span class="firstname">{{ item.person.firstname }}</span>&nbsp;<span class="lastname">{{ item.person.lastname }}</span>
+      </a>
+    </h2>
+    <p class="members__member--job-title" itemprop="jobTitle">
+      {{ item.person.jobtitle }}
+    </p>
+    <hr>
+    <a class="members__member--button-link" href="{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}/">
+      View {{ item.person.firstname }}'s profile
+    </a>
+    <a class="members__member--button-link" href="mailto:{{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}?subject=Website%20query" title="{{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}">
+      <span itemprop="email">{{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}</span>
+    </a>
+    <p class="members__member--description" itemprop="description">
+      {{ item.person.description  | truncate: 100 }}
+    </p>
+    <meta itemprop="worksFor" content="{{ site.title }}">
+    <meta itemprop="gender" content="{{ item.person.gender }}">
+  </li>
 {% endfor %}
