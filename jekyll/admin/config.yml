@@ -96,17 +96,13 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Telephone", name: "telephone", widget: "string"}
               - {label: "Email", name: "email", widget: "string"}
               - {label: "Opening times", name: "open", widget: "string"}
-
-  - name: "pages"
-    label: "Pages"
-    files:
-    - name: "carousel"
-      label: "Carousel"
-      file: "jekyll/_data/carousel.yml"
-      description: "Image carousel"
-      fields:
-        - name: image
-          label: Image
-          widget: list
-          fields:
-            - {label: "Title", name: "worktitle", widget: "string"}
+      - name: "carousel"
+        label: "Carousel"
+        file: "jekyll/_data/carousel.yml"
+        description: "Image carousel"
+        fields:
+          - name: image
+            label: Image
+            widget: list
+            fields:
+              - {label: "Title", name: "worktitle", widget: "string"}
