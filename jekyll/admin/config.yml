@@ -72,26 +72,29 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "details"
     label: "Details"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
     files:
-    - name: "address"
-      label: "Address"
-      file: "jekyll/_data/business-information.yml"
-      description: "Address information"
-      widget: "object"
-      fields:
-        - {label: "Street Address", name: "streetAddress", widget: "markdown"}
-        - {label: "Locality", name: "addressLocality", widget: "string"}
-        - {label: "Region", name: "addressRegion", widget: "string"}
-        - {label: "Postcode", name: "postalCode", widget: "string"}
-        - {label: "Country", name: "addressCountry", widget: "string"}
-    - name: "Contact"
-      label: "contact"
-      file: "jekyll/_data/business-information.yml"
-      description: "Contact information"
-      widget: "object"
-      fields:
-        - {label: "Telephone", name: "telephone", widget: "string"}
-        - {label: "Email", name: "email", widget: "string"}
+      - name: "business"
+        label: "Business information"
+        file: "jekyll/_data/business-information.yml"
+        fields:
+          - label: "Address"
+            name: address
+            widget: "object"
+            fields:
+              - {label: "Street Address", name: "streetAddress", widget: "markdown"}
+              - {label: "Locality", name: "addressLocality", widget: "string"}
+              - {label: "Region", name: "addressRegion", widget: "string"}
+              - {label: "Postcode", name: "postalCode", widget: "string"}
+              - {label: "Country", name: "addressCountry", widget: "string"}
+          - label: "Contact"
+            name: contact
+            widget: "object"
+            fields:
+              - {label: "Telephone", name: "telephone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
 
   - name: "pages"
     label: "Pages"
