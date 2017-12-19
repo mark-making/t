@@ -75,7 +75,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Team" # Used in the UI, ie.: "New Post"
     description: >
       This is where the team posts live.
-    folder: "jekyll/about" # The path to the folder where the documents are stored
+    folder: "jekyll/_about" # The path to the folder where the documents are stored
     extension: "html"
     sort: "title:asc" # Default is title:asc
     create: true

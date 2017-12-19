@@ -32,6 +32,9 @@ collections:
  work:
   output: true
   permalink: /work/:path/
+ about:
+  output: true
+  permalink: /about/:path/
 # //
 # // Handling Reading
 # //
