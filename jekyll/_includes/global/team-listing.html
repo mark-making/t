@@ -2,7 +2,7 @@
   <li class="members__member" itemscope itemtype="http://schema.org/Person">
     <figure>
       <a href="{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}/">
-        <img class="members__member--picture" src="{{ site.url }}{{ site.images }}{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}.jpg" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
+        <img class="members__member--picture" src="{{ item.person.image }}" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
       </a>
     </figure>
     <h2 class="members__member--name" itemprop="name">

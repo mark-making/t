@@ -1,6 +1,6 @@
 <header class="heading-group">
     <figure class="heading-group__image">
-      <img src="{{ site.url }}{{ site.images }}{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}.jpg" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
+      <img src="{{ item.person.image }}" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
     </figure>
     <h1 class="heading-group__heading">{{ item.person.firstname }}&nbsp;{{ item.person.lastname }}</h1>
     <h2 class="heading-group__sub-heading">{{ item.person.jobtitle }}</h2>

@@ -7,6 +7,7 @@ people:
       jobtitle: Developer
       lastname: Young
       linkedin-profile: 'http://www.shannonyoung.co.uk'
+      image: 
   - person:
       description: >-
         Martin is a director at heart and he’d like to direct everything
@@ -17,6 +18,7 @@ people:
       jobtitle: CEO & Creative Director
       lastname: Williams
       linkedin-profile: 'https://www.linkedin.com/in/martin-williams-3230b07/'
+      image: 
   - person:
       description: >-
         There aren’t many Directors of Production and Operations more
@@ -27,6 +29,7 @@ people:
       jobtitle: COO
       lastname: Streib
       linkedin-profile: 'https://www.linkedin.com/in/ulla-streib-038039a/'
+      image: 
   - person:
       description: >-
         Ruth’s credits include David Attenborough Meets President Obama (BBC –
@@ -38,6 +41,7 @@ people:
       jobtitle: Development EP
       lastname: Roberts
       linkedin-profile: 'https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/'
+      image: 
   - person:
       description: >-
         Gaby joined Talesmith in June 2017 as Head of Development after 7 years
@@ -48,6 +52,7 @@ people:
       jobtitle: Head of Development
       lastname: Bastyra
       linkedin-profile: 'https://uk.linkedin.com/in/gabybastyra'
+      image: 
   - person:
       description: >-
         Fearless Fiona has more broadcast credits that you can shake a
@@ -58,6 +63,7 @@ people:
       jobtitle: Line Producer
       lastname: McDonald
       linkedin-profile: 'https://www.linkedin.com/in/fiona-mcdonald-8b319828/'
+      image: 
   - person:
       description: >-
         From InDesign artwork and shooting taster tapes to wrangling Manchu
@@ -69,6 +75,7 @@ people:
       jobtitle: Assistant Producer
       lastname: Walter
       linkedin-profile: 'https://www.linkedin.com/in/dom-walter-a323718b/'
+      image: 
   - person:
       description: >-
         Will is a highly versatile specialist factual Producer with extensive
@@ -80,3 +87,4 @@ people:
       jobtitle: Producer
       lastname: Benson
       linkedin-profile: 'https://www.linkedin.com/in/will-benson-37012b11/'
+      image: 
