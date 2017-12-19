@@ -27,6 +27,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Hero video?", name: hero, widget: boolean, default: false}
       - {label: "Loop video?", name: loop, widget: boolean, default: false}
+      - {label: "Feature?", name: feature, widget: boolean, default: false}
       - {label: "Static image?", name: img, widget: boolean, default: true}
       - {label: "Order", name: "order_page", widget: "number", valueType: "int", min: 1}
       - {label: "Producer", name: "producer", widget: "text"}
