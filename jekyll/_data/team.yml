@@ -3,33 +3,33 @@ people:
       description: "\U0001F428"
       firstname: Shannon
       gender: Male
+      image: /img/optimised/will-benson.jpg
       imdb-profile: 'http://www.shannonyoung.co.uk'
       jobtitle: Developer
       lastname: Young
       linkedin-profile: 'http://www.shannonyoung.co.uk'
-      image: 
   - person:
       description: >-
         Martin is a director at heart and he’d like to direct everything
         Talesmith produces.
       firstname: Martin
       gender: Male
+      image: /img/optimised/Martin-Williams.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1546548/'
       jobtitle: CEO & Creative Director
       lastname: Williams
       linkedin-profile: 'https://www.linkedin.com/in/martin-williams-3230b07/'
-      image: 
   - person:
       description: >-
         There aren’t many Directors of Production and Operations more
         experienced than Ulla.
       firstname: Ulla
       gender: Female
+      image: /img/optimised/ulla-streib.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1455957/'
       jobtitle: COO
       lastname: Streib
       linkedin-profile: 'https://www.linkedin.com/in/ulla-streib-038039a/'
-      image: 
   - person:
       description: >-
         Ruth’s credits include David Attenborough Meets President Obama (BBC –
@@ -37,33 +37,33 @@ people:
         (Discovery / Ch4 Producer).
       firstname: Ruth
       gender: Female
+      image: /img/optimised/ruth-roberts.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1772070/'
       jobtitle: Development EP
       lastname: Roberts
       linkedin-profile: 'https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/'
-      image: 
   - person:
       description: >-
         Gaby joined Talesmith in June 2017 as Head of Development after 7 years
         at Passion Planet producing and running development.
       firstname: Gaby
       gender: Female
+      image: /img/optimised/gaby-bastyra.jpg
       imdb-profile: 'http://www.imdb.com/name/nm3282891/'
       jobtitle: Head of Development
       lastname: Bastyra
       linkedin-profile: 'https://uk.linkedin.com/in/gabybastyra'
-      image: 
   - person:
       description: >-
         Fearless Fiona has more broadcast credits that you can shake a
         spreadsheet at.
       firstname: Fiona
       gender: Female
+      image: /img/optimised/fiona-mcdonald.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1707253/'
       jobtitle: Line Producer
       lastname: McDonald
       linkedin-profile: 'https://www.linkedin.com/in/fiona-mcdonald-8b319828/'
-      image: 
   - person:
       description: >-
         From InDesign artwork and shooting taster tapes to wrangling Manchu
@@ -71,11 +71,11 @@ people:
         considerable talent.
       firstname: Dom
       gender: Male
+      image: /img/optimised/Dom-Walter.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1707253/'
       jobtitle: Assistant Producer
       lastname: Walter
       linkedin-profile: 'https://www.linkedin.com/in/dom-walter-a323718b/'
-      image: 
   - person:
       description: >-
         Will is a highly versatile specialist factual Producer with extensive
@@ -83,8 +83,8 @@ people:
         broadcasters.
       firstname: Will
       gender: Male
+      image: /img/optimised/will-benson.jpg
       imdb-profile: 'http://www.imdb.com/name/nm6491341/""'
       jobtitle: Producer
       lastname: Benson
       linkedin-profile: 'https://www.linkedin.com/in/will-benson-37012b11/'
-      image: 
