@@ -1,5 +1,13 @@
 people:
   - person:
+      description: "\U0001F428"
+      firstname: Shannon
+      gender: Male
+      imdb-profile: 'http://www.shannonyoung.co.uk'
+      jobtitle: Developer
+      lastname: Young
+      linkedin-profile: 'http://www.shannonyoung.co.uk'
+  - person:
       description: >-
         Martin is a director at heart and he’d like to direct everything
         Talesmith produces.
@@ -72,11 +80,3 @@ people:
       jobtitle: Producer
       lastname: Benson
       linkedin-profile: 'https://www.linkedin.com/in/will-benson-37012b11/'
-  - person:
-      description: "\U0001F428"
-      firstname: Shannon
-      gender: Male
-      imdb-profile: 'http://www.shannonyoung.co.uk'
-      jobtitle: Developer
-      lastname: Young
-      linkedin-profile: 'http://www.shannonyoung.co.uk'
