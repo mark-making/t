@@ -12,6 +12,7 @@ public_folder: "/img/optimised/"
 #
 
 collections: # A list of collections the CMS should be able to edit
+
   - name: "work"
     label: "View work" # Used in the UI, ie.: "New Post"
     description: >
@@ -69,6 +70,22 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "about"
+    label: "Team" # Used in the UI, ie.: "New Post"
+    description: >
+      This is where the team posts live.
+    folder: "jekyll/about" # The path to the folder where the documents are stored
+    extension: "html"
+    sort: "title:asc" # Default is title:asc
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "team-member"}
+      - {label: "Full name", name: fullname, widget: string}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "details"
     label: "Details"
     delete: false # Prevent users from deleting documents in this collection
