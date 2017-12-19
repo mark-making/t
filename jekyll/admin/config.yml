@@ -105,6 +105,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: Person
                 name: person
+                description: "Edit team members"
                 widget: object
                 fields:
                   - {label: First name, name: firstname, widget: string}
