@@ -1,27 +1,33 @@
 <header class="heading-group">
     <figure class="heading-group__image">
-      <img src="{{ site.url }}{{ site.images }}{{ person.firstname | downcase }}-{{ person.lastname | downcase }}.jpg" alt="{{ person.firstname }} {{ person.lastname }}" title="{{ person.firstname }} {{ person.lastname }}" width="500" height="500">
-    </figure>    
-    <h1 class="heading-group__heading">{{ person.firstname }}&nbsp;{{ person.lastname }}</h1>
-    <h2 class="heading-group__sub-heading">{{ person.jobtitle }}</h2>
+      <img src="{{ site.url }}{{ site.images }}{{ item.person.firstname | downcase }}-{{ item.person.lastname | downcase }}.jpg" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
+    </figure>
+    <h1 class="heading-group__heading">{{ item.person.firstname }}&nbsp;{{ item.person.lastname }}</h1>
+    <h2 class="heading-group__sub-heading">{{ item.person.jobtitle }}</h2>
     <hr class="heading-group__break">
     <ul class="profiles">
       <li class="email-address">
-        {{ person.firstname | downcase }}.{{ person.lastname | downcase }}{{ site.email-obfuscated }}
+        {{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}
       </li>
-      {% if person.imdb-profile %}
+      {% if item.person.imdb-profile %}
       <li class="imdb-profile">
-        <a href="{{ person.imdb-profile }}">
+        <a href="{{ item.person.imdb-profile }}">
           IMDb
         </a>
       </li>
       {% endif %}
-      {% if person.linkedin-profile %}
+      {% if item.person.linkedin-profile %}
       <li class="linkedin-profile">
-        <a href="{{ person.linkedin-profile }}">
+        <a href="{{ item.person.linkedin-profile }}">
           LinkedIn
         </a>
       </li>
       {% endif %}
     </ul>
 </header>
+<article class="article">
+    <h1 class="article__heading">
+      {{ item.person.description }}
+    </h1>
+    {{ content }}
+</article>
