@@ -5,7 +5,7 @@
     {% if page.title == 'Talesmith' %}
       {{ site.title }}
 		{% elsif page.layout == 'team-member' %}
-			{{ page.team-member }} - {{ site.title }}
+			{{ page.fullname }} - {{ site.title }}
     {% else %}
       {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
     {% endif %}
