@@ -6,7 +6,7 @@ class: team-member
   <div class="page-content">
     {% for item in site.data.team.people %}
         {% capture who %}{{ item.person.firstname }} {{ item.person.lastname }}{% endcapture %}
-        {% if who == page.fullname %}
+        {% if who == page.title %}
           <section class="about-bio">
             {% include /team/bio.html %}
           </section>
