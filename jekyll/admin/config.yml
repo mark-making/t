@@ -145,4 +145,4 @@ collections: # A list of collections the CMS should be able to edit
             label: Image
             widget: list
             fields:
-              - {label: "Title", name: "worktitle", widget: "string"}
+              - {label: "Image", name: "worktitle", widget: "image"}
