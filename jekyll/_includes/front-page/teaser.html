@@ -4,8 +4,8 @@
 			<div class="teaser__content__text" style="{{ include.teaserBGC }}">
 					<div class="dt">
 						<div class="dt-c">
-							<b class="teaser__content__text--title">{{ include.teaserTitle }}</b>
-							<strong class="teaser__content__text--show">{{ include.teaserIntro }}</strong>
+							<b class="teaser__content__text--title">{{ include.teaserTitle | upcase }}</b>
+							<strong class="teaser__content__text--show">{{ include.teaserIntro | newline_to_br }}</strong>
 						</div>
 					</div>
 			</div>
