@@ -1,5 +1,5 @@
 {% if page.hero == true and page.img == false %}
-  <section class="hero-video" itemprop="video" itemscope itemtype="http://schema.org/VideoObject" data-vide-bg="{{ page.title | downcase | slugify }}" data-vide-options="posterType: jpg, autoplay: {{ page.autoplay }}, loop: {{ page.loop }}, muted: {{ site.muted }}, position: 50% 50%">
+  <section class="hero-video" itemprop="video" itemscope itemtype="http://schema.org/VideoObject" data-vide-bg="/img/optimised/{{ page.title | downcase | slugify }}" data-vide-options="posterType: jpg, autoplay: {{ page.autoplay }}, loop: {{ page.loop }}, muted: {{ site.muted }}, position: 50% 50%">
     <meta itemprop="name" content="{% if page.video-title %}{{ page.video-title }}{% else %}{{ page.title }}{% endif %}" />
     <meta itemprop="caption" content="{% if page.video-description %}{{ page.video-description }}{% else %}{{ page.title }}{% endif %}" />
     <meta itemprop="description" content="{% if page.video-description %}{{ page.video-description }}{% else %}{{ page.title }}{% endif %}" />
