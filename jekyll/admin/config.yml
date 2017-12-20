@@ -14,7 +14,7 @@ public_folder: "/img/optimised/"
 collections: # A list of collections the CMS should be able to edit
 
   - name: "work"
-    label: "View work" # Used in the UI, ie.: "New Post"
+    label: "Work" # Used in the UI, ie.: "New Post"
     description: >
       This is where the work posts live.
     folder: "jekyll/_work" # The path to the folder where the documents are stored
