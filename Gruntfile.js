@@ -202,8 +202,8 @@ module.exports = function(grunt) {
                 },
                 video: {
                     files:  [
-                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.serve %>/video/' },
-                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.site %>/video/' },
+                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.serve %>/img/optimised/' },
+                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.site %>/img/optimised/' },
                             ],
                 },
                 map: {
