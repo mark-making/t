@@ -2,14 +2,14 @@
 //
 // A majority of buttons in the site are built from the same base class.
 //
-@keyframes moveteaser {
-  0% {
-    transform: scale(1) translate(0, 0) rotate(0);
-  }
-  100% {
-    transform: scale(.6) translate(-25%, -60%) rotate(-0.10turn);
-  }
-}
+// @keyframes moveteaser {
+//   0% {
+//     transform: scale(1) translate(0, 0) rotate(0);
+//   }
+//   100% {
+//     transform: scale(.6) translate(-25%, -60%) rotate(-0.10turn);
+//   }
+// }
 .teaser {
     // Default/Mobile
     clear: both;
@@ -45,48 +45,44 @@
         position: relative;
         height: 100%;
         background: {
-          color: rgb(70, 70, 70);
-          color: rgba(70, 70, 70, 0.8);
+          color: rgb(0, 0, 0);
+          // color: rgba(70, 70, 70, 0.8);
         }
         .moving {
           width: auto;
           position: absolute;
-          left: -10em;
-          top: -10em;
-          mix-blend-mode: overlay;
-          opacity: 0.3;
+          left: -17em;
+          top: -8em;
           transition: left 5s ease;
           will-change: transform;
         }
         // Small screen
         @include media(s) {
             background:{
-                image: url('../img/optimised/teaser-bg.png');
-                color: rgb(70, 70, 70);
+                // image: url('../img/optimised/teaser-bg.png');
+                // color: rgb(70, 70, 70);
                 repeat: repeat-x;
                 size: cover;
                 position-x: 0;
             }
             .moving {
-              mix-blend-mode: unset;
-              opacity: 1;
               left: -20em;
-              animation: {
-                name: moveteaser;
-                duration: 75s;
-                iteration-count: 1;
-                direction: forwards;
-                fill-mode: forwards;
-                timing-function: ease-out;
-              }
+              // animation: {
+              //   name: moveteaser;
+              //   duration: 75s;
+              //   iteration-count: 1;
+              //   direction: forwards;
+              //   fill-mode: forwards;
+              //   timing-function: ease-out;
+              // }
             }
         }
-        @include media(m) {
-            .moving {
-              left: -5em;
-              top: -4.5em;
-            }
-        }
+        // @include media(m) {
+        //     .moving {
+        //       left: -5em;
+        //       top: -4.5em;
+        //     }
+        // }
         @media screen and (prefers-reduced-motion: reduce) {
             .moving {
                 animation: none;
