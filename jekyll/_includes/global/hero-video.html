@@ -39,9 +39,9 @@
                         <!--[if IE 9]>
                             <video style="display: none;">
                         <![endif]-->
-                                <source srcset="{{ img.worktitle | downcase | slugify }}-l.jpg" media="(min-width: 925px)">
-                                <source srcset="{{ img.worktitle | downcase | slugify }}-m.jpg" media="(min-width: 920px)">
-                                <source srcset="{{ img.worktitle | downcase | slugify }}-s.jpg" media="(min-width: 650px)">
+                                <source srcset="{{ img.worktitle | remove: "-l.jpg" }}-l.jpg" media="(min-width: 925px)">
+                                <source srcset="{{ img.worktitle | remove: "-l.jpg" }}-m.jpg" media="(min-width: 920px)">
+                                <source srcset="{{ img.worktitle | remove: "-l.jpg" }}-s.jpg" media="(min-width: 650px)">
                         <!--[if IE 9]>
                             </video>
                         <![endif]-->
