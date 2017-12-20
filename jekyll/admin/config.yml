@@ -163,6 +163,6 @@ collections: # A list of collections the CMS should be able to edit
                 searchFields: [title]
                 valueField: title
               - {label: Image, name: IMG, widget: image}
-              - {label: Title, name: title, widget: string}
+              - {label: Title, name: Title, widget: string}
               - {label: Introduction, name: Intro, widget: markdown}
               - {label: Background, name: BGC, widget: string}
