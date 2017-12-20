@@ -146,3 +146,18 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             fields:
               - {label: "Image", name: "worktitle", widget: "image"}
+      - name: "teaser"
+        label: "Teaser"
+        file: "jekyll/_data/teaser.yml"
+        description: "Teaser details"
+        fields:
+          - label: Content
+            name: teaser
+            description: "Edit content"
+            widget: object
+            fields:
+              - {label: URL, name: URL, widget: string}
+              - {label: Image, name: IMG, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Introduction, name: Intro, widget: markdown}
+              - {label: Background, name: BGC, widget: string}

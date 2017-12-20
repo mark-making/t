@@ -15,13 +15,15 @@ video-description: Martin Williams
 
 {% include /front-page/intro.html %}
 
+<h1>{{site.data.teaser.URL}}</h1>
+
 {%
   include /front-page/teaser.html
-  teaserURL="the-life-of-earth"
-  teaserIMG="teaser-earth.png"
-  teaserTitle="New release"
-  teaserIntro="The life of earth<br>from space<small>Delve into the planet’s extraordinary<br>4.5 billion year old history as never seen before.</small>"
-  teaserBGC="background-color: transparent;"
+  teaserURL=site.data.teaser.teaser.URL
+  teaserIMG=site.data.teaser.teaser.IMG
+  teaserTitle=site.data.teaser.teaser.Title
+  teaserIntro=site.data.teaser.teaser.Intro
+  teaserBGC=site.data.teaser.teaser.BGC
 %}
 
 {% include /front-page/feature-modules.html %}
