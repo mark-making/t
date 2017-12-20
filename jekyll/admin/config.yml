@@ -167,8 +167,8 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Introduction, name: Intro, widget: markdown}
               - {label: Background, name: BGC, widget: string}
 
-  - name: "Pages"
-    label: "pages"
+  - name: "pages"
+    label: "Pages"
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
