@@ -166,3 +166,20 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: Title, widget: string}
               - {label: Introduction, name: Intro, widget: markdown}
               - {label: Background, name: BGC, widget: string}
+
+  - name: "Pages"
+    label: "pages"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "jekyll/_data/page-content.yml"
+        fields:
+          - label: "Headings"
+            name: heading
+            widget: "object"
+            fields:
+              - {label: "Big heading", name: "Big", widget: "markdown"}
+              - {label: "Small heading", name: "Small", widget: "markdown"}

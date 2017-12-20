@@ -13,9 +13,11 @@ video-title: Showreel of Martin Williams
 video-description: Martin Williams
 ---
 
-{% include /front-page/intro.html %}
-
-<h1>{{site.data.teaser.URL}}</h1>
+{%
+  include /front-page/intro.html
+  bigHeading=site.data.page-content.heading.Big
+  smallHeading=site.data.page-content.heading.Small
+%}
 
 {%
   include /front-page/teaser.html
