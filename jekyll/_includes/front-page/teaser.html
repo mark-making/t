@@ -1,15 +1,15 @@
 <section class="teaser">
-	<a href="/work/{{ include.teaserURL | downcase | slugify }}">
-		<div class="teaser__content">
-			<div class="teaser__content__text" style="{{ include.teaserBGC }}">
-					<div class="dt">
-						<div class="dt-c">
-							<b class="teaser__content__text--title">{{ include.teaserTitle | upcase }}</b>
-							<strong class="teaser__content__text--show">{{ include.teaserIntro | newline_to_br }}</strong>
-						</div>
-					</div>
-			</div>
-      <img class="moving" src="{{ site.url }}{{ site.images }}{{ include.teaserIMG }}" alt="">
-		</div>
-	</a>
+  <a href="/work/{{ include.teaserURL | downcase | slugify }}">
+    <div class="teaser__content">
+      <div class="teaser__content__text" style="{{ include.teaserBGC }}">
+        <div class="dt">
+          <div class="dt-c">
+            <b class="teaser__content__text--title">{{ include.teaserTitle | upcase }}</b>
+            <strong class="teaser__content__text--show">{{ include.teaserIntro | newline_to_br }}</strong>
+          </div>
+        </div>
+      </div>
+      <img class="moving" src="{{ include.teaserIMG }}" alt="">
+    </div>
+  </a>
 </section>
