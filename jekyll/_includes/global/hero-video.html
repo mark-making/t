@@ -39,13 +39,13 @@
                         <!--[if IE 9]>
                             <video style="display: none;">
                         <![endif]-->
-                                <source srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}-l.jpg" media="(min-width: 925px)">
-                                <source srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}-m.jpg" media="(min-width: 920px)">
-                                <source srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}-s.jpg" media="(min-width: 650px)">
+                                <source srcset="{{ img.worktitle | downcase | slugify }}-l.jpg" media="(min-width: 925px)">
+                                <source srcset="{{ img.worktitle | downcase | slugify }}-m.jpg" media="(min-width: 920px)">
+                                <source srcset="{{ img.worktitle | downcase | slugify }}-s.jpg" media="(min-width: 650px)">
                         <!--[if IE 9]>
                             </video>
                         <![endif]-->
-                        <img srcset="{{ site.url }}{{ site.images }}{{ img.worktitle | downcase | slugify }}.jpg" alt="{{ work.title }}" class="module__image--img">
+                        <img srcset="{{ img.worktitle | downcase | slugify }}.jpg" alt="{{ work.title }}" class="module__image--img">
                     </picture>
                 </div>
             {% endfor %}
