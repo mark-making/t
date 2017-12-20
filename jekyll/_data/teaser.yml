@@ -1,6 +1,10 @@
 teaser:
-  URL: the-life-of-earth
-  IMG: teaser-earth.png
-  Title: New release
-  Intro: "The life of earth<br>from space<small>Delve into the planet’s extraordinary<br>4.5 billion year old history as never seen before.</small>"
   BGC: transparent
+  IMG: teaser-earth.png
+  Intro: |-
+    The life of earth
+    from space
+    <small>Delve into the planet’s extraordinary
+    4.5 billion year old history as never seen before.</small>
+  URL: The Real T. rex with Chris Packham
+  title: The Real T. rex with Chris Packham
