@@ -156,7 +156,7 @@ collections: # A list of collections the CMS should be able to edit
             description: "Edit content"
             widget: object
             fields:
-              - {label: URL, name: URL, widget: string}
+              - {label: URL, name: URL, widget: relation, collection: work, searchFields: title, valueField: title }
               - {label: Image, name: IMG, widget: image}
               - {label: Title, name: title, widget: string}
               - {label: Introduction, name: Intro, widget: markdown}
