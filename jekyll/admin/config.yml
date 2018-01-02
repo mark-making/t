@@ -121,6 +121,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - label: People
             name: people
+            description: "The people"
             widget: "list"
             fields:
               - label: Person
@@ -169,6 +170,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "pages"
     label: "Pages"
+    description: "The main pages"
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
