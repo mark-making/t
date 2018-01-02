@@ -253,14 +253,13 @@ module.exports = function(grunt) {
     );
 
     grunt.registerTask('build',     [
-                                        'htmlmin:dist',
-                                        'sass:dist',
+                                        'newer:htmlmin:dist',
+                                        'newer:sass:dist',
                                         'autoprefixer:dist',
                                         'concat',
                                         'uglify:dist',
-                                        'imagemin',
-                                        'copy',
-                                        'growl:dist'
+                                        'newer:imagemin',
+                                        'copy'
                                     ]
     );
 
