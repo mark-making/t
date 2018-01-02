@@ -27,7 +27,7 @@
           <!--[if IE 9]>
               </video>
           <![endif]-->
-          <img srcset="{{ site.url }}{{ site.images }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg" alt="{{ page.title | downcase | slugify }}" class="module__image--img">
+          <img srcset="{{ site.url }}{{ site.images }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}-mobile.jpg" alt="{{ page.title | downcase | slugify }}" class="module__image--img">
       </picture>
   </section>
 {% elsif page.carousel == true and page.loop == true %}
