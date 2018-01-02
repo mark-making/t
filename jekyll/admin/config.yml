@@ -177,16 +177,20 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - name: "home"
         label: "Homepage"
-        file: "jekyll/_data/page-content.yml"
+        file: "jekyll/_data/content-home.yml"
         fields:
-          - label: "Homepage headings"
-            name: home_heading
+          - label: "Headings"
+            name: heading
             widget: "object"
             fields:
               - {label: "Big heading", name: "Big", widget: "markdown"}
               - {label: "Small heading", name: "Small", widget: "markdown"}
-          - label: "About headings"
-            name: about_heading
+      - name: "about"
+        label: "About"
+        file: "jekyll/_data/content-about.yml"
+        fields:
+          - label: "Headings"
+            name: heading
             widget: "object"
             fields:
               - {label: "Big heading", name: "Big", widget: "markdown"}

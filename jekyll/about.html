@@ -19,10 +19,10 @@ carousel: true
 
     <article class="article">
         <h1 class="article__heading">
-          {{ site.data.page-content.about_heading.Big | newline_to_br }}
+          {{ site.data.content-about.heading.Big | newline_to_br }}
         </h1>
         <p>
-          {{ site.data.page-content.about_heading.Small | newline_to_br }}
+          {{ site.data.content-about.heading.Small | newline_to_br }}
         </p>
     </article>
 
@@ -38,8 +38,8 @@ carousel: true
       <hr class="heading-group__break">
     </header>
 
-  	<ul class="members" aria-label="{{ site.title }} team members">
-  		{% include /global/team-listing.html %}
-  	</ul>
+    <ul class="members" aria-label="{{ site.title }} team members">
+      {% include /global/team-listing.html %}
+    </ul>
 
 </section>
