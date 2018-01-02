@@ -180,7 +180,17 @@ collections: # A list of collections the CMS should be able to edit
         file: "jekyll/_data/page-content.yml"
         fields:
           - label: "Headings"
-            name: heading
+            name: home_heading
+            widget: "object"
+            fields:
+              - {label: "Big heading", name: "Big", widget: "markdown"}
+              - {label: "Small heading", name: "Small", widget: "markdown"}
+      - name: "about"
+        label: "About"
+        file: "jekyll/_data/page-content.yml"
+        fields:
+          - label: "Headings"
+            name: about_heading
             widget: "object"
             fields:
               - {label: "Big heading", name: "Big", widget: "markdown"}
