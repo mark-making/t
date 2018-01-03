@@ -9,7 +9,7 @@
         <!--[if IE 9]>
             </video>
         <![endif]-->
-        <img srcset="{{ site.url }}{{ site.images }}{{ work.title | downcase | slugify }}.jpg" alt="{{ work.title }}" class="module__image--img">
+        <img srcset="{{ site.url }}{{ site.images }}{{ work.title | downcase | slugify }}-mobile.jpg" alt="{{ work.title }}" class="module__image--img">
     </picture>
     {% if page.class == 'work-overview' %}
             <div class="module__content--meta-reveal {{ work.title | downcase | slugify}}">
