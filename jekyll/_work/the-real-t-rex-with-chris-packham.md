@@ -1,4 +1,5 @@
 ---
+primary_colour: "rgb(235,202,145)"
 order_page: 2
 feature: true
 layout: work-single

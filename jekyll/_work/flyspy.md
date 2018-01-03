@@ -1,4 +1,6 @@
 ---
+primary_colour: "rgb(112,154,109)"
+light_on_dark: true
 order_page: 4
 layout: work-single
 title: FLYSPY

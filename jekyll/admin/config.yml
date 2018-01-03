@@ -32,6 +32,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Static image?", name: img, widget: boolean, default: true}
       - {label: "Order", name: "order_page", widget: "number", valueType: "int", min: 1}
       - {label: "Producer", name: "producer", widget: "text"}
+      - {label: "Item colour", name: primary_colour, widget: string}
+      - {label: "White text on dark background?", name: light_on_dark, widget: boolean, default: false}
       - label: Schema
         name: schema
         required: false

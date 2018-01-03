@@ -12,7 +12,7 @@
         <img srcset="{{ site.url }}{{ site.images }}{{ work.title | downcase | slugify }}-mobile.jpg" alt="{{ work.title }}" class="module__image--img">
     </picture>
     {% if page.class == 'work-overview' %}
-            <div class="module__content--meta-reveal {{ work.title | downcase | slugify}}">
+            <div class="module__content--meta-reveal {{ work.title | downcase | slugify}} {% if work.light_on_dark %}light_on_dark{% endif %}" style="background-color:{{ work.primary_colour }};">
                 {% if work.role %}
                     <h3 class="module__content--title">{{ work.role }}</h3>
                 {% endif %}
@@ -32,7 +32,7 @@
                 </ul>
             </div>
     {% endif %}
-    <section class="module__content {{ work.title | downcase | slugify}}">
+    <section class="module__content {{ work.title | downcase | slugify}} {% if work.light_on_dark %}light_on_dark{% endif %}" style="background-color:{{ work.primary_colour }}">
         <div class="dt">
             <div class="dt-c">
                 <div class="module__content--meta-default">

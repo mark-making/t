@@ -1,4 +1,6 @@
 ---
+primary_colour: "rgb(16,127,201)"
+light_on_dark: true
 order_page: 4
 layout: work-single
 title: "Flyride 4D"

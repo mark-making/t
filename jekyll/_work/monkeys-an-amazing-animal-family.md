@@ -1,4 +1,6 @@
 ---
+primary_colour: "rgb(155,155,155)"
+light_on_dark: true
 order_page: 4
 layout: work-single
 title: 'Monkeys: An Amazing Animal Family'
