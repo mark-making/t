@@ -25,7 +25,7 @@ layout: default
                 <!--
                     Generate a small description
                 -->
-                {% capture short_desc %}{% contentblock article %}{% endcapture %}
+                {% capture short_desc %}{{ content }}{% endcapture %}
                 <meta itemprop="description" content="{{ short_desc | truncatewords: 18 | strip_html }}">
                 <!--
                     Role
@@ -88,7 +88,7 @@ layout: default
             -->
             <article class="article">
                 <section itemprop="text">
-                    {% contentblock article %}
+                    {{ content }}
                 </section>
             </article>
         </section>
@@ -96,10 +96,6 @@ layout: default
             Article meta
         -->
         {% include /work/information_bar.html %}
-        <!--
-        Article images
-        {% include /work/information_bar.html %}
-        -->
         <!--
             Outward path to all work
         -->

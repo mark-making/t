@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
     description: >
       This is where the work posts live.
     folder: "jekyll/_work" # The path to the folder where the documents are stored
-    extension: "html"
+    extension: "md"
     sort: "date:desc" # Default is title:asc
     create: true
     delete: true
