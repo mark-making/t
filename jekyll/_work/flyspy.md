@@ -55,11 +55,6 @@ map:
   long: -0.127758
 date: 2017-12-12 12:10:34 +0000
 ---
-{% contentfor article %}
-    <h1 class="article__heading">
-        A young genius deviant uses a radio controlled drone fly with a camera in its head to spy on his ex-girlfriend.
-    </h1>
-    <p>
-      In this pioneering sci-fi drama, the first VR narrative film of its kind, the audience will be able to experience the full power of virtual reality as they are implanted inside the point of view of a microscopic spy-drone commanded by an obsessive stalker-geek.
-    </p>
-{% endcontentfor %}
+# A young genius deviant uses a radio controlled drone fly with a camera in its head to spy on his ex-girlfriend.
+
+In this pioneering sci-fi drama, the first VR narrative film of its kind, the audience will be able to experience the full power of virtual reality as they are implanted inside the point of view of a microscopic spy-drone commanded by an obsessive stalker-geek.

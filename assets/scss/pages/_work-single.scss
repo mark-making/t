@@ -3,140 +3,146 @@
 // Styleguide Pages - Work - Single
 
 .work-item {
-	overflow: visible;
-	@include max-width();
-	// Grid
-	@include media(s) {
-		padding: 0;
-		@include column(8);
-		@include push(2);
-		@include pull(2);
-	}
+  overflow: visible;
+  @include max-width();
+  // Grid
+  @include media(s) {
+  padding: 0;
+  @include column(8);
+  @include push(2);
+  @include pull(2);
+  }
 
-	text-align: center;
+  text-align: center;
 
 }
 
-.article {
-	@include column(12);
-	padding: 0 2em;
-	&__heading {
-		margin-top: 0;
-		font: {
-			family: inherit;
-			weight: 300;
-			size: 1.5em;
-		}
-		.internal-promo {
-			position: relative;
-			text-decoration: none;
-			transition: all .15s ease;
-			color: $talesmith-orange;
-			@include media(s) {
-				&:after {
-					content: "Role: " attr(data-show-details) "\A0\A0\A0\27E9";
-					transform: translateY(-90%) translateX(-50%) scale(.9);
-					opacity: 0;
-					transition: opacity .5s ease, transform .5s ease;
-					min-width: 20em;
-					position: absolute;
-					transform-origin: center bottom;
-					box-sizing: border-box;
-					font-size: 0.7em;
-					font-weight: 800;
-					padding: 1em;
-					text-align: center;
-					left: 50%;
-					background-color: darken($talesmith-orange,10%);
-					outline: solid 1px white;
-					outline-offset: -5px;
-				}
-				&:hover {
-					color: $white;
-					background-color: darken($talesmith-orange,10%);
-					&:after {
-						opacity: 1;
-						transform: translateY(-98%) translateX(-50%) scale(1);
-					}
-				}
-			}
-		}
-    a {
-      color: $talesmith-orange;
-    }
-	}
-  p {
-    text-align: left;
-    a {
-      color: $talesmith-orange;
-      text-decoration: none;
-    }    
-  }
-  blockquote {
-    position: relative;
-    margin: 30px 0 0;
-    padding: 1em .5em;
-    @include media(s) {
-      max-width: 80%;
-    }
-    p {
-      font: {
-  			family: 'Libre Baskerville', serif;
-        style: normal;
-        size: 110%;
+.work-single {
+  .article {
+    section {
+      @include column(12);
+      padding: 0 2em;
+      > h1 {
+        margin-top: 0;
+        font: {
+          family: inherit;
+          weight: 300;
+          size: 1.5em;
+        }
+        .internal-promo {
+          position: relative;
+          text-decoration: none;
+          transition: all .15s ease;
+          color: $talesmith-orange;
+          @include media(s) {
+            &:after {
+              content: "Role: " attr(data-show-details) "\A0\A0\A0\27E9";
+              transform: translateY(-90%) translateX(-50%) scale(.9);
+              opacity: 0;
+              transition: opacity .5s ease, transform .5s ease;
+              min-width: 20em;
+              position: absolute;
+              transform-origin: center bottom;
+              box-sizing: border-box;
+              font-size: 0.7em;
+              font-weight: 800;
+              padding: 1em;
+              text-align: center;
+              left: 50%;
+              background-color: darken($talesmith-orange,10%);
+              outline: solid 1px white;
+              outline-offset: -5px;
+            }
+            &:hover {
+              color: $white;
+              background-color: darken($talesmith-orange,10%);
+              &:after {
+                opacity: 1;
+                transform: translateY(-98%) translateX(-50%) scale(1);
+              }
+            }
+          }
+        }
+        a {
+          color: $talesmith-orange;
+        }
       }
-      margin: 0;
-      line-height: 150%;
-    }
-    cite {
-      text-align: left;
-      display: block;
-      font: {
-  			family: 'Lato', sans-serif;
-        style: normal;
+      p {
+        text-align: left;
+        a {
+          color: $talesmith-orange;
+          text-decoration: none;
+        }
       }
-      margin-top: .5em;
-      &:before {
-        content: '- ';
+      blockquote {
+        position: relative;
+        margin: 30px 0 0;
+        padding: 1em .5em;
+        @include media(s) {
+          max-width: 80%;
+        }
+        p {
+          font: {
+            family: 'Libre Baskerville', serif;
+            style: normal;
+            size: 110%;
+          }
+          margin: 0;
+          line-height: 150%;
+          strong {
+            text-align: left;
+            display: block;
+            font: {
+              family: 'Lato', sans-serif;
+              style: normal;
+              weight: 400;
+              size: 90%;
+            }
+            margin-top: .5em;
+            &:before {
+              content: '\2014\0020';
+            }
+          }
+        }
+        &:before {
+          font: {
+      			family: 'Libre Baskerville', serif;
+            style: normal;
+          }
+          color: $talesmith-orange;
+          position: absolute;
+          content: '\201C';
+          left: -0.5em;
+          top: 0;
+          vertical-align: middle;
+          line-height: 1;
+          font-size: 4em;
+        }
       }
-    }
-    &:before {
-      font: {
-  			family: 'Libre Baskerville', serif;
-        style: normal;
-      }
-      color: $talesmith-orange;
-      position: absolute;
-      content: '\201C';
-      left: -0.5em;
-      top: 0;
-      vertical-align: middle;
-      line-height: 1;
-      font-size: 4em;
     }
   }
 }
 
 .image-row {
-	&__heading {
-		text-align: center;
-		margin: 0;
-		font: {
-			family: 'Libre Baskerville', serif;
-			style: italic;
-			weight: 300;
-			size: 1.125em;
-		}
-		&.margin {
-			margin: 2em;
-		}
-	}
-	.owl-carousel {
-		margin-top: 2em;
-	}
-	&:last-child {
-		.owl-carousel {
-			margin: 0;
-		}
-	}
+  &__heading {
+  text-align: center;
+  margin: 0;
+  font: {
+  family: 'Libre Baskerville', serif;
+  style: italic;
+  weight: 300;
+  size: 1.125em;
+  }
+  &.margin {
+  margin: 2em;
+  }
+  }
+  .owl-carousel {
+  margin-top: 2em;
+  }
+  &:last-child {
+  .owl-carousel {
+  margin: 0;
+  }
+  }
 }
