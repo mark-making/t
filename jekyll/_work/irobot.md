@@ -1,4 +1,6 @@
 ---
+primary_colour: "rgb(107,33,94)"
+light_on_dark: true
 hero: false
 loop: false
 feature: false

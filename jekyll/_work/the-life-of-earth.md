@@ -1,4 +1,6 @@
 ---
+light_on_dark: true
+primary_colour: "rgb(14,34,58)"
 order_page: 1
 layout: work-single
 title: The life of Earth from space
