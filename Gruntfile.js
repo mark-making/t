@@ -120,6 +120,59 @@ module.exports = function(grunt) {
                 all: ['<%= dirs.assets %>/js/*.js']
             },
         // Images
+            // Resize
+            responsive_images: {
+              work: {
+                options: {
+                  engine: "im",
+                  sizes: [
+                    {
+                      aspectRatio: false,
+                      rename: false,
+                      width: 1000,
+                      height: 563,
+                      suffix: "-l",
+                      quality: 100
+                    },
+                    {
+                      aspectRatio: false,
+                      rename: false,
+                      width: 650,
+                      height: 366,
+                      suffix: "-m",
+                      quality: 90
+                    },
+                    {
+                      aspectRatio: false,
+                      rename: false,
+                      width: 650,
+                      height: 366,
+                      suffix: "-s",
+                      quality: 90
+                    },
+                    {
+                      aspectRatio: false,
+                      rename: false,
+                      width: 320,
+                      height: 320,
+                      suffix: "-mobile",
+                      quality: 90
+                    },
+                    {
+                      aspectRatio: false,
+                      rename: false,
+                      width: 880,
+                      height: 880,
+                      suffix: "-square",
+                      quality: 95
+                    }
+                  ]
+                },
+                files:  [
+                        { expand: true, cwd: '<%= dirs.assets %>/img/', src: '*.jpg', dest: '<%= dirs.serve %>/img/optimised/' }
+                        ]
+              }
+            },
             // Compression
             imagemin: {
                 svg: {
@@ -152,9 +205,9 @@ module.exports = function(grunt) {
                         progressive: true
                     },
                     files:  [
-                            { expand: true, cwd: '<%= dirs.assets %>/img/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/img/optimised/', ext: '.jpg' },
+                            { expand: true, cwd: '<%= dirs.serve %>/img/optimised/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/img/optimised/', ext: '.jpg' },
                             { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/video/', ext: '.jpg' }
-                            ],
+                            ]
                 }
             },
         // HTML
@@ -258,6 +311,7 @@ module.exports = function(grunt) {
                                         'autoprefixer:dist',
                                         'concat',
                                         'uglify:dist',
+                                        'newer:responsive_images',
                                         'newer:imagemin',
                                         'copy'
                                     ]
