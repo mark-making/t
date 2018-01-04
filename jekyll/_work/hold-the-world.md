@@ -6,7 +6,7 @@ loop: false
 feature: true
 img: true
 order_page: 3
-producer: 'Factory 42, in association with Dream Reality Interactive and Talesmith'
+producer: 'Factory 42, in assoc. with Dream Reality Interactive & Talesmith'
 cast:
   - name: Sir David Attenborough
 award: []
