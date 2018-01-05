@@ -21,6 +21,8 @@
     @include media(m) {
       flex: 0 0 auto;
       width: 50%;
+      float: left;
+      display: table-cell;
       &:hover {
         .module__content--meta-reveal {
           transform: translateY(0);
