@@ -16,15 +16,15 @@
   }
   &__half {
     flex: auto;
+    border: solid .5rem transparent;
     @include media(m) {
-      flex: 0 0 48%;
+      flex: 0 0 50%;
       &:hover {
         .module__content--meta-reveal {
           transform: translateY(0);
         }
       }
     }
-    margin: 1%;
     &__link-wrap {
       color: $talesmith-grey;
       text-decoration: none;
