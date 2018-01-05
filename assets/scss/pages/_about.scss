@@ -7,18 +7,6 @@
 .about-bio {
 
 	@include max-width();
-
-	// Grid
-	@include media(s) {
-		@include column(10);
-		@include push(1);
-		@include pull(1);
-	}
-	@include media(m) {
-		@include column(8);
-		@include push(2);
-		@include pull(2);
-	}
 	text-align: center;
 
 }
