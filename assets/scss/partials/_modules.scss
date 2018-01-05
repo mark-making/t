@@ -4,210 +4,6 @@
 //
 // Styleguide Organisms - Home Module
 
-// .module {
-//     overflow: auto;
-//     height: auto;
-//     display: block;
-//     float: left;
-//     width: 100%;
-//     padding: .5em;
-//     // Small screen
-//     @include media(s) {
-//         padding: .25em;
-//     }
-//     // Medium screen
-//     @include media(m) {
-//         padding: .5em;
-//     }
-//     .light_on_dark {
-//       * {
-//         color: white;
-//       }
-//     }
-//     &__half {
-//         @include column(12);
-//         position: relative;
-//         overflow: hidden;
-//         float: left;
-//         margin-bottom: .5em;
-//         // Small screen
-//         @include media(s) {
-//             margin: .5%;
-//             width: 49%;
-//             &:hover {
-//                 .module__image--img {
-//                     filter: grayscale(0);
-//                 }
-//                 .module__half__meta {
-//                     transform: translateX(0);
-//                 }
-//                 .module__content--meta-reveal {
-//                     transform: translateY(0);
-//                 }
-//                 .module__content--meta-default {
-//                 }
-//             }
-//         }
-//         &__link-wrap {
-//             text-decoration: none;
-//             display: block;
-//         }
-//         &--overview {
-//             min-height: inherit;
-//             height: inherit;
-//         }
-//     }
-//     &__content {
-//         position: relative;
-//         overflow: hidden;
-//         width: 100%;
-//         height: auto;
-//         min-height: 10em;
-//         z-index: 4;
-//         // Medium screen
-//         @include media(m) {
-//             min-height: 5em;
-//             height: 5em;
-//             &--meta-default,
-//             &--meta-reveal {
-//             }
-//             &--meta-default {
-//                 width: 70%;
-//                 float: left;
-//             }
-//             &--meta-reveal {
-//              transform: translateY(-8em);
-//             }
-//         }
-//         &--meta-reveal {
-//             padding: 1em 0;
-//             left: 0;
-//             top: 0;
-//             position: absolute;
-//             width: 100%;
-//             transition: transform .5s ease 5ms;
-//             .module__content--title {
-//                 margin: 0;
-//                 margin-bottom: .5em;
-//             }
-//         }
-//         &--tv {
-//             margin: 0;
-//             padding: 0 .5em;
-//             display: block;
-//             overflow: auto;
-//             &--producer,
-//             &--channel {
-//                 text-align: left;
-//                 display: block;
-//                 float: left;
-//                 font-size: .75em;
-//                 text-transform: uppercase;
-//                 margin-right: 1em;
-//                 color: $talesmith-grey;
-//                 span {
-//                     font-weight: 400;
-//                 }
-//             }
-//             &--producer {}
-//             &--channel {}
-//         }
-//         &--title {
-//             color: $talesmith-grey;
-//             text: {
-//                 transform: uppercase;
-//                 align: center;
-//             }
-//             margin: 0;
-//             padding: 1em;
-//             letter-spacing: 0.1em;
-//             display: block;
-//             // Medium screen
-//             @include media(m) {
-//                 padding: 0 .5em;
-//                 text-align: left;
-//             }
-//         }
-//         &--button {
-//             letter-spacing: 0.13em;
-//             padding: 1em 2.5em;
-//             width: 100%;
-//             display: inline-block;
-//             transition: background .5s ease 5ms;
-//             background-color: rgba(0,0,0,.05);
-//             &:hover {
-//               background-color: rgba(0,0,0,.25);
-//             }
-//             font: {
-//                 family: 'Lato', sans-serif;
-//                 weight: 900;
-//                 size: .75em;
-//             }
-//             text: {
-//                 transform: uppercase;
-//                 decoration: none;
-//                 align: center;
-//             }
-//             color: $talesmith-grey;
-//             position: absolute;
-//             left: 0;
-//             bottom: 0;
-//             line-height: 3em;
-//             // Small screen
-//             @include media(m) {
-//                 width: 30%;
-//                 padding: 2.5em 0;
-//                 margin: 0;
-//                 position: absolute;
-//                 top: 0;
-//                 right: 0;
-//                 bottom: 0;
-//                 left: inherit;
-//                 line-height: 2em;
-//             }
-//         }
-//     }
-//     &__image {
-//         display: block;
-//         overflow: hidden;
-//         &--img {
-//             display: block;
-//             vertical-align: middle;
-//             min-width: 100%;
-//             color: #3b3b3b;
-//             font-size: 1.5em;
-//             min-height: 10em;
-//             background-color: darkgrey;
-//             // This is horrible, only way to animate filters without using all is vendor prefixes
-//                 $timing: .5s ease .2s;
-//                 transition: -webkit-filter $timing;
-//                 transition: -moz-filter $timing;
-//                 transition: -ms-filter $timing;
-//                 transition: -o-filter $timing;
-//             // End horrible
-//
-//             // Small screen
-//             @include media(s) {
-//                 // filter: grayscale(1);
-//             }
-//         }
-//     }
-// }
-//
-// .module__half--front {
-//     .module__content--meta-default {
-//         position: relative;
-//     }
-//     &:first-child {
-//         float: left;
-//         margin-left: 0;
-//     }
-//     &:last-child {
-//         float: right;
-//         margin-right: 0;
-//     }
-// }
-
 .module {
   min-height: 400px;
   display: flex;
@@ -240,119 +36,110 @@
     }
   }
   &__image {
+    display: block;
+    overflow: hidden;
+    &--img {
       display: block;
-      overflow: hidden;
-      &--img {
-          display: block;
-          vertical-align: middle;
-          min-width: 100%;
-          width: 100%;
-          color: #3b3b3b;
-          font-size: 1.5em;
-          min-height: 10em;
-          background-color: darkgrey;
-          // This is horrible, only way to animate filters without using all is vendor prefixes
-              $timing: .5s ease .2s;
-              transition: -webkit-filter $timing;
-              transition: -moz-filter $timing;
-              transition: -ms-filter $timing;
-              transition: -o-filter $timing;
-          // End horrible
-
-          // Small screen
-          @include media(s) {
-              // filter: grayscale(1);
-          }
-      }
+      vertical-align: middle;
+      min-width: 100%;
+      width: 100%;
+      color: #3b3b3b;
+      font-size: 1.5em;
+      min-height: 10em;
+      background-color: darkgrey;
+      // This is horrible, only way to animate filters without using all is vendor prefixes
+        $timing: .5s ease .2s;
+        transition: -webkit-filter $timing;
+        transition: -moz-filter $timing;
+        transition: -ms-filter $timing;
+        transition: -o-filter $timing;
+      // End horrible
+    }
   }
   &__content {
-      display: flex;
-      justify-content: flex-end;
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      height: auto;
-      flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    @include media(s) {
+      flex-direction: row;
+    }
+    &--meta-default {
+      flex: 1 0 60%;
+      padding: 1em;
+      text-align: center;
       @include media(s) {
-        flex-direction: row;
+        text-align: left;
       }
-      &--meta-default {
-        flex: 1 0 60%;
-        padding: 1em;
-        text-align: center;
-        @include media(s) {
-          text-align: left;
+    }
+    &--title {
+      text: {
+        transform: uppercase;
+      }
+      margin: 0;
+      padding: 0;
+      letter-spacing: .1em;
+      display: block;
+    }
+    &--tv {
+      margin: 0.5em 0 0 0;
+      padding: 0;
+      display: block;
+      overflow: auto;
+      &--producer,
+      &--channel {
+        display: inline-block;
+        font-size: .7em;
+        text-transform: uppercase;
+        color: $talesmith-grey;
+        margin-right: 1em;
+        span {
+          font-weight: 400;
         }
       }
-      &--title {
-        text: {
-          transform: uppercase;
-        }
+      &.work-overview {
         margin: 0;
-        padding: 0;
-        letter-spacing: .1em;
-        display: block;
       }
-      &--tv {
-        margin: 0.5em 0 0 0;
-        padding: 0;
-        display: block;
-        overflow: auto;
-        &--producer,
-        &--channel {
-          display: inline-block;
-          font-size: .7em;
-          text-transform: uppercase;
-          color: $talesmith-grey;
-          margin-right: 1em;
-          span {
-            font-weight: 400;
-          }
-        }
-        &.work-overview {
+    }
+    &--button {
+      flex: 1;
+      width: 100%;
+      letter-spacing: 0.13em;
+      padding: 1.5em 1em;
+      transition: background .5s ease 5ms;
+      background-color: rgba(0,0,0,.05);
+      &:hover {
+        background-color: rgba(0,0,0,.25);
+      }
+      font: {
+          family: 'Lato', sans-serif;
+          weight: 900;
+          size: .7em;
+      }
+      text: {
+          transform: uppercase;
+          decoration: none;
+          align: center;
+      }
+    }
+    &--meta-reveal {
+      padding: 1em;
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      transition: transform .5s ease 5ms;
+      transform: translateY(0);
+      @include media(m) {
+        transform: translateY(-8em);
+      }
+      .module__content--title {
           margin: 0;
-        }
+          margin-bottom: .5em;
       }
-      &--button {
-        flex: 1;
-        width: 100%;
-        letter-spacing: 0.13em;
-        padding: 1.5em 1em;
-        transition: background .5s ease 5ms;
-        background-color: rgba(0,0,0,.05);
-        &:hover {
-          background-color: rgba(0,0,0,.25);
-        }
-        font: {
-            family: 'Lato', sans-serif;
-            weight: 900;
-            size: .7em;
-        }
-        text: {
-            transform: uppercase;
-            decoration: none;
-            align: center;
-        }
-      }
-      &--meta-reveal {
-          padding: 1em;
-          left: 0;
-          top: 0;
-          position: absolute;
-          width: 100%;
-          transition: transform .5s ease 5ms;
-          transform: translateY(0);
-          @include media(m) {
-            transform: translateY(-8em);
-          }
-          .module__content--title {
-              margin: 0;
-              margin-bottom: .5em;
-          }
-      }
-
-
-
+    }
   }
-
 }
