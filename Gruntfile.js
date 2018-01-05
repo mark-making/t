@@ -52,6 +52,9 @@ module.exports = function(grunt) {
             },
             // Autoprefixing
             autoprefixer: {
+                options: {
+                  browsers: ['last 2 versions', 'ie 8', 'ie 9']
+                },
                 dev: {
                     src:    '<%= dirs.serve %>/css/style.css',
                     dest:   '<%= dirs.serve %>/css/style.css'

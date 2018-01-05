@@ -9,6 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  width: 100%;
   .light_on_dark {
     * {
       color: white;
@@ -18,7 +19,8 @@
     flex: auto;
     border: solid .5rem transparent;
     @include media(m) {
-      flex: 0 0 50%;
+      flex: 0 0 auto;
+      width: 50%;
       &:hover {
         .module__content--meta-reveal {
           transform: translateY(0);
