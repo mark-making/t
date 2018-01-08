@@ -5,7 +5,7 @@ people:
         Talesmith produces.
       firstname: Martin
       gender: Male
-      image: /img/optimised/martin-williams-square.jpg
+      image: /img/optimised/martin-williams.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1546548/'
       jobtitle: CEO & Creative Director
       lastname: Williams
@@ -16,7 +16,7 @@ people:
         experienced than Ulla.
       firstname: Ulla
       gender: Female
-      image: /img/optimised/ulla-streib-square.jpg
+      image: /img/optimised/ulla-streib.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1455957/'
       jobtitle: COO
       lastname: Streib
@@ -28,7 +28,7 @@ people:
         (Discovery / Ch4 Producer).
       firstname: Ruth
       gender: Female
-      image: /img/optimised/ruth-roberts-square.jpg
+      image: /img/optimised/ruth-roberts.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1772070/'
       jobtitle: Development EP
       lastname: Roberts
@@ -39,7 +39,7 @@ people:
         at Passion Planet producing and running development.
       firstname: Gaby
       gender: Female
-      image: /img/optimised/gaby-bastyra-square.jpg
+      image: /img/optimised/gaby-bastyra.jpg
       imdb-profile: 'http://www.imdb.com/name/nm3282891/'
       jobtitle: Head of Development
       lastname: Bastyra
@@ -50,7 +50,7 @@ people:
         spreadsheet at.
       firstname: Fiona
       gender: Female
-      image: /img/optimised/fiona-mcdonald-square.jpg
+      image: /img/optimised/fiona-mcdonald.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1707253/'
       jobtitle: Line Producer
       lastname: McDonald
@@ -62,7 +62,7 @@ people:
         considerable talent.
       firstname: Dom
       gender: Male
-      image: /img/optimised/dom-walter-square.jpg
+      image: /img/optimised/dom-walter.jpg
       imdb-profile: 'http://www.imdb.com/name/nm1707253/'
       jobtitle: Assistant Producer
       lastname: Walter
@@ -74,7 +74,7 @@ people:
         broadcasters.
       firstname: Will
       gender: Male
-      image: /img/optimised/will-benson-square.jpg
+      image: /img/optimised/will-benson.jpg
       imdb-profile: 'http://www.imdb.com/name/nm6491341/""'
       jobtitle: Producer
       lastname: Benson
