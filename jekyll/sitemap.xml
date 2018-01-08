@@ -6,7 +6,7 @@ layout: null
 	{% for page in site.pages %}
 		{% if page.url != "/private/" %}
 			<url>
-				<loc>{{ site.url }}{{ page.url }}</loc>
+				<loc>https://talesmith.tv{{ page.url }}</loc>
 				<changefreq>monthly</changefreq>
 				<priority>1.0</priority>
 			</url>
@@ -14,7 +14,7 @@ layout: null
 	{% endfor %}
 	{% for work in site.work %}
 		<url>
-			<loc>{{ site.url }}{{ work.url }}</loc>
+			<loc>https://talesmith.tv{{ work.url }}</loc>
 			<changefreq>monthly</changefreq>
 			<priority>0.5</priority>
 		</url>

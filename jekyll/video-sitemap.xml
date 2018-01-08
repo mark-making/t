@@ -5,10 +5,10 @@ layout: null
 	{% for page in site.pages %}
 		{% if page.hero == true %}
 			<url>
-				<loc>{{ site.url }}{{ page.url }}</loc>
+				<loc>https://talesmith.tv{{ page.url }}</loc>
 				<video:video>
 					<video:thumbnail_loc>
-						{{ site.url }}{{ site.video }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg
+						https://talesmith.tv{{ site.video }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg
 					</video:thumbnail_loc>
 					<video:title>
 						{{page.title}}
@@ -17,7 +17,7 @@ layout: null
 						{{page.title}}
                 	</video:description>
                 	<video:content_loc>
-                		{{ site.url }}{{ site.video }}{{ page.title | downcase | slugify }}.mp4
+                		https://talesmith.tv{{ site.video }}{{ page.title | downcase | slugify }}.mp4
                 	</video:content_loc>
 					{% if page.published %}
 						<video:publication_date>
@@ -31,10 +31,10 @@ layout: null
 	{% for work in site.work %}
 		{% if work.hero == true %}
 			<url>
-				<loc>{{ site.url }}{{ work.url }}</loc>
+				<loc>https://talesmith.tv{{ work.url }}</loc>
 				<video:video>
 					<video:thumbnail_loc>
-						{{ site.url }}{{ site.video }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg
+						https://talesmith.tv{{ site.video }}{% if work.title %}{{ work.title | downcase | slugify }}{% else %}{{ page.title | downcase | slugify }}{% endif %}.jpg
 					</video:thumbnail_loc>
 					<video:title>
 						{{work.title}}
@@ -43,7 +43,7 @@ layout: null
 						{{work.title}}
 					</video:description>
                 	<video:content_loc>
-                		{{ site.url }}{{ site.video }}{{ work.title | downcase | slugify }}.mp4
+                		https://talesmith.tv{{ site.video }}{{ work.title | downcase | slugify }}.mp4
                 	</video:content_loc>
                 	{% if work.published %}
 						<video:publication_date>
