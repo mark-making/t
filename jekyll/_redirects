@@ -1,7 +1,7 @@
 # /work/talesmith/*  /work/:splat
 
 # Admin
-/admin https://talesmith.tv/admin/ 200
+/admin /admin/ 200
 
 # Root
 http://talesmith.tv/ https://talesmith.tv/ 301
