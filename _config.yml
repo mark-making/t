@@ -15,7 +15,7 @@ muted: false
 # //
 # // Where things are
 # //
-url: "https://talesmith.tv"
+url: "//talesmith.tv"
 source: ./jekyll
 destination: ./_site
 layouts_dir: /_layouts
