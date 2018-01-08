@@ -124,58 +124,58 @@ module.exports = function(grunt) {
             },
         // Images
             // Resize
-            responsive_images: {
-              work: {
-                options: {
-                  engine: "im",
-                  sizes: [
-                    {
-                      aspectRatio: false,
-                      rename: false,
-                      width: 1000,
-                      height: 563,
-                      suffix: "-l",
-                      quality: 100
-                    },
-                    {
-                      aspectRatio: false,
-                      rename: false,
-                      width: 650,
-                      height: 366,
-                      suffix: "-m",
-                      quality: 90
-                    },
-                    {
-                      aspectRatio: false,
-                      rename: false,
-                      width: 650,
-                      height: 366,
-                      suffix: "-s",
-                      quality: 90
-                    },
-                    {
-                      aspectRatio: false,
-                      rename: false,
-                      width: 320,
-                      height: 320,
-                      suffix: "-mobile",
-                      quality: 90
-                    },
-                    {
-                      aspectRatio: false,
-                      rename: false,
-                      width: 880,
-                      height: 880,
-                      suffix: "-square",
-                      quality: 95
-                    }
-                  ]
-                },
-                files:  [
-                        { expand: true, cwd: '<%= dirs.assets %>/img/', src: '*.jpg', dest: '<%= dirs.serve %>/img/optimised/' }
-                        ]
-              }
-            },
+              // responsive_images: {
+              //   work: {
+              //     options: {
+              //       engine: "im",
+              //       sizes: [
+              //         {
+              //           aspectRatio: false,
+              //           rename: false,
+              //           width: 1000,
+              //           height: 563,
+              //           suffix: "-l",
+              //           quality: 100
+              //         },
+              //         {
+              //           aspectRatio: false,
+              //           rename: false,
+              //           width: 650,
+              //           height: 366,
+              //           suffix: "-m",
+              //           quality: 90
+              //         },
+              //         {
+              //           aspectRatio: false,
+              //           rename: false,
+              //           width: 650,
+              //           height: 366,
+              //           suffix: "-s",
+              //           quality: 90
+              //         },
+              //         {
+              //           aspectRatio: false,
+              //           rename: false,
+              //           width: 320,
+              //           height: 320,
+              //           suffix: "-mobile",
+              //           quality: 90
+              //         },
+              //         {
+              //           aspectRatio: false,
+              //           rename: false,
+              //           width: 880,
+              //           height: 880,
+              //           suffix: "-square",
+              //           quality: 95
+              //         }
+              //       ]
+              //     },
+              //     files:  [
+              //             { expand: true, cwd: '<%= dirs.assets %>/img/', src: '*.jpg', dest: '<%= dirs.serve %>/img/optimised/' }
+              //             ]
+              //   }
+              // },
             // Compression
             imagemin: {
                 svg: {
@@ -208,7 +208,7 @@ module.exports = function(grunt) {
                         progressive: true
                     },
                     files:  [
-                            { expand: true, cwd: '<%= dirs.serve %>/img/optimised/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/img/optimised/', ext: '.jpg' },
+                            { expand: true, cwd: '<%= dirs.serve %>/img/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/img/optimised/', ext: '.jpg' },
                             { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/video/', ext: '.jpg' }
                             ]
                 }
@@ -242,31 +242,39 @@ module.exports = function(grunt) {
             },
         // Copying
             copy: {
+                map: {
+                    files:  [
+                            { expand: true, cwd: '<%= dirs.assets %>/bower/smallworld.js/dist/', src: '*.json', dest: '<%= dirs.serve %>/js/' },
+                            { expand: true, cwd: '<%= dirs.assets %>/bower/smallworld.js/dist/', src: '*.json', dest: '<%= dirs.site %>/js/' },
+                            ],
+                },
                 fonts: {
                     files:  [
                             { expand: true, cwd: '<%= dirs.assets %>/fonts/', src: ['**'], dest: '<%= dirs.serve %>/fonts/' },
                             { expand: true, cwd: '<%= dirs.assets %>/fonts/', src: ['**'], dest: '<%= dirs.site %>/fonts/' }
                             ],
                 },
+                video: {
+                    files:  [
+                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.serve %>/img/' },
+                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.site %>/img/' },
+                            ],
+                },
                 images: {
                     files: [{
                         expand: true,
-                        cwd: '<%= dirs.serve %>/img/',
+                        cwd: '<%= dirs.assets %>/img/',
                         src: ['**'],
-                        dest: '<%= dirs.site %>/img/',
+                        dest: '<%= dirs.serve %>/img/',
                     }],
                 },
-                video: {
-                    files:  [
-                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.serve %>/img/optimised/' },
-                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.site %>/img/optimised/' },
-                            ],
-                },
-                map: {
-                    files:  [
-                            { expand: true, cwd: '<%= dirs.assets %>/bower/smallworld.js/dist/', src: '*.json', dest: '<%= dirs.serve %>/js/' },
-                            { expand: true, cwd: '<%= dirs.assets %>/bower/smallworld.js/dist/', src: '*.json', dest: '<%= dirs.site %>/js/' },
-                            ],
+                images_opt: {
+                    files: [{
+                        expand: true,
+                        cwd: '<%= dirs.serve %>/img/optimised/',
+                        src: ['**'],
+                        dest: '<%= dirs.site %>/img/optimised/',
+                    }],
                 },
             },
         // Tasks
@@ -314,9 +322,9 @@ module.exports = function(grunt) {
                                         'autoprefixer:dist',
                                         'concat',
                                         'uglify:dist',
-                                        'newer:responsive_images',
+                                        'copy',
                                         'newer:imagemin',
-                                        'copy'
+                                        'copy:images_opt',
                                     ]
     );
 
