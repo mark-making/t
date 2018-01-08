@@ -1,4 +1,4 @@
-# //
+  # //
 # // Meta
 # //
 title: "Talesmith"
@@ -34,11 +34,11 @@ collections:
   permalink: /work/:path/
  about:
   output: true
-  permalink: /about/:path/  
+  permalink: /about/:path/
 # //
 # // Handling Reading
 # //
-include: [ '.htaccess', 'humans.txt', 'robots.txt', '.htpasswd' ]
+include: [ '.htaccess', 'humans.txt', 'robots.txt', '.htpasswd', 'favicon.ico' ]
 keep_files: [ 'css', 'js', 'img', 'video', 'fonts' ]
 exclude:
   - Gulpfile.js

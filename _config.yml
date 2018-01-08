@@ -38,7 +38,7 @@ collections:
 # //
 # // Handling Reading
 # //
-include: [ '.htaccess', 'humans.txt', 'robots.txt', '.htpasswd' ]
+include: [ '.htaccess', 'humans.txt', 'robots.txt', '.htpasswd', 'favicon.ico' ]
 keep_files: [ 'css', 'js', 'img', 'video', 'fonts' ]
 exclude:
   - Gulpfile.js
