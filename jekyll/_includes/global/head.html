@@ -4,13 +4,12 @@
 	<title>
     {% if page.title == 'Talesmith' %}
       {{ site.title }}
-		{% elsif page.layout == 'team-member' %}
-			{{ page.fullname }} - {{ site.title }}
     {% else %}
       {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
     {% endif %}
   </title>
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.layout == 'team-member' %}{{ page.team-description }}{% else %}{{ site.description }}{% endif %}">
+	{% assign team_description = page.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncate: 160 %}
+	<meta name="description" content="{% if page.excerpt %}{{ team_description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- APP ICONS/FAVICON -->
 	{% include /global/meta-favicons.html %}
