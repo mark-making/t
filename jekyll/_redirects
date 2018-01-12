@@ -1,8 +1,5 @@
 # /work/talesmith/*  /work/:splat
 
-# Admin
-/admin /admin/ 200
-
 # Root
 http://talesmith.tv/ https://talesmith.tv/ 301
 
@@ -23,8 +20,19 @@ http://talesmith.tv/about/dom-walter/ https://talesmith.tv/about/dom-walter/ 301
 
 # Work items
 http://talesmith.tv/work/talesmith/flyspy/ https://talesmith.tv/work/flyspy/ 301
+http://talesmith.tv/work/flyspy/ https://talesmith.tv/work/flyspy/ 301
+
 http://talesmith.tv/work/talesmith/flyride-4D/ https://talesmith.tv/work/flyride-4D/ 301
+http://talesmith.tv/work/flyride-4D/ https://talesmith.tv/work/flyride-4D/ 301
+
 http://talesmith.tv/work/talesmith/hold-the-world/ https://talesmith.tv/work/hold-the-world/ 301
+http://talesmith.tv/work/hold-the-world/ https://talesmith.tv/work/hold-the-world/ 301
+
 http://talesmith.tv/work/talesmith/the-life-of-earth/ https://talesmith.tv/work/the-life-of-earth/ 301
+http://talesmith.tv/work/the-life-of-earth/ https://talesmith.tv/work/the-life-of-earth/ 301
+
 http://talesmith.tv/work/talesmith/monkeys-an-amazing-animal-family/ https://talesmith.tv/work/monkeys-an-amazing-animal-family/ 301
+http://talesmith.tv/work/monkeys-an-amazing-animal-family/ https://talesmith.tv/work/monkeys-an-amazing-animal-family/ 301
+
 http://talesmith.tv/work/talesmith/the-real-t-rex-with-chris-packham/ https://talesmith.tv/work/the-real-t-rex-with-chris-packham/ 301
+http://talesmith.tv/work/the-real-t-rex-with-chris-packham/ https://talesmith.tv/work/the-real-t-rex-with-chris-packham/ 301
