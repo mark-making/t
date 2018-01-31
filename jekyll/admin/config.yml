@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: release
 
-#publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 media_folder: "assets/img/"
 public_folder: "/img/optimised/"
