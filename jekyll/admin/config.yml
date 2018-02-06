@@ -121,24 +121,19 @@ collections: # A list of collections the CMS should be able to edit
         file: "jekyll/_data/team.yml"
         description: "Team members"
         fields:
-          - label: People
-            name: people
-            description: "The people"
-            widget: "object"
+          - label: Person
+            name: person
+            description: "Edit team members"
+            widget: "list"
             fields:
-              - label: Person
-                name: person
-                description: "Edit team members"
-                widget: object
-                fields:
-                  - {label: First name, name: firstname, widget: string}
-                  - {label: Last name, name: lastname, widget: string}
-                  - {label: Role, name: jobtitle, widget: string}
-                  - {label: Description, name: description, widget: markdown}
-                  - {label: Gender, name: gender, widget: select, options: [Male,Female,Other]}
-                  - {label: iMDB, name: imdb-profile, widget: string}
-                  - {label: LinkedIn, name: linkedin-profile, widget: string}
-                  - {label: Image, name: image, widget: image}
+              - {label: First name, name: firstname, widget: string}
+              - {label: Last name, name: lastname, widget: string}
+              - {label: Role, name: jobtitle, widget: string}
+              - {label: Description, name: description, widget: markdown}
+              - {label: Gender, name: gender, widget: select, options: [Male,Female,Other]}
+              - {label: iMDB, name: imdb-profile, widget: string}
+              - {label: LinkedIn, name: linkedin-profile, widget: string}
+              - {label: Image, name: image, widget: image}
       - name: "carousel"
         label: "Carousel"
         file: "jekyll/_data/carousel.yml"
