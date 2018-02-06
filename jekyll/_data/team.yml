@@ -1,81 +1,74 @@
 people:
-  - person:
-      description: >-
-        Martin is a director at heart and he’d like to direct everything
-        Talesmith produces.
-      firstname: Martin
-      gender: Male
-      image: /img/optimised/martin-williams.jpg
-      imdb-profile: 'http://www.imdb.com/name/nm1546548/'
-      jobtitle: CEO & Creative Director
-      lastname: Williams
-      linkedin-profile: 'https://www.linkedin.com/in/martin-williams-3230b07/'
-  - person:
-      description: >-
-        There aren’t many Directors of Production and Operations more
-        experienced than Ulla.
-      firstname: Ulla
-      gender: Female
-      image: /img/optimised/ulla-streib.jpg
-      imdb-profile: 'http://www.imdb.com/name/nm1455957/'
-      jobtitle: COO
-      lastname: Streib
-      linkedin-profile: 'https://www.linkedin.com/in/ulla-streib-038039a/'
-  - person:
-      description: >-
-        Ruth’s credits include David Attenborough Meets President Obama (BBC –
-        EMMY nominee / Director) and Into the Universe with Stephen Hawking
-        (Discovery / Ch4 Producer).
-      firstname: Ruth
-      gender: Female
-      image: /img/optimised/ruth-roberts.jpg
-      imdb-profile: 'http://www.imdb.com/name/nm1772070/'
-      jobtitle: Development EP
-      lastname: Roberts
-      linkedin-profile: 'https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/'
-  - person:
-      description: >-
-        Gaby joined Talesmith in June 2017 as Head of Development after 7 years
-        at Passion Planet producing and running development.
-      firstname: Gaby
-      gender: Female
-      image: /img/optimised/gaby-bastyra.jpg
-      imdb-profile: 'http://www.imdb.com/name/nm3282891/'
-      jobtitle: Head of Development
-      lastname: Bastyra
-      linkedin-profile: 'https://uk.linkedin.com/in/gabybastyra'
-  - person:
-      description: >-
-        Fearless Fiona has more broadcast credits that you can shake a
-        spreadsheet at.
-      firstname: Fiona
-      gender: Female
-      image: /img/optimised/fiona-mcdonald.jpg
-      imdb-profile: 'http://www.imdb.com/name/nm1707253/'
-      jobtitle: Line Producer
-      lastname: McDonald
-      linkedin-profile: 'https://www.linkedin.com/in/fiona-mcdonald-8b319828/'
-  - person:
-      description: >-
-        From InDesign artwork and shooting taster tapes to wrangling Manchu
-        falconers and running slack lining courses, there is no end to Dom’s
-        considerable talent.
-      firstname: Dom
-      gender: Male
-      image: /img/optimised/dom-walter.jpg
-      imdb-profile: 'http://www.imdb.com/name/nm1707253/'
-      jobtitle: Assistant Producer
-      lastname: Walter
-      linkedin-profile: 'https://www.linkedin.com/in/dom-walter-a323718b/'
-  - person:
-      description: >-
-        Will is a highly versatile specialist factual Producer with extensive
-        experience making science and wildlife documentaries for major UK and US
-        broadcasters.
-      firstname: Will
-      gender: Male
-      image: /img/optimised/will-benson.jpg
-      imdb-profile: 'http://www.imdb.com/name/nm6491341/""'
-      jobtitle: Producer
-      lastname: Benson
-      linkedin-profile: 'https://www.linkedin.com/in/will-benson-37012b11/'
+  - firstname: Martin
+    lastname: Williams
+    description: >-
+      Martin is a director at heart and he’d like to direct everything
+      Talesmith produces.
+    jobtitle: CEO & Creative Director
+    gender: Male
+    image: /img/optimised/martin-williams.jpg
+    imdb-profile: 'http://www.imdb.com/name/nm1546548/'
+    linkedin-profile: 'https://www.linkedin.com/in/martin-williams-3230b07/'
+  - firstname: Ulla
+    lastname: Streib
+    description: >-
+      There aren’t many Directors of Production and Operations more
+      experienced than Ulla.
+    jobtitle: COO
+    gender: Female
+    image: /img/optimised/ulla-streib.jpg
+    imdb-profile: http://www.imdb.com/name/nm1455957/'
+    linkedin-profile: 'https://www.linkedin.com/in/ulla-streib-038039a/'
+  - firstname: Ruth
+    lastname: Roberts
+    description: >-
+      Ruth’s credits include David Attenborough Meets President Obama (BBC –
+      EMMY nominee / Director) and Into the Universe with Stephen Hawking
+      (Discovery / Ch4 Producer).
+    jobtitle: Development EP
+    gender: Female
+    image: /img/optimised/ruth-roberts.jpg
+    imdb-profile: 'http://www.imdb.com/name/nm1772070/'
+    linkedin-profile: 'https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/'
+  - firstname: Gaby
+    lastname: Bastyra
+    description: >-
+      Gaby joined Talesmith in June 2017 as Head of Development after 7 years
+      at Passion Planet producing and running development.
+    jobtitle: Head of Development
+    gender: Female
+    image: /img/optimised/gaby-bastyra.jpg
+    imdb-profile: 'http://www.imdb.com/name/nm3282891/'
+    linkedin-profile: 'https://uk.linkedin.com/in/gabybastyra'
+  - firstname: Fiona
+    lastname: McDonald
+    description: >-
+      Fearless Fiona has more broadcast credits that you can shake a
+      spreadsheet at.
+    jobtitle: Line Producer
+    gender: Female
+    image: /img/optimised/fiona-mcdonald.jpg
+    imdb-profile: 'http://www.imdb.com/name/nm1707253/'
+    linkedin-profile: 'https://www.linkedin.com/in/fiona-mcdonald-8b319828/'
+  - firstname: Dom
+    lastname: Walter
+    description: >-
+      From InDesign artwork and shooting taster tapes to wrangling Manchu
+      falconers and running slack lining courses, there is no end to Dom’s
+      considerable talent.
+    jobtitle: Assistant Producer
+    gender: Male
+    image: /img/optimised/dom-walter.jpg
+    imdb-profile: 'http://www.imdb.com/name/nm1707253/'
+    linkedin-profile: 'https://www.linkedin.com/in/dom-walter-a323718b/'
+  - firstname: Will
+    lastname: Benson
+    description: >-
+      Will is a highly versatile specialist factual Producer with extensive
+      experience making science and wildlife documentaries for major UK and US
+      broadcasters.
+    jobtitle: Producer
+    gender: Male
+    image: /img/optimised/will-benson.jpg
+    imdb-profile: 'http://www.imdb.com/name/nm6491341/'
+    linkedin-profile: 'https://www.linkedin.com/in/will-benson-37012b11/'
