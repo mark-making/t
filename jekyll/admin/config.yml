@@ -124,7 +124,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: People
             name: people
             description: "The people"
-            widget: "list"
+            widget: "object"
             fields:
               - label: Person
                 name: person
