@@ -122,7 +122,7 @@ collections: # A list of collections the CMS should be able to edit
         description: "Team members"
         fields:
           - label: Person
-            name: person
+            name: people.person
             description: "Edit team members"
             widget: "list"
             fields:
