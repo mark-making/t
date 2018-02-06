@@ -5,7 +5,7 @@ feature: true
 img: true
 order_page: 2
 producer: Talesmith / Cineflix
-primary_colour: 'rgb(235,202,185)'
+primary_colour: 'rgb(235,202,145)'
 light_on_dark: false
 schema:
   - name: producer
