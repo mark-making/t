@@ -1,24 +1,24 @@
 <header class="heading-group">
     <figure class="heading-group__image">
-      <img src="{{ item.person.image }}" alt="{{ item.person.firstname }} {{ item.person.lastname }}" title="{{ item.person.firstname }} {{ item.person.lastname }}" width="500" height="500">
+      <img src="{{ item.image }}" alt="{{ item.firstname }} {{ item.lastname }}" title="{{ item.firstname }} {{ item.lastname }}" width="500" height="500">
     </figure>
-    <h1 class="heading-group__heading">{{ item.person.firstname }}&nbsp;{{ item.person.lastname }}</h1>
-    <h2 class="heading-group__sub-heading">{{ item.person.jobtitle }}</h2>
+    <h1 class="heading-group__heading">{{ item.firstname }}&nbsp;{{ item.lastname }}</h1>
+    <h2 class="heading-group__sub-heading">{{ item.jobtitle }}</h2>
     <hr class="heading-group__break">
     <ul class="profiles">
       <li class="email-address">
-        {{ item.person.firstname | downcase }}.{{ item.person.lastname | downcase }}{{ site.email-obfuscated }}
+        {{ item.firstname | downcase }}.{{ item.lastname | downcase }}{{ site.email-obfuscated }}
       </li>
-      {% if item.person.imdb-profile %}
+      {% if item.imdb-profile %}
       <li class="imdb-profile">
-        <a href="{{ item.person.imdb-profile }}">
+        <a href="{{ item.imdb-profile }}">
           IMDb
         </a>
       </li>
       {% endif %}
-      {% if item.person.linkedin-profile %}
+      {% if item.linkedin-profile %}
       <li class="linkedin-profile">
-        <a href="{{ item.person.linkedin-profile }}">
+        <a href="{{ item.linkedin-profile }}">
           LinkedIn
         </a>
       </li>
@@ -27,7 +27,7 @@
 </header>
 <article class="article">
     <h1 class="article__heading">
-      {{ item.person.description }}
+      {{ item.description }}
     </h1>
     {{ content }}
 </article>
