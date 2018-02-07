@@ -30,48 +30,48 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Loop the hero video?", name: loop, widget: boolean, default: false}
       - {label: "Feature on the homepage?", name: feature, widget: boolean, default: false}
       - {label: "Static image?", name: img, widget: boolean, default: true}
-      - {label: "Order", name: "order_page", widget: "number", valueType: "int", min: 1}
-      - {label: "Producer", name: "producer", widget: "text"}
-      - {label: "Item colour", name: primary_colour, widget: string}
+      - {label: "Order", name: order_page, widget: number, valueType: int, min: 1}
+      - {label: "Producer", name: producer, widget: text}
+      - {label: "Item colour", name: primary_colour, widget: string, default: "rgb(XXX,XXX,XXX)"}
       - {label: "White text on dark background?", name: light_on_dark, widget: boolean, default: false}
       - label: Schema
         name: schema
         required: false
         widget: list
         fields:
-          - {label: Type, name: name, widget: string, default: "Director"}
+          - {label: "Type", name: name, widget: select, options: ["Director", "Producer", "Assoc. producer", "Writer"]}
       - label: Cast
         name: cast
         required: false
         widget: list
         fields:
-          - {label: Full name, name: name, widget: string}
+          - {label: "Full name", name: name, widget: string}
       - label: Awards
         name: award
         required: false
         widget: list
         fields:
-          - {label: Award name, name: name, widget: text}
-          - {label: Year, name: year, widget: text}
-          - {label: Category, name: category, widget: text}
-          - {label: Outcome, name: outcome, widget: select, options: ["Nomination", "Winner"]}
-          - {label: Web address, name: url, widget: text}
+          - {label: "Award name", name: name, widget: text}
+          - {label: "Year", name: year, widget: string}
+          - {label: "Category", name: category, widget: string}
+          - {label: "Outcome", name: outcome, widget: string}
+          - {label: "Web address", name: url, widget: string}
       - label: Channels
         name: channel
         widget: list
         fields:
-          - {label: Channel name, name: name, widget: text}
-          - {label: "Text only?", name: text-only, widget: text}
+          - {label: Channel name, name: name, widget: select, options: ["VR experience", "Cinema", "Sky", "BBC", "CBC", "France TV", "Smithsonian Networks", "Zee Entertainment"]}
+          - {label: "Text only?", name: text-only, widget: select, options: ["Yes", "No"]}
       - label: Map
         name: map
         widget: list
         fields:
-          - {label: Location, name: name, widget: text}
-          - {label: Latitude, name: lat, widget: text}
-          - {label: Longitude, name: long, widget: text}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "work-single"}
-      - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Location, name: name, widget: string}
+          - {label: Latitude, name: lat, widget: string}
+          - {label: Longitude, name: long, widget: string}
+      - {label: "Title", name: title, widget: string, tagname: h1}
+      - {label: "Layout", name: layout, widget: "hidden", default: "work-single"}
+      - {label: "Body", name: body, widget: "markdown"}
 
   - name: "about"
     label: "Team" # Used in the UI, ie.: "New Post"
