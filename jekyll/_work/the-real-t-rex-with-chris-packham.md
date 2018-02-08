@@ -1,32 +1,31 @@
 ---
-primary_colour: "rgb(235,202,145)"
-order_page: 2
-feature: true
-layout: work-single
-title: The Real T. rex with Chris Packham
-schema:
- - name: producer
 hero: false
+feature: true
 img: true
+order_page: 2
 producer: Talesmith / Cineflix
+primary_colour: 'rgb(235,202,145)'
+schema:
+  - name: Producer
 channel:
-- name: BBC
-- name: CBC
-- name: France TV
+  - name: BBC
+  - name: CBC
+  - name: France TV
 map:
-- name: Britain
-  lat: 55.378051
-  long: -3.435973
-- name: Germany
-  lat: 51.165691
-  long: 10.451526
-- name: Canada
-  lat: 56.130366
-  long: -106.346771
-- name: USA
-  lat: 37.09024
-  long: -95.712891
-date: 2017-12-12 11:30:01 +0000
+  - lat: 55.378051
+    long: -3.435973
+    name: Britain
+  - lat: 51.165691
+    long: 10.451526
+    name: Germany
+  - lat: 56.130366
+    long: -106.346771
+    name: Canada
+  - lat: 37.09024
+    long: -95.712891
+    name: USA
+title: The Real T. rex with Chris Packham
+layout: work-single
 ---
 # Talesmith and Cineflix to produce myth-busting documentary The Real _T. rex_ with Mr. Chris Packham (US – Rediscovering _T. rex_) for BBC, CBC and France TV
 
