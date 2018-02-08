@@ -42,7 +42,7 @@ layout: default
                 FOR LOOP through author,producer,director
             -->
             {% for item in page.schema %}
-                <div itemprop="{{ item.name }} | downcase" itemscope itemtype="http://schema.org/Person">
+                <div itemprop="{{ item.name | downcase }}" itemscope itemtype="http://schema.org/Person">
                     <meta itemprop="name" content="Martin Williams">
                 </div>
             {% endfor %}
