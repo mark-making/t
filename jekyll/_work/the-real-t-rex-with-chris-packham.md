@@ -3,7 +3,7 @@ hero: false
 feature: true
 img: true
 order_page: 2
-producer: Talesmith / Cineflix
+producer: Talesmith / Talesmith
 primary_colour: 'rgb(235,202,145)'
 schema:
   - name: Producer
