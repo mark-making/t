@@ -36,5 +36,8 @@
     "grunt-responsive-images": "^1.10.1",
     "grunt-sass": "^2.1.0",
     "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
   }
 }
