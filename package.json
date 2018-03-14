@@ -16,7 +16,8 @@
   },
   "keywords": [
     "jekyll",
-    "mark-making"
+    "mark-making",
+    "netlify"
   ],
   "devDependencies": {
     "grunt": "^1.0.2",
