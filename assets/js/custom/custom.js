@@ -9,6 +9,7 @@ $(function() {
             owl.owlCarousel({
                 loop: true,
                 nav : false,
+                dots: false,
                 autoheight: true,
                 autoplay: true,
                 autoplayTimeout: 3500,
