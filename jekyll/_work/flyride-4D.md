@@ -1,21 +1,22 @@
 ---
-primary_colour: "rgb(16,127,201)"
-light_on_dark: true
-order_page: 4
-layout: work-single
-title: "Flyride 4D"
-schema:
- - name: "director"
- - name: "producer"
 hero: false
+feature: false
 img: true
-producer: "Talesmith / Moonraker VFX"
+order_page: 4
+producer: Talesmith / Moonraker VFX
+primary_colour: 'rgb(16,127,201)'
+light_on_dark: true
+schema:
+  - name: director
+  - name: producer
 channel:
- - name: "VR experience"
+  - name: VR experience
 map:
- - name: Changbaishan National Park
-   lat: 42.051366
-   long: 127.777840
+  - lat: 42.051366
+    long: 127.77784
+    name: Changbaishan National Park
+title: Flyride Changbaishan 4D
+layout: work-single
 ---
 # Talesmith and Moonraker VFX have come together to set-up special projects vehicle FLYRIDE to produce a five-minute film for the new visitor's centre at Changbaishan National Park in China.
 
