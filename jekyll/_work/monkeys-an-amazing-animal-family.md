@@ -1,37 +1,36 @@
 ---
-primary_colour: "rgb(155,155,155)"
-light_on_dark: true
-order_page: 4
-layout: work-single
-title: 'Monkeys: An Amazing Animal Family'
-schema:
-- name: producer
 hero: false
+feature: false
 img: true
-award:
-- name: Grierson trust
-  year: 2017
-  outcome: Nomination
-  category: Best Natural History Documentary
-  url: http://www.griersontrust.org/
+order_page: 7
 producer: Offspring Films developed in association with Talesmith
+primary_colour: 'rgb(155,155,155)'
+light_on_dark: true
+schema:
+  - name: producer
+award:
+  - category: Best Natural History Documentary
+    name: Grierson trust
+    outcome: Nomination
+    url: 'http://www.griersontrust.org/'
+    year: 2017
 channel:
-- name: Sky
-  url: "#"
+  - name: Sky
 map:
-- name: Madgascar
-  lat: -18.766947
-  long: 46.869107
-- name: Borneo
-  lat: 0.961883
-  long: 114.55485
-- name: Columbia
-  lat: 4.570868
-  long: -74.297333
-- name: Congo
-  lat: -0.228021
-  long: 15.827659
-date: 2017-12-12 12:10:34 +0000
+  - lat: -18.766947
+    long: 46.869107
+    name: Madgascar
+  - lat: 0.961883
+    long: 114.55485
+    name: Borneo
+  - lat: 4.570868
+    long: -74.297333
+    name: Columbia
+  - lat: -0.228021
+    long: 15.827659
+    name: Congo
+title: 'Monkeys: An Amazing Animal Family'
+layout: work-single
 ---
 # In this series biologist Patrick Aryee takes us on a journey through time, to retrace the primate family’s astonishing rise to power through the twists and turns of its family tree.
 
