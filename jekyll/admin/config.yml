@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
         name: channel
         widget: list
         fields:
-          - {label: Channel name, name: name, widget: select, options: ["VR experience", "Cinema", "Sky", "BBC", "CBC", "France TV", "Smithsonian Networks", "Zee Entertainment"]}
+          - {label: Channel name, name: name, widget: select, options: ["VR experience", "Cinema", "Theatrical", "Sky", "BBC", "CBC", "France TV", "Smithsonian Networks", "Zee Entertainment"]}
           - {label: "Text only?", name: text-only, widget: select, options: ["Yes", "No"]}
       - label: Map
         name: map
