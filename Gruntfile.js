@@ -323,7 +323,7 @@ module.exports = function(grunt) {
                                         'concat',
                                         'uglify:dist',
                                         'copy',
-                                        'newer:imagemin',
+                                        'imagemin',
                                         'copy:images_opt',
                                     ]
     );
