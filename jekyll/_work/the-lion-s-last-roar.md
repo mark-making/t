@@ -4,7 +4,7 @@ loop: false
 feature: false
 img: true
 order_page: 3
-producer: Talesmith / Freebron Films
+producer: Talesmith / Freeborn Films
 primary_colour: 'rgb(51, 31, 68)'
 light_on_dark: true
 schema:
