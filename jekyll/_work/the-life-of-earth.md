@@ -1,44 +1,44 @@
 ---
-light_on_dark: true
-primary_colour: "rgb(14,34,58)"
-order_page: 1
-layout: work-single
-title: The life of Earth from space
-schema:
-- name: producer
 hero: false
+feature: true
 img: true
+order_page: 1
 producer: Talesmith
+primary_colour: 'rgb(14,34,58)'
+light_on_dark: true
+schema:
+  - name: producer
 channel:
-- name: Smithsonian Networks
-- name: Zee Entertainment
+  - name: Smithsonian Networks
+  - name: Zee Entertainment
 map:
-- name: Space
-- name: Ethiopia
-  lat: 9.145
-  long: 40.489673
-- name: Delhi
-  lat: 28.704059
-  long: 77.10249
-- name: USA
-  lat: 37.09024
-  long: -95.712891
-- name: Madagascar
-  lat: -18.766947
-  long: -46.869107
-- name: UK
-  lat: 55.378051
-  long: -3.435973
-- name: Venezuela
-  lat: 6.42375
-  long: -66.58973
-- name: Iceland
-  lat: 64.963051
-  long: -19.020835
-- name: Japan
-  lat: 36.204824
-  long: 138.252924
-date: 2017-12-12 12:10:34 +0000
+  - name: Space
+  - lat: 9.145
+    long: 40.489673
+    name: Ethiopia
+  - lat: 28.704059
+    long: 77.10249
+    name: Delhi
+  - lat: 37.09024
+    long: -95.712891
+    name: USA
+  - lat: -18.766947
+    long: -46.869107
+    name: Madagascar
+  - lat: 55.378051
+    long: -3.435973
+    name: UK
+  - lat: 6.42375
+    long: -66.58973
+    name: Venezuela
+  - lat: 64.963051
+    long: -19.020835
+    name: Iceland
+  - lat: 36.204824
+    long: 138.252924
+    name: Japan
+title: The Life of Earth
+layout: work-single
 ---
 # Talesmith explores the history of Earth in spectacular new documentary for Zee Entertainment and Smithsonian Networks Intl.
 
