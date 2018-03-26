@@ -11,6 +11,7 @@ schema:
   - name: Producer
 channel:
   - name: Theatrical
+    text-only: 'Yes'
 map:
   - lat: '37.090240'
     long: '-95.712891'
