@@ -10,7 +10,7 @@ light_on_dark: true
 schema:
   - name: Producer
 channel:
-  - name: Cinema
+  - name: Theatrical
 map:
   - lat: '37.090240'
     long: '-95.712891'
