@@ -39,7 +39,7 @@ collections:
 # // Handling Reading
 # //
 include: [ '.htaccess', 'humans.txt', 'robots.txt', '_headers', '_redirects', '.htpasswd', 'favicon.ico' ]
-keep_files: [ 'css', 'js', 'img', 'video', 'fonts' ]
+keep_files: [ 'css', 'js', 'video', 'fonts' ]
 exclude:
   - Gulpfile.js
   - readme.md

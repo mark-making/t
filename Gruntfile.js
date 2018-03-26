@@ -182,9 +182,9 @@ module.exports = function(grunt) {
                     files: [
                         {
                             expand: true,
-                            cwd:    '<%= dirs.assets %>/img/',
+                            cwd:    '<%= dirs.site %>/img/',
                             src:    '*.svg',
-                            dest:   '<%= dirs.serve %>/img/optimised/',
+                            dest:   '<%= dirs.site %>/img/optimised/',
                             ext:    '.svg'
                         }
                     ]
@@ -196,9 +196,9 @@ module.exports = function(grunt) {
                     files: [
                         {
                             expand: true,
-                            cwd:    '<%= dirs.assets %>/img/',
+                            cwd:    '<%= dirs.site %>/img/',
                             src:    '*.png',
-                            dest:   '<%= dirs.serve %>/img/optimised/',
+                            dest:   '<%= dirs.site %>/img/optimised/',
                             ext:    '.png'
                         }
                     ]
@@ -208,8 +208,8 @@ module.exports = function(grunt) {
                         progressive: true
                     },
                     files:  [
-                            { expand: true, cwd: '<%= dirs.serve %>/img/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/img/optimised/', ext: '.jpg' },
-                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/video/', ext: '.jpg' }
+                            { expand: true, cwd: '<%= dirs.site %>/img/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.site %>/img/optimised/', ext: '.jpg' },
+                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.site %>/video/', ext: '.jpg' }
                             ]
                 }
             },
@@ -260,20 +260,12 @@ module.exports = function(grunt) {
                             { expand: true, cwd: '<%= dirs.assets %>/video/', src: ['**'], dest: '<%= dirs.site %>/img/' },
                             ],
                 },
-                images: {
+                images_opt: {
                     files: [{
                         expand: true,
                         cwd: '<%= dirs.assets %>/img/',
                         src: ['**'],
-                        dest: '<%= dirs.serve %>/img/',
-                    }],
-                },
-                images_opt: {
-                    files: [{
-                        expand: true,
-                        cwd: '<%= dirs.serve %>/img/optimised/',
-                        src: ['**'],
-                        dest: '<%= dirs.site %>/img/optimised/',
+                        dest: '<%= dirs.site %>/img/',
                     }],
                 },
             },
@@ -312,6 +304,7 @@ module.exports = function(grunt) {
                                         'uglify:dev',
                                         'growl:dev',
                                         'copy',
+                                        'imagemin',
                                         'watch'
                                     ]
     );
@@ -324,7 +317,6 @@ module.exports = function(grunt) {
                                         'uglify:dist',
                                         'copy',
                                         'imagemin',
-                                        'copy:images_opt',
                                     ]
     );
 
