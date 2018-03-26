@@ -10,7 +10,7 @@ light_on_dark: true
 schema:
   - name: Producer
 channel:
-  - name: Cinema
+  - name: Theatrical
 map:
   - lat: '37.090240'
     long: '-95.712891'
@@ -30,7 +30,7 @@ map:
 title: The Lion's Last Roar?
 layout: work-single
 ---
-# Talesmith in co-production with Freeborn Films have acquired funding to produce a feature length documentary that will cut right to the heart of the big game hunting culture and reveal, for the first time, the truth about trophy hunting’s contribution to conservation.
+# Talesmith, in co-production with Freeborn Films, have acquired funding to produce a feature length documentary that will cut right to the heart of the big game hunting culture and reveal, for the first time, the truth about trophy hunting’s contribution to conservation.
 
 Lion trophy hunting is a subject that divides opinion like few others. When a lion named ‘Cecil’ was shot in Zimbabwe in 2015 by American trophy hunter Walter Palmer, it shook the world. Three years later, the flames of the trophy hunting debate burn brighter than ever. But when one investigative journalist began to dig into the deepest corners of the lion trophy hunting industry what she found was a far more surprising and alarming story. This is that story.
 
