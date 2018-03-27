@@ -32,7 +32,7 @@ map:
 title: Flyride Five Sacred Mountains 4D
 layout: work-single
 ---
-# FLYRIDE FILMS, the company set up by high-end factual production company Talesmith and world-class independent VFX company Moonraker have won an order from China’s Legend Tourism Investment for five new 4D giant-screen FLYRIDE immersive films. 
+# FLYRIDE FILMS, the company set up by high-end factual production company Talesmith and world-class independent VFX company Moonraker have won an order from China’s Legend Tourism Investment for five new 4D giant-screen FLYRIDE immersive films.
 
 Shot in 8K, using custom VR camera, graphics and editing technology, each five-minute film blends stunning real life footage with striking visual effects and compelling storytelling to create a unique and breathtaking 4D exploration of one of China’s five sacred mountains. 
 
@@ -40,8 +40,9 @@ The new FLYRIDE films will be shown at Legend’s Cultural Leisure Complexes acr
 
 China’s five sacred mountains are some of the country’s best known cultural landmarks - symbolising the essence of what it is to be Chinese - blending tradition, mythology and history with a modern desire for fresh air and the healing power of a beautiful natural environment. Each is traditionally associated with a specific element: fire, water, metal, wood and earth - and the films will take these themes as a way of introducing each mountain. 
 
-This is a hugely exciting area for us as a company, with a lot of opportunity for growth as the number of 4D giant screen locations increases globally. We’re able to combine Talesmith’s storytelling expertise with Moonraker’s incredible graphics to create something unique for companies looking to provide the latest VR experiences to customers at their attractions.
+> This is a hugely exciting area for us as a company, with a lot of opportunity for growth as the number of 4D giant screen locations increases globally. We’re able to combine Talesmith’s storytelling expertise with Moonraker’s incredible graphics to create something unique for companies looking to provide the latest VR experiences to customers at their attractions.
 
-**Martin Williams, Creative Director at Talesmith**
+**Martin Williams, Creative Director at Talesmith
+**
 
 For more information about Flyride Films please go to: flyridefilms.com
