@@ -304,7 +304,6 @@ module.exports = function(grunt) {
                                         'uglify:dev',
                                         'growl:dev',
                                         'copy',
-                                        'imagemin',
                                         'watch'
                                     ]
     );
