@@ -2,7 +2,6 @@
 layout: post
 title: "Talesmith goes global"
 date: 2018-01-05 16:44:16+00:00
-categories: company
 ---
 This note demonstrates some of what [Markdown][1] is capable of doing.
 

@@ -193,17 +193,16 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Big heading", name: "Big", widget: "markdown"}
               - {label: "Small heading", name: "Small", widget: "markdown"}
 
-  - name: "news" # Used in routes, e.g. /admin/collections/blog
-    label: "Post" # Used in the UI
+  - name: "posts"
+    label: "Posts" # Used in the UI
+    label_singular: "Post" # Used in the UI, ie: "New Post"
     description: >
       This is where the blog posts live.    
     folder: "jekyll/_posts" # The path to the folder where the documents are stored
-    extension: "md"
-    create: true
-    delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    create: true
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: layout, widget: "hidden", default: "post"}
       - {label: "Title", name: title, widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - {label: "Body", name: body, widget: "markdown"}

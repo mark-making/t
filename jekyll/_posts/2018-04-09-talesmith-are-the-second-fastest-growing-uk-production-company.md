@@ -2,7 +2,6 @@
 layout: post
 title: "Talesmith are the second fastest growing UK production company, care of the Broadcast Indie Survey"
 date: 2018-04-09 11:11:11+00:00
-categories: update
 ---
 MIPTV, Cannes 9 April 2018: Cineflix Rights, the UK’s largest independent TV content distributor, has signed a first
 look partnership deal with Talesmith - the UK’s fastest growing factual indie producer.
