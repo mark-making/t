@@ -1,0 +1,41 @@
+---
+title: News
+layout: page
+class: news-overview
+hero: false
+---
+<!-- This loops through the paginated posts -->
+<section>
+  <header id="news" class="heading-group">
+      <h1 class="heading-group__heading">News</h1>
+      <h2 class="heading-group__sub-heading">Press releases / Announcements</h2>
+      <hr class="heading-group__break">
+  </header>		
+  <div class="article-flex">
+  {% assign post = paginator.posts %}		
+  {% for post in post %}
+    <article class="item">
+      <a href="{{ post.url }}">
+        <header>
+          <h1>{{- post.title | strip_html | normalize_whitespace -}}</h1>
+          <time datetime="2001-05-15T19:00">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </header>
+        <p>{{- post.excerpt | strip_html | normalize_whitespace | truncatewords: 10, '...' -}}</p>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% endif %}
+  <span class="page_number ">Page: <a href="{{ paginator.previous_page_path }}" class="previous">{{ paginator.page }}</a> of <a href="{{ paginator.next_page_path }}" class="next">{{ paginator.total_pages }}</a> with a total of <a href="/news/" class="next">{{paginator.total_posts}} posts</a></span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>
+
+

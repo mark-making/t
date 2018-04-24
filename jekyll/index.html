@@ -12,7 +12,6 @@ default-audio: audible
 video-title: Showreel of Martin Williams
 video-description: Martin Williams
 ---
-
 {%
   include /front-page/intro.html
   bigHeading=site.data.content-home.heading.Big
@@ -30,4 +29,20 @@ video-description: Martin Williams
 
 {% include /front-page/feature-modules.html %}
 
-{% include /front-page/outro.html %}
+{% include
+  /front-page/outro.html
+  outroText="See all work"
+  outroURL="/work/"
+%}	
+
+{% unless site.posts.size == 0 %}
+  
+  {% include /global/article_listing.html %}
+
+  {% include
+    /front-page/outro.html
+    outroText="See all posts"
+    outroURL="/news/"
+  %}
+
+{% endunless %}

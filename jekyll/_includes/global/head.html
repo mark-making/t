@@ -2,13 +2,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>
-    {% if page.title == 'Talesmith' %}
+    {%- if page.title == 'Talesmith' -%}
       {{ site.title }}
-    {% else %}
+    {%- else -%}
       {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
-    {% endif %}
+    {%- endif -%}
   </title>
-	{% assign team_description = page.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncate: 160 %}
+	{%- assign team_description = page.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncate: 160 -%}
 	<meta name="description" content="{% if page.excerpt %}{{ team_description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- APP ICONS/FAVICON -->
