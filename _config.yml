@@ -8,7 +8,7 @@ email-obfuscated: "&#64;&#116;&#97;&#108;&#101;&#115;&#109;&#105;&#116;&#104;&#4
 telephone: "+44 020 3907 0351"
 # //
 # // Outputting
-# //
+# // 
 timezone: Europe/London
 permalink: pretty
 muted: false
@@ -35,6 +35,9 @@ collections:
  about:
   output: true
   permalink: /about/:path/
+ posts:
+  output: true
+  permalink: /news/:title/   
 # //
 # // Handling Reading
 # //
@@ -59,3 +62,13 @@ exclude:
 # //
 kramdown:
  auto_ids: false
+# //
+# // Plugins
+# //
+plugins:
+  - jekyll-paginate
+# //
+# // Paginate
+# //
+paginate: 2
+paginate_path: "/news/page:num/"
