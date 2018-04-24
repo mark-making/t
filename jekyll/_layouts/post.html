@@ -1,16 +1,63 @@
 ---
 layout: default
-permalink: page-title
 ---
-<section class="post">
+<section class="page">
+    <div class="page-content">
+        <section class="work-item">
+            <!--
+                Article header
+            -->
+            <header class="heading-group">
+                <!--
+                    Article name
+                -->
+                <h1 class="heading-group__heading">
+                    <span itemprop="name">{{page.title}}</span>
+                </h1>
+                <!--
+                    Generate a small description
+                -->
+                {% capture short_desc %}{{ content }}{% endcapture %}
+                <meta itemprop="description" content="{{ short_desc | truncatewords: 18 | strip_html }}">
+                <!--
+                    Role
+                -->
+                <h2 class="heading-group__sub-heading">
+                    <span>{{ page.role }}</span>
+                </h2>
+                <h2 class="heading-group__producer">
+                    <span><small>Producer:&nbsp;{{ page.producer }}</small></span>
+                </h2>
+                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+                <hr class="heading-group__break">
+            </header>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+            <!--
+                Article content
+            -->
+            <article class="article">
+                <section itemprop="text">
+                    {{ content | normalize_whitespace }}
+                </section>
+            </article>
+        </section>
 
+        <!--
+            Outward path to all work
+        -->
+        <section class="outro">
+            <a href="{{ site.url }}/news/" class="button" itemprop="significantLink">see all news</a>
+        </section>
+    </div>
 </section>
+
+<div class="PageNavigation">
+    {% if page.previous.url %}
+        <a rel="prev" class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+        <a rel="next" class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+</div>
+      
