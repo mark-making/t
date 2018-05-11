@@ -48,14 +48,14 @@ body {
 }
 
 .outro {
-	@include column(8);
-	@include push(2);
-	@include pull(2);
+	@include column(12);
+	// @include push(1);
+	// @include pull(1);
 	padding: 2em 0;
 	@include media(s) {
-		@include column(4);
-		@include push(4);
-		@include pull(4);
+		// @include column(4);
+		// @include push(4);
+		// @include pull(4);
 	}
 	.button {
 		max-width: 15em;

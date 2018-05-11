@@ -7,15 +7,7 @@
 	<div class="article-flex">
 	{% assign post = site.posts | sort: 'date' %}		
 	{% for post in post reversed limit:2 %}
-		<article class="item">
-			<a title="{{- post.title | strip_html | normalize_whitespace -}}." href="{{ post.url }}">
-				<header>
-					<h1>{{- post.title | strip_html | normalize_whitespace | truncate: 35, '...' -}}</h1>
-					<time datetime="2001-05-15T19:00">{{ post.date | date: "%b %-d, %Y" }}</time>
-				</header>
-				<p>{{- post.excerpt | strip_html | normalize_whitespace | truncatewords: 10, '...' -}}</p>
-			</a>
-		</article>
-		{% endfor %}
+		{% include /global/single-post.html %}
+	{% endfor %}
 	</div>
 </section>

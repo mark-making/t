@@ -26,9 +26,8 @@ layout: default
                     <span>{{ page.role }}</span>
                 </h2>
                 <h2 class="heading-group__producer">
-                    <span><small>Producer:&nbsp;{{ page.producer }}</small></span>
+                    <span><small>Published:&nbsp;{{ page.date | date: "%b %-d, %Y" }}</small></span>
                 </h2>
-                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
                 <hr class="heading-group__break">
             </header>
 
@@ -47,17 +46,24 @@ layout: default
             Outward path to all work
         -->
         <section class="outro">
-            <a href="{{ site.url }}/news/" class="button" itemprop="significantLink">see all news</a>
+                    
+            <nav role="navigation" aria-label="Pagination Navigation">
+                <ul class="pagination" data-current="{{paginator.page}}">
+                    <li>
+                        <a {% unless page.previous.url %}disabled{% endunless %} class="button {%- unless page.previous.url %} disabled{%- endunless -%}" rel="prev" href="{{ page.previous.url }}" title="{{- page.previous.title | strip_html | normalize_whitespace -}}.">&laquo; Previous</a>
+                    </li>
+                    &nbsp;
+                    &nbsp;
+                    <li>
+                        <a {% unless page.next.url %}disabled{% endunless %} class="button {%- unless page.next.url %} disabled{%- endunless -%}" rel="next" href="{{ page.next.url }}" title="{{- page.next.title | strip_html | normalize_whitespace -}}.">Next &raquo;</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <a href="{{ site.url }}/news/" class="button" itemprop="significantLink">see all news</a>            
+        
         </section>
-    </div>
-</section>
 
-<div class="PageNavigation">
-    {% if page.previous.url %}
-        <a rel="prev" class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-    {% endif %}
-    {% if page.next.url %}
-        <a rel="next" class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-    {% endif %}
-</div>
-      
+
+    </div>
+</section>      

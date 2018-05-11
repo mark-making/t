@@ -1,0 +1,14 @@
+<!-- Pagination links class="current" -->
+<nav role="navigation" aria-label="Pagination Navigation">
+    <ul class="pagination" data-current="{{paginator.page}}">
+        <li>
+            <a {% unless paginator.previous_page %}disabled{% endunless %} class="button {%- unless paginator.previous_page %} disabled{%- endunless -%}" rel="prev" href="{{ paginator.previous_page_path }}">&laquo; Previous</a>
+        </li>  
+        <li class="info">
+            <span>{{ paginator.page }} of {{ paginator.total_pages }} <br> with a total of {{ paginator.total_posts }} posts</span>
+        </li>
+        <li>
+            <a {% unless paginator.next_page %}disabled{% endunless %} class="button {%- unless paginator.next_page %} disabled{%- endunless -%}" rel="next" href="{{ paginator.next_page_path }}">Next &raquo;</a>
+        </li>
+    </ul>
+</nav>

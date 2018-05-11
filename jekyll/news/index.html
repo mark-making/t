@@ -14,28 +14,11 @@ hero: false
   <div class="article-flex">
   {% assign post = paginator.posts %}		
   {% for post in post %}
-    <article class="item">
-      <a href="{{ post.url }}">
-        <header>
-          <h1>{{- post.title | strip_html | normalize_whitespace -}}</h1>
-          <time datetime="2001-05-15T19:00">{{ post.date | date: "%b %-d, %Y" }}</time>
-        </header>
-        <p>{{- post.excerpt | strip_html | normalize_whitespace | truncatewords: 10, '...' -}}</p>
-      </a>
-    </article>
-    {% endfor %}
+    {% include /global/single-post.html %}
+  {% endfor %}
   </div>
 </section>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% endif %}
-  <span class="page_number ">Page: <a href="{{ paginator.previous_page_path }}" class="previous">{{ paginator.page }}</a> of <a href="{{ paginator.next_page_path }}" class="next">{{ paginator.total_pages }}</a> with a total of <a href="/news/" class="next">{{paginator.total_posts}} posts</a></span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% endif %}
-</div>
+{% include /global/pagination.html %}
 
 
