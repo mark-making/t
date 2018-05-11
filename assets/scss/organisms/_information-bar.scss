@@ -68,6 +68,9 @@
                   weight: 900;
               }
             }
+            &:first-of-type {
+                margin-top: 0;
+            }
             span {
                 font: {
                     weight: 400;
@@ -381,9 +384,11 @@
                   float: left;
                   &--button {
                       padding: 1.3em;
-
                       &:hover {
                         transform: translate(2px,-2px);
+                      }
+                      &.small {
+                          font-size: 80%;
                       }
                   }
               }

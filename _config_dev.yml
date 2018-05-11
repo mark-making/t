@@ -5,7 +5,7 @@ title: "Talesmith"
 description: "Founded by Emmy winning film-maker Martin Williams, our team has a long and glittering track record in producing award-winning content fronted by some of the biggest names in television. Our aim is to deliver the highest quality films and series for UK, US and international broadcasters."
 email: "&#105;&#110;&#102;&#111;&#64;&#116;&#97;&#108;&#101;&#115;&#109;&#105;&#116;&#104;&#46;&#116;&#118;" # info@talesmith.tv
 email-obfuscated: "&#64;&#116;&#97;&#108;&#101;&#115;&#109;&#105;&#116;&#104;&#46;&#116;&#118;" # @talesmith.tv
-telephone: "+44 020 7284 6896"
+telephone: "+44 020 3907 0351"
 # //
 # // Outputting
 # //
@@ -35,10 +35,13 @@ collections:
  about:
   output: true
   permalink: /about/:path/
+ posts:
+  output: true
+  permalink: /news/:title/  
 # //
 # // Handling Reading
 # //
-include: [ '.htaccess', 'humans.txt', 'robots.txt', '.htpasswd', 'favicon.ico' ]
+include: [ '.htaccess', 'humans.txt', 'robots.txt', '_headers', '_redirects', '.htpasswd', 'favicon.ico' ]
 keep_files: [ 'css', 'js', 'img', 'video', 'fonts' ]
 exclude:
   - Gulpfile.js
@@ -59,3 +62,13 @@ exclude:
 # //
 kramdown:
  auto_ids: false
+# //
+# // Plugins
+# //
+plugins:
+  - jekyll-paginate
+# //
+# // Paginate
+# //
+paginate: 1
+paginate_path: "/news/page:num/"

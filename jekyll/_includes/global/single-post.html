@@ -1,0 +1,9 @@
+<article class="item">
+	<a title="{{- post.title | strip_html | normalize_whitespace -}}." href="{{ post.url }}">
+		<header>
+			<h1>{{- post.title | strip_html | normalize_whitespace | truncate: 40, '...' -}}</h1>
+			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+		</header>
+		<p>{{- post.excerpt | strip_html | normalize_whitespace | truncatewords: 20, '...' -}}</p>
+	</a>
+</article>

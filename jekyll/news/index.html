@@ -1,0 +1,24 @@
+---
+title: News
+layout: page
+class: news-overview
+hero: false
+---
+<!-- This loops through the paginated posts -->
+<section>
+  <header id="news" class="heading-group">
+      <h1 class="heading-group__heading">News</h1>
+      <h2 class="heading-group__sub-heading">Press releases / Announcements</h2>
+      <hr class="heading-group__break">
+  </header>		
+  <div class="article-flex">
+  {% assign post = paginator.posts %}		
+  {% for post in post %}
+    {% include /global/single-post.html %}
+  {% endfor %}
+  </div>
+</section>
+
+{% include /global/pagination.html %}
+
+
