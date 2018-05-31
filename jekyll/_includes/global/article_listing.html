@@ -5,8 +5,8 @@
 			<hr class="heading-group__break">
 	</header>		
 	<div class="article-flex">
-	{% assign post = site.posts | sort: 'date' %}		
-	{% for post in post reversed limit:2 %}
+	{% assign post = site.posts %}		
+	{% for post in post limit:2 %}
 		{% include /global/single-post.html %}
 	{% endfor %}
 	</div>
