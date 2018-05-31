@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Flyride films to produce five new Flyride 4D, 8k giant-screen immersive films"
-date: 2018-05-03 11:11:11+00:00
+title: 'Flyride films to produce five new Flyride 4D, 8k giant-screen immersive films'
+date: '2018-05-03 12:11:11'
 ---
 Flyride Films, the company set up by high-end factual production company Talesmith and world-class independent VFX company Moonraker today announced it has won an order from China’s Legend Cultural Development for five new 4D giant-screen FLYRIDE immersive films.
 
