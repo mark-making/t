@@ -7,6 +7,18 @@ producer: Talesmith / Cineflix
 primary_colour: 'rgb(235,202,145)'
 schema:
   - name: Producer
+award:
+  - category: Presenter Award
+    name: Wildscreen Panda Nomination
+    outcome: 'TBC '
+    url: >-
+      https://www.wildscreen.org/panda-awards-database/2018/the-real-trex-with-chris-packham/
+    year: '2018'
+  - category: Science
+    name: Grierson Award Shortlisted
+    outcome: TBC
+    url: 'http://www.griersontrust.org/grierson-awards/past-awards/2017/shortlist/'
+    year: '2018'
 channel:
   - name: BBC
   - name: CBC
