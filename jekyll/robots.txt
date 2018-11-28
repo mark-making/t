@@ -5,4 +5,5 @@ User-agent: *
 Disallow: /team/
 Disallow: /team
 Disallow: /admin/
+Disallow: /private/
 Disallow: /admin
