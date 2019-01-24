@@ -11,8 +11,7 @@ schema:
   - name: Producer
 cast:
   - {}
-award:
-  - {}
+award: []
 channel:
   - text-only: 'Yes'
 map:
@@ -36,7 +35,7 @@ earthrise is executive produced by Kirsty Wilson and Martin Williams.
 > How we deal with humanity’s impact on the environment is of huge interest to global audiences. earthrise is an eye-opening and informative series which focuses on innovative solutions – often developed by young people from around the world. We’re thrilled that Al Jazeera has entrusted Talesmith to produce one of its highest profile brands.
 >
 > **Martin Williams, CEO and Creative Director of Talesmith**
->
+
 > The importance of a programme such as earthrise, which seeks to offer environmental hope and inspiration, only increases as the man- made problems threatening our planet worsen and the need to find, and enact, workable solutions intensifies. It’s very exciting to be working on this new series with Talesmith, which has a strong track- record in bringing science and natural history stories alive for an international audience.
 >
 > **Amanda Burrell, Al Jazeera’s Executive Producer**
