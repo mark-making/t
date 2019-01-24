@@ -3,10 +3,10 @@ hero: false
 loop: false
 feature: true
 img: true
-order_page: 2
+order_page: 1
 producer: Talesmith
 primary_colour: 'rgb(60,70,80)'
-light_on_dark: false
+light_on_dark: true
 schema:
   - name: Producer
 cast:
