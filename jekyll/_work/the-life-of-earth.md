@@ -2,7 +2,7 @@
 hero: false
 feature: true
 img: true
-order_page: 1
+order_page: 3
 producer: Talesmith
 primary_colour: 'rgb(14,34,58)'
 light_on_dark: true

@@ -1,7 +1,7 @@
-<section class="teaser">
+<section class="teaser" style="background-color:{{ include.teaserBGC }};">
   <a href="/work/{{ include.teaserURL | downcase | slugify }}">
-    <div class="teaser__content">
-      <div class="teaser__content__text" style="{{ include.teaserBGC }}">
+    <div class="teaser__content" style="background:url('{{ include.teaserIMG }}'); background-repeat: no-repeat; background-position: 0 10%;">
+      <div class="teaser__content__text" style="background-color:{{ include.teaserBGC }};">
         <div class="dt">
           <div class="dt-c">
             <b class="teaser__content__text--title">{{ include.teaserTitle | upcase }}</b>
@@ -9,7 +9,6 @@
           </div>
         </div>
       </div>
-      <img class="moving" src="{{ include.teaserIMG }}" alt="">
     </div>
   </a>
 </section>
