@@ -30,8 +30,6 @@ earthrise is a series commission from Al Jazeera. Each episode (6x30') due to ai
 
 Stories include how Rohingya refugees fleeing Myanmar formed a local group to help protect Bangladesh’s last surviving, critically endangered elephants, which had killed some refugees after coming into contact with them near camps constructed in their forest home; and a new restaurant in Finland which aims to minimise its environmental footprint by growing food on-site and recycling almost all of its waste.
 
-earthrise is executive produced by Kirsty Wilson and Martin Williams.
-
 > How we deal with humanity’s impact on the environment is of huge interest to global audiences. earthrise is an eye-opening and informative series which focuses on innovative solutions – often developed by young people from around the world. We’re thrilled that Al Jazeera has entrusted Talesmith to produce one of its highest profile brands.
 >
 > **Martin Williams, CEO and Creative Director of Talesmith**
@@ -39,5 +37,3 @@ earthrise is executive produced by Kirsty Wilson and Martin Williams.
 > The importance of a programme such as earthrise, which seeks to offer environmental hope and inspiration, only increases as the man- made problems threatening our planet worsen and the need to find, and enact, workable solutions intensifies. It’s very exciting to be working on this new series with Talesmith, which has a strong track- record in bringing science and natural history stories alive for an international audience.
 >
 > **Amanda Burrell, Al Jazeera’s Executive Producer**
-
-Talesmith is known for producing high quality, blue-chip factual programming for broadcasters worldwide. The company most recently produced BBC Two’s The Real T.Rex With Chris Packham, and is currently in production with Life of Earth: From Space and Life of Earth: The Age of Humans for Smithsonian and Zee Entertainment, with a number of other projects in development. Talesmith was recently recognised in 2018 as one of the UK’s fastest growing independent television producers.
