@@ -12,7 +12,8 @@ schema:
 cast: []
 award: []
 channel:
-  - text-only: 'Yes'
+  - name: TBC
+    text-only: 'Yes'
 map:
   - lat: '23.684994'
     long: '90.356331'
