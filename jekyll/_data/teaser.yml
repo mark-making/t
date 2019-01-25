@@ -1,8 +1,7 @@
 teaser:
-  BGC: transparent
-  IMG: /img/optimised/teaser-trex.jpg
+  BGC: '#000000'
+  IMG: /img/optimised/teaser-earthrise.jpg
   Intro: |-
-    The Real T. rex
-    with Chris Packham
-  Title: BBC TWO
-  URL: The Real T. rex with Chris Packham
+    May 2019
+  Title: earthrise
+  URL: earthrise

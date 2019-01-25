@@ -216,7 +216,19 @@ module.exports = function(grunt) {
                             { expand: true, cwd: '<%= dirs.site %>/img/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.site %>/img/optimised/', ext: '.jpg' },
                             { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.site %>/video/', ext: '.jpg' }
                             ]
-                }
+                },
+                dev: {
+                    options: {
+                        progressive: true,
+                        optimizationLevel: 7
+                    },
+                    files:  [
+                        { expand: true, cwd: '<%= dirs.serve %>/img/', src: '*.{jpeg,jpg}', dest: '<%= dirs.serve %>/img/optimised/', ext: '.jpg' },
+                        { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/video/', ext: '.jpg' },
+                        { expand: true, cwd: '<%= dirs.serve %>/img/', src: '*.svg', dest: '<%= dirs.serve %>/img/optimised/', ext: '.svg' },
+                        { expand: true, cwd: '<%= dirs.serve %>/img/', src: '*.png', dest: '<%= dirs.serve %>/img/optimised/', ext: '.png' },
+                    ]
+                },               
             },
         // HTML
             // Minification
@@ -269,8 +281,8 @@ module.exports = function(grunt) {
                     files: [{
                         expand: true,
                         cwd: '<%= dirs.assets %>/img/',
-                        src: ['**'],
-                        dest: '<%= dirs.site %>/img/',
+                        src: ['**'], dest: '<%= dirs.site %>/img/',
+                        src: ['**'], dest: '<%= dirs.serve %>/img/'
                     }],
                 },
             },
@@ -309,6 +321,7 @@ module.exports = function(grunt) {
                                         'uglify:dev',
                                         'growl:dev',
                                         'copy',
+                                        'newer:imagemin:dev',
                                         'watch'
                                     ]
     );

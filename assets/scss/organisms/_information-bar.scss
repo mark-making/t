@@ -406,15 +406,17 @@
             @include column(12);
         }
         &--work-left {
+            padding: 1rem 0;
             @include media(s) {
                 @include column(2);
             }
         }
         &--work-mid {
             position: relative;
+            padding: 1rem 0;
             @include media(s) {
                 @include column(5);
-                padding: 0 1em;
+                padding: 1rem;
             }
         }
         &--work-right {
@@ -428,6 +430,7 @@
             .location-wrap{
                 line-height: 1;
                 color: $talesmith-orange;
+                padding: 1rem 0;
                 // Grid
                 @include media(s) {
                     @include column(2,5);

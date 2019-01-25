@@ -28,7 +28,7 @@
                 <b>Awards/Nominations:</b>
             </p>
             <section class="information-bar__content__awards">
-                {% if page.award %}
+                {% if page.award == blank %}
                     <ul class="information-bar__content__awards__list">
                         {% for award in page.award %}
                             <li class="information-bar__content__awards__list--logo">
