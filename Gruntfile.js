@@ -183,39 +183,17 @@ module.exports = function(grunt) {
               // },
             // Compression
             imagemin: {
-                svg: {
-                    files: [
-                        {
-                            expand: true,
-                            cwd:    '<%= dirs.site %>/img/',
-                            src:    '*.svg',
-                            dest:   '<%= dirs.site %>/img/optimised/',
-                            ext:    '.svg'
-                        }
-                    ]
-                },
-                png: {
+                dist: {
                     options: {
+                        progressive: true,
                         optimizationLevel: 7
                     },
-                    files: [
-                        {
-                            expand: true,
-                            cwd:    '<%= dirs.site %>/img/',
-                            src:    '*.png',
-                            dest:   '<%= dirs.site %>/img/optimised/',
-                            ext:    '.png'
-                        }
-                    ]
-                },
-                jpg: {
-                    options: {
-                        progressive: true
-                    },
                     files:  [
-                            { expand: true, cwd: '<%= dirs.site %>/img/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.site %>/img/optimised/', ext: '.jpg' },
-                            { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.site %>/video/', ext: '.jpg' }
-                            ]
+                        { expand: true, cwd: '<%= dirs.site %>/img/', src: '*.{jpeg,jpg}', dest: '<%= dirs.site %>/img/optimised/', ext: '.jpg' },
+                        { expand: true, cwd: '<%= dirs.assets %>/video/', src: '*.{jpeg,jpg}', dest: '<%= dirs.site %>/video/', ext: '.jpg' },
+                        { expand: true, cwd: '<%= dirs.site %>/img/', src: '*.svg', dest: '<%= dirs.site %>/img/optimised/', ext: '.svg' },
+                        { expand: true, cwd: '<%= dirs.site %>/img/', src: '*.png', dest: '<%= dirs.site %>/img/optimised/', ext: '.png' },
+                    ]
                 },
                 dev: {
                     options: {
@@ -224,7 +202,7 @@ module.exports = function(grunt) {
                     },
                     files:  [
                         { expand: true, cwd: '<%= dirs.serve %>/img/', src: '*.{jpeg,jpg}', dest: '<%= dirs.serve %>/img/optimised/', ext: '.jpg' },
-                        { expand: true, cwd: '<%= dirs.assets %>/video/', src: '**/*.{jpeg,jpg}', dest: '<%= dirs.serve %>/video/', ext: '.jpg' },
+                        { expand: true, cwd: '<%= dirs.assets %>/video/', src: '*.{jpeg,jpg}', dest: '<%= dirs.serve %>/video/', ext: '.jpg' },
                         { expand: true, cwd: '<%= dirs.serve %>/img/', src: '*.svg', dest: '<%= dirs.serve %>/img/optimised/', ext: '.svg' },
                         { expand: true, cwd: '<%= dirs.serve %>/img/', src: '*.png', dest: '<%= dirs.serve %>/img/optimised/', ext: '.png' },
                     ]
@@ -278,12 +256,10 @@ module.exports = function(grunt) {
                             ],
                 },
                 images_opt: {
-                    files: [{
-                        expand: true,
-                        cwd: '<%= dirs.assets %>/img/',
-                        src: ['**'], dest: '<%= dirs.site %>/img/',
-                        src: ['**'], dest: '<%= dirs.serve %>/img/'
-                    }],
+                    files:  [
+                            { expand: true, cwd: '<%= dirs.assets %>/img/', src: ['**'], dest: '<%= dirs.serve %>/img/' },
+                            { expand: true, cwd: '<%= dirs.assets %>/img/', src: ['**'], dest: '<%= dirs.site %>/img/' },
+                            ],
                 },
             },
         // Tasks
@@ -333,7 +309,7 @@ module.exports = function(grunt) {
                                         'concat',
                                         'uglify:dist',
                                         'copy',
-                                        'imagemin',
+                                        'imagemin:dist',
                                     ]
     );
 
