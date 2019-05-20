@@ -10,16 +10,6 @@ people:
     lastname: Williams
     linkedin-profile: 'https://www.linkedin.com/in/martin-williams-3230b07/'
   - description: >-
-      There aren’t many Directors of Production and Operations more experienced
-      than Ulla.
-    firstname: Ulla
-    gender: Female
-    image: /img/optimised/ulla-streib.jpg
-    imdb-profile: 'http://www.imdb.com/name/nm1455957/'''
-    jobtitle: COO
-    lastname: Streib
-    linkedin-profile: 'https://www.linkedin.com/in/ulla-streib-038039a/'
-  - description: >-
       Ruth’s credits include David Attenborough Meets President Obama (BBC –
       EMMY nominee / Director) and Into the Universe with Stephen Hawking
       (Discovery / Ch4 Producer).
@@ -30,3 +20,13 @@ people:
     jobtitle: Development EP
     lastname: Roberts
     linkedin-profile: 'https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/'
+  - description: >-
+      Mark's task is simple - to ready Talesmith for a new phase of big,
+      international productions.
+    firstname: Mark
+    gender: Male
+    image: /img/optimised/mark.jpg
+    imdb-profile: 'https://www.imdb.com/name/nm2050393/'
+    jobtitle: Director of Operations
+    lastname: Wright
+    linkedin-profile: linkedin.com/in/mark-brunel-wright
