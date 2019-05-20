@@ -1,12 +1,12 @@
 people:
   - description: >-
-      Martin is a director at heart and he’d like to direct everything Talesmith
-      produces.
+      Martin is an award winning director and producer with over 20 years
+      experience.
     firstname: Martin
     gender: Male
     image: /img/optimised/martin-williams.jpg
     imdb-profile: 'http://www.imdb.com/name/nm1546548/'
-    jobtitle: CEO & Creative Director
+    jobtitle: Founder & Creative Director
     lastname: Williams
     linkedin-profile: 'https://www.linkedin.com/in/martin-williams-3230b07/'
   - description: >-
