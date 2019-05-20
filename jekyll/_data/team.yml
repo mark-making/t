@@ -30,3 +30,14 @@ people:
     jobtitle: Director of Operations
     lastname: Wright
     linkedin-profile: linkedin.com/in/mark-brunel-wright
+  - description: >-
+      Andrew Baker is Talesmith's NED. He is one of the UK’s leading media
+      advisers, having worked with some of the most innovative and influential
+      television producers in the UK over the last 10+ years.
+    firstname: 'Andrew '
+    gender: Male
+    image: /img/optimised/andrew-baker.jpeg
+    imdb-profile: 'https://www.imdb.com/name/nm1546548/'
+    jobtitle: NED
+    lastname: Baker
+    linkedin-profile: 'https://www.linkedin.com/in/andrewrbaker/'
