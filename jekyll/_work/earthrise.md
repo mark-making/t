@@ -15,12 +15,8 @@ channel:
   - name: TBC
     text-only: 'Yes'
 map:
-  - lat: '23.684994'
-    long: '90.356331'
-    name: Bangladesh
-  - lat: '61.924110'
-    long: '25.748152'
-    name: Finland
+  - location: '{"type":"Point","coordinates":[-3.651196,56.1140968]}'
+    name: Edinburgh
 title: Earthrise
 layout: work-single
 ---
