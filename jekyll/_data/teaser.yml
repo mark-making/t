@@ -1,6 +1,8 @@
 teaser:
   BGC: '#000000'
   IMG: /img/optimised/teaser-earthrise.jpg
-  Intro: Currently airing every week day on Al Jazeera
+  Intro: >-
+    On Al Jazeera: Mon 22.30 GMT, Tue 09.30 GMT, Wed 03.30 GMT, Thu 16.30GMT,
+    Fri 05.30GMT
   Title: earthrise
-  URL: earthrise
+  URL: Earthrise
