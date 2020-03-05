@@ -1,12 +1,12 @@
 address:
   addressCountry: United Kingdom
-  addressLocality: Wendover
-  addressRegion: Bucks
-  postalCode: HP22 6EB
+  addressLocality: Paddington Basin
+  addressRegion: London
+  postalCode: W2 6BD
   streetAddress: |-
-    Old Coach House 
+    Rm 463
 
-    Back Street
+    1 Kingdom Street
 contact:
   email: info@talesmith.tv
   open: '(10:00 - 18:00 GMT)'
