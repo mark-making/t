@@ -3,10 +3,7 @@ address:
   addressLocality: Paddington Basin
   addressRegion: London
   postalCode: W2 6BD
-  streetAddress: |-
-    Rm 463
-
-    1 Kingdom Street
+  streetAddress: 'Rm 463, 1 Kingdom Street'
 contact:
   email: info@talesmith.tv
   open: '(10:00 - 18:00 GMT)'
