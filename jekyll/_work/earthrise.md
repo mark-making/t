@@ -43,3 +43,5 @@ Stories include how Rohingya refugees fleeing Myanmar formed a local group to he
 > **Martin Williams, CEO and Creative Director of Talesmith**
 >
 > The importance of a programme such as earthrise, which seeks to offer environmental hope and inspiration, only increases as the man- made problems threatening our planet worsen and the need to find, and enact, workable solutions intensifies. It’s very exciting to be working on this new series with Talesmith, which has a strong track- record in bringing science and natural history stories alive for an international audience.
+>
+> **Amanda Burrell, Executive Producer at Al Jazeera**
