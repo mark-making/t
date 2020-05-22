@@ -33,11 +33,11 @@ award:
     url: http://www.leoawards.com/2020
 channel:
   - name: CBC
-    text-only: Yes
+    text-only: true
   - name: BBC
-    text-only: Yes
-  - name: TBC
-    text-only: Yes
+    text-only: true
+  - name: arte
+    text-only: true
 map:
   - lat: "48.424637"
     long: "-123.236877"
