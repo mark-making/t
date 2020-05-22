@@ -31,6 +31,11 @@ award:
     category: Scriptwriting, Short Documentary Program
     outcome: TBC
     url: http://www.leoawards.com/2020
+  - name: International Wildlife Film Festival
+    year: "2020"
+    category: Official Selection
+    outcome: Official Selection
+    url: http://wildlifefilms.org/iwff-virtual-festival
 channel:
   - name: CBC
     text-only: true
