@@ -36,6 +36,11 @@ award:
     category: Official Selection
     outcome: Official Selection
     url: http://wildlifefilms.org/iwff-virtual-festival
+  - name: Sunset Film Festival
+    year: "2020"
+    category: Official Selection
+    outcome: Selected
+    url: https://filmfreeway.com/SunsetFilmFestivalLosAngeles
 channel:
   - name: CBC
     text-only: true
