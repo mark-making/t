@@ -18,7 +18,7 @@ award:
     url: https://theaibs.tv/AIBs-2019/Winners/AIBs-2019-winners-book.pdf
 channel:
   - name: Al Jazeera
-    text-only: Yes
+    text-only: true
 map:
   - lat: "23.684994"
     long: "90.356331"
@@ -32,6 +32,9 @@ map:
   - name: London
     lat: "51.507351"
     long: "-0.127758"
+  - name: Lebanon
+    lat: "34.191738"
+    long: "35.887572"
 title: Earthrise
 layout: work-single
 ---
