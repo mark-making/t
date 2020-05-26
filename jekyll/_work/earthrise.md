@@ -36,6 +36,26 @@ award:
     year: "2020"
     category: Climate Change & Sustainability
     outcome: Winner
+  - name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Magazine Feature
+    outcome: Winner
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    outcome: Winner
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Nature & Wildlife
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Educational / Instructional
+    outcome: Winner
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Environment & Ecology
+    outcome: Winner
 channel:
   - name: Al Jazeera
     text-only: true
