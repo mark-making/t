@@ -35,6 +35,21 @@ map:
   - name: Lebanon
     lat: "34.191738"
     long: "35.887572"
+  - name: Turkey
+    lat: "38.963745"
+    long: "35.243320"
+  - name: Italy
+    lat: "41.871941"
+    long: "12.567380"
+  - name: Sweden
+    lat: "60.128162"
+    long: "18.643501"
+  - name: USA
+    lat: "37.090240"
+    long: "-95.712891"
+  - name: Cameroon
+    lat: "7.369722"
+    long: "12.354722"
 title: Earthrise
 layout: work-single
 ---
