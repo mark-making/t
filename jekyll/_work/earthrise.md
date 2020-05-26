@@ -16,6 +16,26 @@ award:
     category: Politics & Business
     outcome: Winner
     url: https://theaibs.tv/AIBs-2019/Winners/AIBs-2019-winners-book.pdf
+  - name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Heroes
+    outcome: Winner
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Educational / Instructional
+    outcome: Winner
+  - name: New York Festivals TV & Film Silver Award
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    category: Magazine Format
+    year: "2020"
+    outcome: Winner
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Climate Change & Sustainability
+    outcome: Winner
 channel:
   - name: Al Jazeera
     text-only: true
