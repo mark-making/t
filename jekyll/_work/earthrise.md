@@ -16,6 +16,46 @@ award:
     category: Politics & Business
     outcome: Winner
     url: https://theaibs.tv/AIBs-2019/Winners/AIBs-2019-winners-book.pdf
+  - name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Heroes
+    outcome: Winner
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Educational / Instructional
+    outcome: Winner
+  - name: New York Festivals TV & Film Silver Award
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    category: Magazine Format
+    year: "2020"
+    outcome: Winner
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Climate Change & Sustainability
+    outcome: Winner
+  - name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Magazine Feature
+    outcome: Winner
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    outcome: Winner
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Nature & Wildlife
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Educational / Instructional
+    outcome: Winner
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Environment & Ecology
+    outcome: Winner
 channel:
   - name: Al Jazeera
     text-only: true
@@ -35,6 +75,21 @@ map:
   - name: Lebanon
     lat: "34.191738"
     long: "35.887572"
+  - name: Turkey
+    lat: "38.963745"
+    long: "35.243320"
+  - name: Italy
+    lat: "41.871941"
+    long: "12.567380"
+  - name: Sweden
+    lat: "60.128162"
+    long: "18.643501"
+  - name: USA
+    lat: "37.090240"
+    long: "-95.712891"
+  - name: Cameroon
+    lat: "7.369722"
+    long: "12.354722"
 title: Earthrise
 layout: work-single
 ---
