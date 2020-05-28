@@ -4,18 +4,24 @@ loop: false
 feature: false
 img: true
 order_page: 4
-producer: 'Factory 42, in assoc. with Dream Reality Interactive & Talesmith'
-primary_colour: 'rgb(70,70,70)'
+producer: Factory 42, in assoc. with Dream Reality Interactive & Talesmith
+primary_colour: rgb(70,70,70)
 light_on_dark: true
 cast:
   - name: Sir David Attenborough
-award: []
+award:
+  - name: SXSW
+    year: "2018"
+    category: Interactive VR
+    outcome: Official Selection
+    url: https://www.sxsw.com/awards/innovation-awards/
 channel:
   - name: VR experience
+    text-only: Yes
 map:
-  - lat: '-34.603722'
-    long: '-58.381592'
-    name: Argentina
+  - lat: "51.507351"
+    long: "-0.127758"
+    name: London
 title: Hold the world
 layout: work-single
 ---
