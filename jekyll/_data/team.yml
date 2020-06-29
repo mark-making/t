@@ -1,39 +1,35 @@
 people:
-  - description: >-
-      Martin is an award winning director and producer with over 20 years
+  - description: Martin is an award winning director and producer with over 20 years
       experience.
     firstname: Martin
     gender: Male
     image: /img/optimised/martin-williams.jpg
-    imdb-profile: 'http://www.imdb.com/name/nm1546548/'
+    imdb-profile: http://www.imdb.com/name/nm1546548/
     jobtitle: Founder & Creative Director
     lastname: Williams
-    linkedin-profile: 'https://www.linkedin.com/in/martin-williams-3230b07/'
-  - description: >-
-      Ruth knows a thing or two about development. David Attenborough meeting
-      President Obama? No problem. Stephen Hawking on supernovae? Easy!
+    linkedin-profile: https://www.linkedin.com/in/martin-williams-3230b07/
+  - description: Ruth knows a thing or two about development. David Attenborough
+      meeting President Obama? No problem. Stephen Hawking on supernovae? Easy!
     firstname: Ruth
     gender: Female
     image: /img/optimised/ruth-roberts.jpg
-    imdb-profile: 'http://www.imdb.com/name/nm1772070/'
-    jobtitle: Development EP
+    imdb-profile: http://www.imdb.com/name/nm1772070/
+    jobtitle: SVP Development
     lastname: Roberts
-    linkedin-profile: 'https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/'
-  - description: >-
-      Mark's task is simple - to ready Talesmith for a new phase of big,
+    linkedin-profile: https://www.linkedin.com/in/ruth-roberts-frgs-6b588765/
+  - description: Mark's task is simple - to ready Talesmith for a new phase of big,
       international productions.
     firstname: Mark
     gender: Male
     image: /img/optimised/mark.jpg
-    imdb-profile: 'https://www.imdb.com/name/nm2050393/'
+    imdb-profile: https://www.imdb.com/name/nm2050393/
     jobtitle: Director of Operations
     lastname: Wright
     linkedin-profile: linkedin.com/in/mark-brunel-wright
-  - description: >-
-      Andrew is Talesmith's NED. He is one of the UK’s leading media advisers,
-      having worked with some of the most innovative and influential television
-      producers in the UK over the last 10+ years.Andrew Baker is one of the
-      UK's leading media advisers, having worked with some of the most
+  - description: Andrew is Talesmith's NED. He is one of the UK’s leading media
+      advisers, having worked with some of the most innovative and influential
+      television producers in the UK over the last 10+ years.Andrew Baker is one
+      of the UK's leading media advisers, having worked with some of the most
       innovative and influential television producers in the UK. Previously Head
       of Business Affairs at ITV and founder of Rights TV, the UK's largest
       Business Affairs consultancy, Andrew has a wealth of experience in
@@ -41,7 +37,7 @@ people:
     firstname: Andrew
     gender: Male
     image: /img/optimised/andrew-baker.jpg
-    imdb-profile: 'https://www.imdb.com/name/nm1546548/'
+    imdb-profile: https://www.imdb.com/name/nm1546548/
     jobtitle: Non Executive Director
     lastname: Baker
-    linkedin-profile: 'https://www.linkedin.com/in/andrewrbaker/'
+    linkedin-profile: https://www.linkedin.com/in/andrewrbaker/
