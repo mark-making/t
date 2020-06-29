@@ -1,14 +1,13 @@
 ---
-hero: true
-loop: true
+hero: false
+loop: false
 feature: false
 img: false
 order_page: 6
 producer: Flatcap Films in association with Talesmith
-primary_colour: 'rgb(112,154,109)'
+primary_colour: rgb(112,154,109)
 light_on_dark: true
-schema:
-  - name: producer
+schema: []
 cast:
   - name: Ophelia Lovibond
   - name: Sam Hoare
@@ -17,34 +16,48 @@ award:
   - category: Best Sci-Fi Short
     name: London International Film Festival
     year: 2015
+    outcome: Official Selection
+    url: http://www.lisff.com/
   - category: Best Dramatic Short
     name: Arizona International Film Festival
     year: 2015
+    url: http://filmfestivalarizona.com/
+    outcome: Official Selection
   - category: Best Sci-Fi Short
-    name: 'SENE Film, Music & Arts Festival'
+    name: SENE Film, Music & Arts Festival
     year: 2015
+    outcome: Official Selection
+    url: https://www.senefest.com/
   - category: Best Sci Fi Short | Best Cinematography | Best CGI
     name: Silver Scream Fest
     year: 2015
+    outcome: winner
+    url: https://www.facebook.com/Silver-Scream-Film-Fest-130064330402681/
   - category: Film Short
-    name: 'Accolade Global Film Competition '
+    name: "Accolade Global Film Competition "
     outcome: Award of Excellence Special Mention
     year: 2015
+    url: https://accoladecompetition.org/
   - category: Certificate of Excellence Award
     name: Rincon International Film Festival
     year: 2015
+    outcome: winner
+    url: https://www.rinconfilm.com/
   - category: Foreign Film
     name: Los Angeles Reel Film Festival
-    outcome: 1st Place
+    outcome: Winner
     year: 2015
+    url: http://www.lareelfilmfest.com/Home.html
   - category: Cinematic Visual Concept
     name: Lighthouse International Film Festival
     outcome: Special Jury Award
     year: 2015
+    url: http://lighthousefilmfestival.org/
 channel:
   - name: VR experience
+    text-only: Yes
   - name: Cinema
-    text-only: 'Yes'
+    text-only: Yes
 map:
   - lat: 51.507351
     long: -0.127758

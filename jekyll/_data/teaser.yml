@@ -1,6 +1,9 @@
 teaser:
-  BGC: '#000000'
-  IMG: /img/optimised/takaya-lone-wolf-l.jpg
-  Intro: Coming soon...
-  Title: 'Takaya: Lone Wolf'
-  URL: 'Takaya: Lone Wolf'
+  BGC: "#000000"
+  IMG: /img/optimised/teaser-takaya.jpg
+  Intro: |-
+    Now available worldwide
+
+    from Cineflix Rights
+  Title: "Takaya: Lone Wolf"
+  URL: "Takaya: Lone Wolf"

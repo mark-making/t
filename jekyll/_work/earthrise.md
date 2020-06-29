@@ -5,35 +5,106 @@ feature: true
 img: true
 order_page: 1
 producer: Talesmith
-primary_colour: 'rgb(60,70,80)'
+primary_colour: rgb(60,70,80)
 light_on_dark: true
 schema:
   - name: Producer
 cast: []
-award: []
+award:
+  - name: AIB
+    year: "2019"
+    category: Politics & Business
+    outcome: Winner
+    url: https://theaibs.tv/AIBs-2019/Winners/AIBs-2019-winners-book.pdf
+  - name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Heroes
+    outcome: Winner
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Educational / Instructional
+    outcome: Winner
+  - name: New York Festivals TV & Film Silver Award
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    category: Magazine Format
+    year: "2020"
+    outcome: Winner
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Silver Award
+    year: "2020"
+    category: Climate Change & Sustainability
+    outcome: Winner
+  - name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Magazine Feature
+    outcome: Winner
+    url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    outcome: Winner
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Nature & Wildlife
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Educational / Instructional
+    outcome: Winner
+  - url: https://tvfilm.newyorkfestivals.com/winners/List/19482e67-0d52-455c-87f7-c83e453ed7a5
+    name: New York Festivals TV & Film Bronze Award
+    year: "2020"
+    category: Environment & Ecology
+    outcome: Winner
 channel:
-  - name: TBC
-    text-only: 'Yes'
+  - name: Al Jazeera
+    text-only: true
 map:
-  - lat: '23.684994'
-    long: '90.356331'
+  - lat: "23.684994"
+    long: "90.356331"
     name: Bangladesh
-  - lat: '61.924110'
-    long: '25.748152'
+  - lat: "61.924110"
+    long: "25.748152"
     name: Finland
+  - name: Patagonia
+    lat: "-50.268277"
+    long: "-73.644311"
+  - name: London
+    lat: "51.507351"
+    long: "-0.127758"
+  - name: Lebanon
+    lat: "34.191738"
+    long: "35.887572"
+  - name: Turkey
+    lat: "38.963745"
+    long: "35.243320"
+  - name: Italy
+    lat: "41.871941"
+    long: "12.567380"
+  - name: Sweden
+    lat: "60.128162"
+    long: "18.643501"
+  - name: USA
+    lat: "37.090240"
+    long: "-95.712891"
+  - name: Cameroon
+    lat: "7.369722"
+    long: "12.354722"
 title: Earthrise
 layout: work-single
 ---
-# earthrise explores the most significant environmental threats to the planet and highlights eco-friendly solutions being employed around the world to tackle them.
+earthrise is a multi award-winning environmental series for Al Jazeera exploring the most significant threats to our planet by highlighting eco-friendly solutions from around the world. earthrise features stories of those who strive to improve our quality of life and reduce our negative impact on the earth. 
 
-earthrise is a series commission from Al Jazeera. Each episode (6x30') due to air from May 2019 examines particular threats in different countries around the world and focuses on individuals – often young environmentalists and entrepreneurs – who are devising and using innovative techniques to reduce humanity’s negative impact on the Earth and improve our quality of life.
+6x 30min episodes produced by Talesmith:
 
-Stories include how Rohingya refugees fleeing Myanmar formed a local group to help protect Bangladesh’s last surviving, critically endangered elephants, which had killed some refugees after coming into contact with them near camps constructed in their forest home; and a new restaurant in Finland which aims to minimise its environmental footprint by growing food on-site and recycling almost all of its waste.
+**Life After Conflict**
 
-> How we deal with humanity’s impact on the environment is of huge interest to global audiences. earthrise is an eye-opening and informative series which focuses on innovative solutions – often developed by young people from around the world. We’re thrilled that Al Jazeera has entrusted Talesmith to produce one of its highest profile brands.
->
-> **Martin Williams, CEO and Creative Director of Talesmith**
+**Ecosystem Alert**
 
-> The importance of a programme such as earthrise, which seeks to offer environmental hope and inspiration, only increases as the man- made problems threatening our planet worsen and the need to find, and enact, workable solutions intensifies. It’s very exciting to be working on this new series with Talesmith, which has a strong track- record in bringing science and natural history stories alive for an international audience.
->
-> **Amanda Burrell, Al Jazeera’s Executive Producer**
+**Reimagining Plastic** 
+
+**Feeding the Billions**
+
+**Rewilding Patagonia** 
+
+**The People's Voice**
