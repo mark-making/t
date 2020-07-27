@@ -41,6 +41,11 @@ award:
     category: Official Selection
     outcome: Selected
     url: https://filmfreeway.com/SunsetFilmFestivalLosAngeles
+  - name: Grierson Award
+    year: "2020"
+    category: Natural History
+    outcome: Shortlisted
+    url: https://griersontrust.org/about-us/news/2020/grierson-awards-2020-shortlist.html
 channel:
   - name: CBC
     text-only: true
