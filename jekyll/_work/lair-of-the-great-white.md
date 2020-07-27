@@ -6,13 +6,17 @@ img: true
 order_page: 1
 producer: Talesmith
 primary_colour: rgb(58,94,53)
-light_on_dark: false
+light_on_dark: true
 cast:
   - name: Dr Craig O'Connell
   - name: Marc Payne
 channel:
   - name: TBC
     text-only: Yes
+map:
+  - name: Western Australia
+    lat: "-32.806610"
+    long: "125.567031"
 title: Lair of the Great White
 layout: work-single
 ---
