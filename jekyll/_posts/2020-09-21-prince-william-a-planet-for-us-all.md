@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Talesmith partner with HRH Prince William, ITV & Oxford Films with a new
+title: Talesmith partner with HRH Prince William, ITV & Oxford Films on
   environmental documentary
 date: 2020-09-29 01:01:00
 ---
