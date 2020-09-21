@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Prince William: A Planet for Us All"
+title: Talesmith partner with HRH Prince William, ITV & Oxford Films with a new
+  environmental documentary
 date: 2020-09-29 01:01:00
 ---
 # **Prince William: A Planet for Us All**
