@@ -1,5 +1,5 @@
 ---
-hero: true
+hero: false
 loop: false
 feature: true
 img: true
