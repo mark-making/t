@@ -1,5 +1,5 @@
 ---
-hero: false
+hero: true
 loop: false
 feature: true
 img: true
@@ -36,4 +36,4 @@ layout: work-single
 ---
 **Inspired by fatherhood, Prince William embarks on a two-year mission, seeking ways to protect the beleaguered natural world for all our children.**
 
-Growing up, Prince William always loved nature. Now, as a father, with the devastation of climate change and extinction already upon us, the need to protect nature has never been more urgent. Filmed over two years, with unique on-the-shoulder access, this film is an intimate and charming portrayal of the Duke of Cambridge at a unique moment, not just in his own life but in the life of our planet. William has always believed it’s possible to give young people hope and he has the belief that things can get fixed. As he meets inspiring local heroes across Britain and the world, he sees an opportunity to become a bridge between the young people who are crying out for change and the leaders and policy makers who can make it happen; after all, the covid pandemic has shown what governments are capable of in a crisis.
+Growing up, Prince William always loved nature. Now, as a father, with the devastation of climate change and extinction already upon us, the need to protect nature has never been more urgent. Filmed over two years, with unique on-the-shoulder access, this film is an intimate and charming portrayal of the Duke of Cambridge at a unique moment, not just in his own life but in the life of our planet. William has always believed it’s possible to give young people hope and he has the belief that things can get fixed. As he meets inspiring local heroes across Britain and the world, he sees an opportunity to become a bridge between the young people who are crying out for change and the leaders and policy makers who can make it happen; after all, the covid pandemic has shown what governments are capable of in a crisis.[<iframe title="vimeo-player" src="https://player.vimeo.com/video/460957576" width="640" height="360" frameborder="0" allowfullscreen></iframe>](<<iframe title="vimeo-player" src="https://player.vimeo.com/video/460957576" width="640" height="360" frameborder="0" allowfullscreen></iframe>>)
