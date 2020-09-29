@@ -6,11 +6,11 @@ date: 2020-09-29 01:01:00
 ---
 # **Prince William: A Planet for Us All**
 
-> “*Now I’ve got George, Charlotte and now Louis in my life, your outlook does change…You want to hand over to the next generation, the wildlife in a much better condition.”*
+> “*Someone has to put their head above the parapet and say, I care about this. To have the belief that if we all work together, we can make a difference*.”
 
 HRH Prince William, The Duke of Cambridge
 
-**TX Monday 5th October 2020 at 9pm TBC**
+**TX Monday 5th October 2020 at 9pm, ITV**
 
 With exclusive access across two years, this film is an intimate portrayal of Prince William, following him as we’ve never seen him before on a global mission to champion action for the natural world and celebrate the pioneering work of local heroes.
 
@@ -22,11 +22,7 @@ The challenge is daunting but this film is a message of hope driven by Prince Wi
 
 Filmed at a time of unparalleled change for everyone, the documentary follows Prince William from Africa to Asia, from London to Liverpool and to the Sandringham Estate, charting his journey as the world has awoken to the urgent need to restore our planet. It shows The Duke as he has developed his lifelong passion for African conservation into a global leadership role on the environment. We see him join conservation heroes great and small: from Sir David Attenborough to children and young people protecting the natural world close to home. 
 
-The film begins at The Sandringham Estate, as Prince William says: 
-
-> “*There’s quite a few places on Sandringham that I love. Favourite spots like this. Just peace and quiet, time to think. The views are stunning. You can hear the birds, it’s so nice…it takes me back to my childhood*.”
-
-He grew up feeling a deep connection with the outdoors and explains that it’s a connection he now shares with his own children.
+The film begins at The Sandringham Estate. Prince William grew up feeling a deep connection with the outdoors and explains that it’s a connection he now shares with his own children.
 
 At an event in Birkenhead, the Duchess of Cambridge names a new ship after Sir David Attenborough, before the couple meet with him privately afterwards and discuss their hopes for finding solutions to the climate change crisis.
 
@@ -34,13 +30,17 @@ The Duchess of Cambridge tells him:
 
 > “*The children were very upset that we were coming to see you and they weren’t coming. They are massive fans of yours!”*
 
-Sir David shares his optimism: 
+Prince William adds:
+
+> “*Every generation, you know, after yours, David, has grown up listening and seeing all the things that you’ve shown them. And, hopefully, each generation listens a little bit more.”*
+
+Sir David shares his optimism:
 
 > “*The public is becoming extraordinarily well informed it seems to me. Kids know an awful lot now about ecology and what’s happening with the world. It’s remarkable.”*
 
 In Liverpool, Prince William makes a surprise visit to meet a group of children determined to make a difference to the planet. They are in the process of building a huge bug hotel, which they have named *Bugingham Palace*. After discussing the importance of the insects on the environment, the children are keen to quiz the Duke about some other pressing subjects - including whether his children can be cheeky and whether he is able to do the floss dance!
 
-Back at Sandringham, Prince William explains that the Royal Family have long been providing a haven for wildlife on the estate by planting trees in amongst the barley and wheat, as evidence has shown that the insects in the trees protect the crops from pests and reduce the need for pesticides.
+Back at Sandringham, Prince William explains that on the estate they are trying to boost the numbers of insects by planting trees in amongst the barley and wheat, as evidence has shown that the insects in the trees protect the crops from pests and reduce the need for pesticides.
 
 Prince William’s passion for conservation started in his youth when he visited Africa and the documentary follows him as he goes back there and visits rhinos in Tanzania. As he feeds a carrot to a rhino called Deborah, Prince William talks about poaching and his fear of rhinos and elephants disappearing forever.
 
@@ -50,15 +50,15 @@ He says:
 
 Prince William is visibly moved as he visits a heavily-guarded secure ivory store in Tanzania where 43,000 tusks with a street value of £50million have been impounded.
 
-He says: 
+He says:
 
 > “*It’s a mind blowing number of tusks, it really is. You can’t get your head around it.”*
 
-Back in London, Prince William talks about his trip to Tanzania in a speech at the Illegal Wildlife Trade Conference before he and the Duchess of Cambridge visit a beach in Anglesey, Wales, to help with a litter pick.
+Back in London, Prince William talks about his trip to Tanzania in a speech at the Illegal Wildlife Trade Conference before he and The Duchess of Cambridge visit a beach in Anglesey, Wales, to help with a litter pick.
 
-In Ullapool in the Scottish Highlands, two schoolgirls excitedly meet Prince William on a video call so they can tell him the work they have been doing to protect their local ocean wildlife which is being damaged by trawlers dredging the seabed for scallops. After a successful campaign to parliament, the area is now protected and all scallop fishing must be done by hand. Prince William has a video call with a local fisherman to ask about his livelihood and discuss eating jellied eels with a hangover.
+In Ullapool in the Scottish Highlands, two schoolgirls excitedly meet Prince William on a video call so they can tell him the work they have been doing to protect their local ocean wildlife which is being damaged by trawlers dredging the seabed for scallops. After a successful campaign to parliament, the area is now protected and all scallop fishing must be done by hand. Prince William has a video call with a local fisherman to ask about his livelihood and the impact that COVID-19 has had.
 
-Prince William and the Duchess of Cambridge are seen on a trip to Pakistan where they are shown the effects of global warming at the Hindu Kush mountains where glaciers are melting at record speed which could eventually lead to a shortage of fresh water.
+The Duke and Duchess of Cambridge are seen on a trip to Pakistan where they are shown the effects of global warming at the Hindu Kush mountains where glaciers are melting at record speed which could eventually lead to a shortage of fresh water.
 
 The Duchess of Cambridge says: 
 
@@ -66,7 +66,9 @@ The Duchess of Cambridge says:
 
 Prince William adds: 
 
-> *“We are very lucky to be up here to see this, nothing is more important now than climate change and the environment.”*
+> *“It’s a huge environmental and humanitarian disaster. And yet, we still don’t seem to be picking up the pace and understanding it quick enough. And I think the young are really getting it. And the younger generation are really wanting more and more people to do stuff and want more action.*
+>
+> *“And we’ve got to speed the pace up. We’ve got to get on top of it and we need to be more vocal and more educational about what’s going on.”*
 
 Back in the UK, Prince William goes kayaking at a central London nature reserve which has been created at an 11 acre reservoir in Hackney. The area used to be out of bounds to the public, but is now a tranquil space which is home to a wealth of wildlife including kingfishers, dragonflies and rare moths. Prince William talks to the people who have developed the area and those who use it.
 
@@ -74,9 +76,9 @@ At the end of the programme, Prince William says that he believes that 2020 and 
 
 He says: 
 
-> “*I’ve been really heartened by what I’ve been hearing from other people and how they’ve decided to appreciate nature and experience it and see all the things that they never thought they would. The details come out because they never thought they had the time.*
+> “*I can’t talk about Coronavirus without mentioning how many people sadly lost their lives and how terrible and sad that all is. But I think the tiny little ray of light, if there is any ray of light from this, is that is allows us to take stock and to refocus our priorities. I’ve been really heartened by what I’ve been hearing from other people and how they’ve decided to appreciate nature and experience it and see all the things that they never thought they would.*
 >
-> “*Someone has to put their head above the parapet and say, I care about this. To have the belief that If we all work together, we can make a difference*.”
+> “*Someone has to put their head above the parapet and say, I care about this. To have the belief that if we all work together, we can make a difference*.”
 
 Produced by Oxford Films in association with Talesmith, for ITV.
 
