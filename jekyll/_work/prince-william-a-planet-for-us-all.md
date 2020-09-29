@@ -5,7 +5,7 @@ feature: true
 img: true
 order_page: 1
 producer: Oxford Film and TV in association with Talesmith
-primary_colour: rgb(XXX,XXX,XXX)
+primary_colour: rgb(225,202,198)
 light_on_dark: false
 cast:
   - name: HRH Prince William, Duke of Cambridge
