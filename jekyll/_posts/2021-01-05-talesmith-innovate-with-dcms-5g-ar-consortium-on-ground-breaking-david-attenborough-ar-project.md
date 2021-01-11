@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Talesmith innovate with DCMS 5G AR consortium on ground-breaking David
-  Attenborough AR project
+  Attenborough Augmented Reality project
 date: 2021-01-13 01:00:00
 ---
 ## **World-leading creative, technology and scientific organisations to use power of 5G to deliver an Augmented Reality Experience inspired by *The Green Planet*, with funding from Government’s 5G Create competition.**
