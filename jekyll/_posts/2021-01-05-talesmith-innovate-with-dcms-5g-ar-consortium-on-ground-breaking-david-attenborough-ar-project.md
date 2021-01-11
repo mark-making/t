@@ -2,13 +2,13 @@
 layout: post
 title: Talesmith innovate with DCMS 5G AR consortium on ground-breaking David
   Attenborough AR project
-date: 2021-01-18 09:00:00
+date: 2021-01-13 01:00:00
 ---
 ## **World-leading creative, technology and scientific organisations to use power of 5G to deliver an Augmented Reality Experience inspired by *The Green Planet*, with funding from Government’s 5G Create competition.**
 
 * #### Six of the world’s leading creative, technology and scientific organisations form consortium to create new experience inspired by the forthcoming BBC Studios Natural History Unit landmark series *The Green Planet* presented by Sir David Attenborough.
 * #### App will use unique 5G capabilities to deliver an immersive experience to engage audiences in the natural world
-* #### Group wins £2.2m Government grant through the 5G Create competition to fund the experience
+* #### Group wins £2.2m government Department of Culture, Media & Sport grant through the 5G Create competition to fund the experience
 
 BBC Studios, 5G mobile network operator EE, Royal Botanic Gardens, Kew, Talesmith and Dimension Studios today announce *The Green Planet* 5G AR Consortium, led by the immersive content studio Factory 42. The Consortium will work together on an innovation project to explore and develop a ground- breaking AR experience inspired by the landmark BBC One upcoming TV series, *The Green Planet*. The TV show will be presented by Sir David Attenborough. The app, inspired by the series, will be designed to encourage audiences to discover new and surprising wonders of the natural world. The consortium is one of nine projects to win £2.2m funding as part of the 5G Create competition backed by the Department for Digital, Culture, Media & Sport, which is exploring how 5G technology can be used by a wide range of sectors including the creative industries. 
 
