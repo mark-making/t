@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Talesmith innovate with DCMS 5G AR consortium on ground-breaking David
-  Attenborough Augmented Reality project
+title: Talesmith innovate with world-leading group using cutting edge AR technology
 date: 2021-01-13 01:00:00
 ---
 ## **World-leading creative, technology and scientific organisations to use power of 5G to deliver an Augmented Reality Experience inspired by *The Green Planet*, with funding from Government’s 5G Create competition.**
 
-* #### Six of the world’s leading creative, technology and scientific organisations form consortium to create new experience inspired by the forthcoming BBC Studios Natural History Unit landmark series *The Green Planet* presented by Sir David Attenborough.
-* #### App will use unique 5G capabilities to deliver an immersive experience to engage audiences in the natural world
-* #### Group wins £2.2m government Department of Culture, Media & Sport grant through the 5G Create competition to fund the experience
+* Six of the world’s leading creative, technology and scientific organisations form consortium to create new experience inspired by the forthcoming BBC Studios Natural History Unit landmark series *The Green Planet* presented by Sir David Attenborough
+* App will use unique 5G capabilities to deliver an immersive experience to engage audiences in the natural world 
+* Group wins £2.2m Government grant through the 5G Create competition to fund the experience
 
 BBC Studios, 5G mobile network operator EE, Royal Botanic Gardens, Kew, Talesmith and Dimension Studios today announce *The Green Planet* 5G AR Consortium, led by the immersive content studio Factory 42. The Consortium will work together on an innovation project to explore and develop a ground- breaking AR experience inspired by the landmark BBC One upcoming TV series, *The Green Planet*. The TV show will be presented by Sir David Attenborough. The app, inspired by the series, will be designed to encourage audiences to discover new and surprising wonders of the natural world. The consortium is one of nine projects to win £2.2m funding as part of the 5G Create competition backed by the Department for Digital, Culture, Media & Sport, which is exploring how 5G technology can be used by a wide range of sectors including the creative industries. 
 
@@ -16,9 +15,13 @@ The unique combination of increased capacity and dense coverage of EE’s 5G ne
 
 Scientifically accurate digital botanical imagery, verified by Kew’s world leading scientists, will enable people to find out more about the flora and fauna that inhabits our planet. People will be able to use their phones and devices to nurture rare and exotic plants, observe their behaviours and watch in seconds as they grow in urban backdrops while seeing the animals that live among them. The consortium will also work with digital learning specialists to ensure the app not only entertains but also gives audiences a deeper connection and understanding of plant life in an interactive way.
 
-The consortium is being led by Factory 42 with each partner playing a different role in the development of the app. Factory 42 will co-produce the project with BBC Studios in association with natural history producer,  Talesmith. The three organisations will bring creative direction and the powerful story telling of Sir David Attenborough; EE will deploy its 5G network and edge computing; while Dimension Studios will provide the volumetric capture video technology that will create the holographic images in the app. 
+ The consortium is being led by Factory 42 with each partner playing a different role in the development of the app. Factory 42 will co-produce the project with BBC Studios in association with natural history producer,  Talesmith. The three organisations will bring creative direction and the powerful story telling of Sir David Attenborough; EE will deploy its 5G network and edge computing; while Dimension Studios will provide the volumetric capture video technology that will create the holographic images in the app. 
 
 > **John Cassy, Founder and CEO, Factory 42 said:** “The importance of protecting the planet has never been greater and the opportunity to use emerging technologies to engage audiences of all ages in environmental issues in new ways is hugely exciting. We’re delighted to have pulled together a unique consortium of world leading organisations and look forward to showing how 5G networks will enhance our everyday lives and our understanding of the world around us”
+>
+> **Martin Williams, CEO Talesmith** **said:** “This cutting-edge project is what Talesmith is all about - it represents a fantastic opportunity to entertain and inform while inspiring a whole new digital generation to care deeply about the natural world, using a medium they connect with and enjoy. We’re delighted to be working with Factory 42 and their partners on another world-leading experience.“
+>
+> **Matt Warman, Minister for Digital Infrastructure said:** “5G Create is about exploring new and inventive ways we can use 5G to give British industries a competitive advantage. This cutting-edge app, fronted by broadcasting legend Sir David Attenborough, is set to be an inspiring example of how new technology can reconnect us with the natural world whilst demonstrating the power of 5G to a huge new audience.”
 >
 > **Mike Gunton, Creative Director, BBC Studios said**: “Innovation has always been at the heart BBC Studios Natural History Unit. We believe that the App inspired by *The Green Planet* has the potential to reach millions to showcase the beauty and fragility of our natural world and inspire positive change around biodiversity and habitat protection for the benefit of all species.”
 >
@@ -28,7 +31,7 @@ The consortium is being led by Factory 42 with each partner playing a different 
 >
 > **Steve Jelley, Co-founder and Joint Managing Director of Dimension Studios, said**: “There has been no better advocate than Sir David Attenborough for the natural world. We’re thrilled to be using volumetric capture to bring Sir David’s remarkable message to millions, ultimately changing people’s attitude towards our planet.” 
 >
-> **Martin Williams, CEO Talesmith** **said:** “This cutting-edge project is what Talesmith is all about - it represents a fantastic opportunity to entertain and inform while inspiring a whole new digital generation to care deeply about the natural world, using a medium they connect with and enjoy. We’re delighted to be working with Factory 42 and their partners on another world-leading experience.“
+>
 
 **Press contacts:**
 
