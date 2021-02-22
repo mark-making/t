@@ -1,6 +1,6 @@
 people:
-  - description: Martin is an award winning director and producer with over 20 years
-      experience.
+  - description: Martin is a multi award-winning director and producer with over 20
+      years experience.
     firstname: Martin
     gender: Male
     image: /img/optimised/martin-williams.jpg
@@ -75,12 +75,7 @@ people:
   - firstname: Elisabeth
     lastname: Pinto
     jobtitle: Production Manager
-    description: As a highly able documentary, drama and docu-drama production
-      manager, with extensive experience across the film and television
-      industry, from development through to production and post-production, no
-      challenge is too tough for Elisabeth. In the midst of the pandemic, she
-      has confidently steered multiple complex productions through uncharted
-      waters.
+    description: Elisabeth runs a tight but happy ship on all her productions.
     gender: Female
     linkedin-profile: https://www.linkedin.com/in/elisabeth-pinto-087b3410/
     image: /img/optimised/elisabeth-pinto.jpg
