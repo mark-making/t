@@ -63,12 +63,11 @@ people:
   - firstname: "Serena "
     lastname: Davies
     jobtitle: Series Producer / Director
-    description: Serena is highly experienced Series Producer and Director
-      specializing in science and natural history. She  brings complex subjects
-      to life with engaging, character led story telling, and creative visuals
-      and she has worked with both new and experienced presenters. She's great
-      with running complex productions, managing budgets and with filming in
-      remote and hostile environments across the world.
+    description: She  brings complex subjects to life with engaging, character led
+      story telling, and creative visuals and she has worked with both new and
+      experienced presenters. She's great with running complex productions,
+      managing budgets and with filming in remote and hostile environments
+      across the world.
     gender: Female
     imdb-profile: https://www.imdb.com/name/nm1583111/
     linkedin-profile: https://www.linkedin.com/in/serena-davies-6a5b9021/
