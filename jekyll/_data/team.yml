@@ -41,6 +41,23 @@ people:
     jobtitle: Non Executive Director
     lastname: Baker
     linkedin-profile: https://www.linkedin.com/in/andrewrbaker/
+  - firstname: Elisabeth
+    lastname: Pinto
+    jobtitle: Production Manager
+    description: Elisabeth runs a tight but happy ship on all her productions.
+    gender: Female
+    linkedin-profile: https://www.linkedin.com/in/elisabeth-pinto-087b3410/
+    image: /img/optimised/elisabeth-pinto.jpg
+    imdb-profile: https://www.imdb.com/name/nm1788482/?ref_=fn_al_nm_1
+  - firstname: Serena
+    lastname: Davies
+    jobtitle: Series Producer / Director
+    description: Serena is highly experienced Series Producer and Director
+      specializing in science and natural history.
+    gender: Female
+    imdb-profile: https://www.imdb.com/name/nm1583111/
+    linkedin-profile: https://www.linkedin.com/in/serena-davies-6a5b9021/
+    image: /img/optimised/serena-davies.jpg
   - firstname: Will
     lastname: Benson
     jobtitle: Producer / Director
@@ -60,20 +77,3 @@ people:
     linkedin-profile: https://www.linkedin.com/in/chelseamose/
     image: /img/optimised/chelsea-mose.jpg
     imdb-profile: https://www.imdb.com
-  - firstname: Serena
-    lastname: Davies
-    jobtitle: Series Producer / Director
-    description: Serena is highly experienced Series Producer and Director
-      specializing in science and natural history.
-    gender: Female
-    imdb-profile: https://www.imdb.com/name/nm1583111/
-    linkedin-profile: https://www.linkedin.com/in/serena-davies-6a5b9021/
-    image: /img/optimised/serena-davies.jpg
-  - firstname: Elisabeth
-    lastname: Pinto
-    jobtitle: Production Manager
-    description: Elisabeth runs a tight but happy ship on all her productions.
-    gender: Female
-    linkedin-profile: https://www.linkedin.com/in/elisabeth-pinto-087b3410/
-    image: /img/optimised/elisabeth-pinto.jpg
-    imdb-profile: https://www.imdb.com/name/nm1788482/?ref_=fn_al_nm_1
