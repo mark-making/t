@@ -14,22 +14,22 @@ award:
       Leo Awards
     year: "2020"
     category: Short Documentary Program
-    outcome: TBC
+    outcome: WINNER
     url: http://www.leoawards.com/2020
   - name: Leo Awards
     url: http://www.leoawards.com/2020
-    outcome: TBC
+    outcome: WINNER
     year: "2020"
     category: Directing, Short Documentary Program
   - name: Leo Awards
     year: "2020"
     category: Cinematography, Short Documentary Program
-    outcome: TBC
+    outcome: WINNER
     url: http://www.leoawards.com/2020
   - name: Leo Awards
     year: "2020"
     category: Scriptwriting, Short Documentary Program
-    outcome: TBC
+    outcome: WINNER
     url: http://www.leoawards.com/2020
   - name: International Wildlife Film Festival
     year: "2020"
@@ -46,6 +46,11 @@ award:
     category: Natural History
     outcome: Shortlisted
     url: https://griersontrust.org/about-us/news/2020/grierson-awards-2020-shortlist.html
+  - name: Academy of Canadian Cinema & Television Award
+    year: "2021"
+    category: Rob Stewart Award for Science or Nature Program or Series
+    outcome: WINNER
+    url: https://www.academy.ca/nominees/?cat=t
 channel:
   - name: CBC
     text-only: true
