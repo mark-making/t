@@ -18,18 +18,18 @@ award:
     url: http://www.leoawards.com/2020
   - name: Leo Awards
     url: http://www.leoawards.com/2020
-    outcome: TBC
+    outcome: WINNER
     year: "2020"
     category: Directing, Short Documentary Program
   - name: Leo Awards
     year: "2020"
     category: Cinematography, Short Documentary Program
-    outcome: TBC
+    outcome: WINNER
     url: http://www.leoawards.com/2020
   - name: Leo Awards
     year: "2020"
     category: Scriptwriting, Short Documentary Program
-    outcome: TBC
+    outcome: WINNER
     url: http://www.leoawards.com/2020
   - name: International Wildlife Film Festival
     year: "2020"
