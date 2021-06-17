@@ -46,6 +46,11 @@ award:
     category: Natural History
     outcome: Shortlisted
     url: https://griersontrust.org/about-us/news/2020/grierson-awards-2020-shortlist.html
+  - name: Academy of Canadian Cinema & Television Award
+    year: "2021"
+    category: Rob Stewart Award for Science or Nature Program or Series
+    outcome: WINNER
+    url: https://www.academy.ca/nominees/?cat=t
 channel:
   - name: CBC
     text-only: true
