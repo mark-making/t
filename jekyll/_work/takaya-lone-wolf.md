@@ -14,7 +14,7 @@ award:
       Leo Awards
     year: "2020"
     category: Short Documentary Program
-    outcome: TBC
+    outcome: WINNER
     url: http://www.leoawards.com/2020
   - name: Leo Awards
     url: http://www.leoawards.com/2020
