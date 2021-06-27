@@ -5,8 +5,19 @@ feature: true
 img: true
 order_page: 1
 producer: Talesmith
-primary_colour: rgb(XXX,XXX,XXX)
+primary_colour: rgb(000,044,139)
 light_on_dark: false
+cast:
+  - name: Dr Craig O'Connell
+  - name: Marc Payne
+  - name: Madison Stewart
+channel:
+  - text-only: Yes
+    name: TBC
+map:
+  - name: Great Australian Bight
+    lat: "35.7696"
+    long: "131.2809"
 title: Return to Lair of the Great White
 layout: work-single
 ---
