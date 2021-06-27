@@ -6,7 +6,7 @@ img: true
 order_page: 1
 producer: Talesmith
 primary_colour: rgb(000,044,139)
-light_on_dark: false
+light_on_dark: true
 cast:
   - name: Dr Craig O'Connell
   - name: Marc Payne
