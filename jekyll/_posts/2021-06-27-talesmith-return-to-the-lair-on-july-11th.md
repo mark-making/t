@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Talesmith Return to the Lair on July 11th "
+title: "Talesmith Return to the Lair of the Great White on July 14th "
 date: 2021-06-27 09:17:15
 ---
 ### Talesmith's new film *Return to Lair of the Great White* is part of a stellar 2021 **Shark Week** line up, with the team defying the odds to discover a mysterious new great white nursery ground.
