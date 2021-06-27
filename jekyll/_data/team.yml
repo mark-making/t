@@ -49,22 +49,3 @@ people:
     linkedin-profile: https://www.linkedin.com/in/elisabeth-pinto-087b3410/
     image: /img/optimised/elisabeth-pinto.jpg
     imdb-profile: https://www.imdb.com/name/nm1788482/?ref_=fn_al_nm_1
-  - firstname: Will
-    lastname: Benson
-    jobtitle: Producer / Director
-    image: /img/optimised/will-benson.jpg
-    linkedin-profile: https://www.linkedin.com/in/will-benson-37012b11/
-    gender: Male
-    description: Will is a highly versatile Producer/Director with a strong track
-      record for making innovative specialist-factual and natural history
-      programmes.
-    imdb-profile: https://www.imdb.com/name/nm6491341/?ref_=ttfc_fc_cr2
-  - firstname: Chelsea
-    lastname: Mose
-    jobtitle: Producer / Director
-    description: Chelsea is an experienced Producer and Director specialising in
-      unscripted and factual TV.
-    gender: Female
-    linkedin-profile: https://www.linkedin.com/in/chelseamose/
-    image: /img/optimised/chelsea-mose.jpg
-    imdb-profile: https://www.imdb.com
