@@ -1,11 +1,11 @@
 people:
-  - description: Martin is a multi award-winning director and producer with over 20
-      years experience.
+  - description: Martin is Talesmith's founder and a multi award-winning film maker
+      with over 20 years experience.
     firstname: Martin
     gender: Male
     image: /img/optimised/martin-williams.jpg
     imdb-profile: http://www.imdb.com/name/nm1546548/
-    jobtitle: Founder & Creative Director
+    jobtitle: Founder
     lastname: Williams
     linkedin-profile: https://www.linkedin.com/in/martin-williams-3230b07/
   - description: Ruth knows a thing or two about development. David Attenborough
