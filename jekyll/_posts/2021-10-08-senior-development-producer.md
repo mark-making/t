@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Senior Development Producer
-date: 2021-10-09 12:55:34
+date: 2021-10-13 11:26:35
 ---
 ### We’re looking for an experienced development producer in premium science & natural history, with a track record in successful pitches. Applicant must be able to generate fresh, new ideas, to build ideas up from log-line concepts and to write treatments. You should also have a good commissioner network.
 
