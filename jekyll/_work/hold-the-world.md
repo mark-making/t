@@ -4,7 +4,7 @@ loop: false
 feature: false
 img: true
 order_page: 4
-producer: Factory 42, in assoc. with Dream Reality Interactive & Talesmith
+producer: Factory 42, in assoc. with Dream Reality Interactive & Talesmitha
 primary_colour: rgb(70,70,70)
 light_on_dark: true
 cast:
